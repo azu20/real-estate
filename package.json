@@ -2,6 +2,9 @@
   "name": "real-estate",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "server.js",
   "dependencies": {
     "mdbreact": "^4.27.0",
