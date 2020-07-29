@@ -1,9 +1,27 @@
-.border{
-    border: solid black 1px;
-    background-color: #64B5F6;
-  
+.jumboTron{
+    min-height: 400px;
+    max-height: 500px;
+    /* max-width: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg");
+    border: solid yellow 2px;
+    /* display: flex; */
+    object-fit: cover;
 }
 
-.jumboImage{
-    background-image: url("../../Assets/WashburnSearch.png");
+.searchBox{
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+.verticalAlign{
+    /* display: flex; */
+    /* justify-content: center; */
+    border: 1px black solid;
+
+    
+
 }

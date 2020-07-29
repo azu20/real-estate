@@ -3,6 +3,8 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import "../Nav/Nav.css";
+
 class Nav extends Component {
 state = {
   isOpen: false
@@ -49,7 +51,7 @@ render() {
           </MDBNavbarNav>
           <MDBNavbarNav center>
                 <MDBNavItem>
-                    <h1>WASHBURN REALTY</h1>
+                    <h1>WASHBURN</h1>
                 </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
