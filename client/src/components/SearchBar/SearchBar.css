@@ -1,0 +1,9 @@
+.border{
+    border: solid black 1px;
+    background-color: #64B5F6;
+  
+}
+
+.jumboImage{
+    background-image: url("../../Assets/WashburnSearch.png");
+}

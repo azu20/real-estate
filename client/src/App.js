@@ -1,10 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Nav from "./components/Nav/Nav";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
   return (
-   <p>test</p>
+    <>
+      <Nav />
+      <SearchBar />
+    </>
   );
 }
 
