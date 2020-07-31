@@ -1,0 +1,28 @@
+.jumboTron{
+    min-height: 600px;
+    /* max-height: 700px; */
+    /* max-width: 100%; */
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg");
+    border: solid yellow 2px;
+    /* display: flex; */
+    object-fit: cover;
+}
+
+.searchBox{
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+.verticalAlign{
+    /* display: flex; */
+    /* justify-content: center; */
+    border: 1px black solid;
+
+    
+
+}

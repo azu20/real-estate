@@ -1,20 +1,18 @@
 import React from "react";
-import { MDBCol, MDBIcon } from "mdbreact";
 import "./MapAndSearchContainer.css";
 
 import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
+import SplashScreen from "../SplashScreen/SplashScreen";
+import Nav from "../Nav/Nav";
 
 const SearchBar = () => {
   return (
     <>
-    <MDBCol md="6" className="jumboTron">
-      <div className="active-pink-3 active-pink-4 mb-4">
-        <input className="form-control" type="text" placeholder="Search" aria-label="Search" />
-      </div>
-    </MDBCol>
-    
+    <Nav />
+    {/* SplashScreen has "search term" we need for RapidAPI and Maps?  */}
+    <SplashScreen></SplashScreen> 
+    {/* <CardHomeInfo /> */}
 
-    <CardHomeInfo />
     </>
   )
 }
