@@ -11,6 +11,9 @@ import {
 
 import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSearchContainer.js";
 import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
+import Favorites from "./components/Favorites/Favorites";
+import AdminArea from "./components/AdminArea/AdminArea";
+
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
       <Router>
         <Route path exact ="/" component={MapAndSearchContainer}/>
         <Route path = "/mapandcard" component={MapAndCardDisplay}/>
+        <Route path = "/favorites" component={Favorites}/>
+        <Route path = "/adminarea" component={AdminArea}/>
       </Router>
     </>
   );

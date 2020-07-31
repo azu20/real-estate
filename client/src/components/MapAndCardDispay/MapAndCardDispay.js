@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom";
 import "../MapAndCardDispay/MapAndCardDispay.css";
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../Nav/Nav";
@@ -15,7 +16,8 @@ const MapAndCardDispay = () => {
             <MDBContainer fluid>
                 <MDBRow>
                     <MDBCol size="6" className="areaForMap">
-                        MAP AREA
+                       MAP AREA
+
                 </MDBCol>
                     <MDBCol size="6">
                         <CardHomeInfo></CardHomeInfo>

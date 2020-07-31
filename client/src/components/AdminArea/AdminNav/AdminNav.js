@@ -4,9 +4,9 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 
 
-import "../Nav/Nav.css";
+import "../AdminNav/AdminNav.css";
 
-class Nav extends Component {
+class AdminNav extends Component {
 state = {
   isOpen: false
 };
@@ -16,7 +16,7 @@ toggleCollapse = () => {
 }
 
 render() {
-  const navColor = {backgroundColor:'#2196F3' }
+  const navColor = {backgroundColor:'red' }
   
   return (
       <MDBNavbar style={navColor} dark expand="md">
@@ -55,7 +55,7 @@ render() {
           </MDBNavbarNav>
           <MDBNavbarNav center>
                 <MDBNavItem>
-                <NavLink to="/"><h1>WASHBURN</h1></NavLink>
+                <NavLink to="/"><h1>ADMIN AREA - WASHBURN</h1></NavLink>
                 </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
@@ -90,4 +90,4 @@ render() {
   }
 }
 
-export default Nav;
+export default AdminNav;
