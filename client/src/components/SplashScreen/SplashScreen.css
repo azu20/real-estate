@@ -1,7 +1,8 @@
 .jumboTron{
-    min-height: 400px;
-    max-height: 500px;
+    min-height: 600px;
+    /* max-height: 700px; */
     /* max-width: 100%; */
+    min-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: 100%; */

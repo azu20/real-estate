@@ -7,14 +7,14 @@
   },
   "main": "server.js",
   "dependencies": {
-    "mdbreact": "^4.27.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
     "axios": "^0.18.0",
     "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mdbreact": "^4.27.0",
     "mongoose": "^5.3.16",
-    "if-env": "^1.0.4"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
