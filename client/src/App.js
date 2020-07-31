@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 
 import Nav from "./components/Nav/Nav";
-import SearchBar from "./components/SearchBar/SearchBar";
+import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSearchContainer.js";
 
 function App() {
   return (
     <>
       <Nav />
-      <SearchBar />
+      <MapAndSearchContainer/>
     </>
   );
 }
