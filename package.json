@@ -7,7 +7,6 @@
   },
   "main": "server.js",
   "dependencies": {
-    "axios": "^0.18.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mdbreact": "^4.27.0",

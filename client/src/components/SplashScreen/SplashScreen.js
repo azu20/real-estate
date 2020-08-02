@@ -5,13 +5,16 @@ import "./SplashScreen.css";
 
 
 
-const SplashScreen = () => {
+const SplashScreen = (props) => {
     return (
       <>
       <MDBCol md="6" className="jumboTron">
         <div className="active-pink-3 active-pink-4 mb-4">
-          <input className="form-control" type="text" placeholder="Search" aria-label="Search" />
-          <NavLink to="/mapandcard"><button>Search</button></NavLink>
+          <input onClick={props.handleInputChange} className="form-control" type="text" placeholder="Search" aria-label="Search" />
+          {/* remove NavLink for testing */}
+          {/* <NavLink to="/mapandcard"><button>Search</button></NavLink> */}
+          <button onClick={props.handleFormSubmit}>Submit</button>
+
         </div>
       </MDBCol>
       

@@ -13,6 +13,7 @@ import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSear
 import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
 import Favorites from "./components/Favorites/Favorites";
 import AdminArea from "./components/AdminArea/AdminArea";
+import TestAreaForAPIHooks from "./components/TestAreaForAPIHooks/TestAreaForAPIHooks";
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
       {/* <Nav />
       <MapAndSearchContainer/> */}
       <Router>
-        <Route path exact ="/" component={MapAndSearchContainer}/>
+        <Route path  ="/" component={TestAreaForAPIHooks}/>
+        {/* <Rout path = "/" component{stub_for_login_component} */}
+        
         <Route path = "/mapandcard" component={MapAndCardDisplay}/>
         <Route path = "/favorites" component={Favorites}/>
         <Route path = "/adminarea" component={AdminArea}/>
