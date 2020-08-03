@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {MDBRow} from "mdbreact";
 import SplashScreen from "../SplashScreen/SplashScreen";
 import axios from "axios";
 import TestCard from "./TestCards/TestCards";
@@ -27,9 +28,10 @@ const TestAreaForAPIHooks = () => {
 
     //#Fake API Call
       const searchRealatorAPI = () => {
-        
-        console.log(testData)
-        setResults(testData);
+        console.log("pre api call");
+        console.log(testData.properties)
+        console.log("post api call");
+        setResults(testData.properties);
 
     }
       //### WORKING RAPID-API Call 
@@ -78,7 +80,7 @@ const TestAreaForAPIHooks = () => {
     };
 
     //### conditional rendering, won't need in future
-    function ResultsToDisplayYet(props) {
+    const ResultsToDisplayYet = () => {
   
       if(results === []){
         return(
@@ -88,7 +90,19 @@ const TestAreaForAPIHooks = () => {
         )
       }
         return (
-          <TestCard results={results} />
+          <div> {results.map(item => (
+            <TestCard 
+            key={item.mls.id}
+            city={item.address.city}
+            street={item.address.line}
+            zip={item.address.postal_code}
+            state={item.address.state_cody}
+            baths={item.baths}
+            beds={item.beds}
+            sqft={item.building_size.size}
+            price={item.price}/>
+            ))} </div>
+        
           )
     }
 
@@ -107,9 +121,27 @@ const TestAreaForAPIHooks = () => {
                 handleInputChange={handleInputChange}
                 handleFormSubmit={handleFormSubmit}
             />
-            <br></br>
-            <ResultsToDisplayYet/>
           
+            {/* <ResultsToDisplayYet/> */}
+            return (
+          <MDBRow> {results.map(item => (
+            <TestCard 
+            key={item.mls.id}
+            city={item.address.city}
+            street={item.address.line}
+            zip={item.address.postal_code}
+            state={item.address.state_code}
+            baths={item.baths}
+            beds={item.beds}
+            sqft={item.building_size.size}
+            price={item.price}
+            photo={item.thumbnail}/>
+            ))} </MDBRow>
+        
+          )
+            
+            
+                  
             
         </>
     );
