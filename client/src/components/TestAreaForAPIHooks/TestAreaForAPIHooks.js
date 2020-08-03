@@ -42,7 +42,7 @@ const TestAreaForAPIHooks = () => {
     //     "headers":{
     //     "content-type":"application/octet-stream",
     //     "x-rapidapi-host":"realtor.p.rapidapi.com",
-    //     "x-rapidapi-key":"c691c22375msh7f4aeaa1564c418p132c02jsn24b19b5f8e2d",
+    //     "x-rapidapi-key":process.env.REACT_APP_RAPIDAPI_KEY ,
     //     "useQueryString":true
     //     },"params":{
     //     "sort":"relevance",
