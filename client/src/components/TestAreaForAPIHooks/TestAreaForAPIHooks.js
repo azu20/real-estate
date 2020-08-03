@@ -3,8 +3,8 @@ import {MDBRow} from "mdbreact";
 import SplashScreen from "../SplashScreen/SplashScreen";
 import axios from "axios";
 import TestCard from "./TestCards/TestCards";
-import testData from  "../../Assets/testHomeData.json";
-
+import testData from  "../../Assets/Test_JSON_files/testHomeData.json";
+import TestPhotoDisplay from "./TestPhotoDisplay/TestPhotoDisplay";
 
 const TestAreaForAPIHooks = () => {
     const [search, setSearch] = useState("");
@@ -28,9 +28,9 @@ const TestAreaForAPIHooks = () => {
 
     //#Fake API Call
       const searchRealatorAPI = () => {
-        console.log("pre api call");
+        // console.log("pre api call");
         console.log(testData.properties)
-        console.log("post api call");
+        // console.log("post api call");
         setResults(testData.properties);
 
     }
@@ -123,7 +123,8 @@ const TestAreaForAPIHooks = () => {
             />
           
             {/* <ResultsToDisplayYet/> */}
-            return (
+
+      
           <MDBRow> {results.map(item => (
             <TestCard 
             key={item.mls.id}
@@ -135,13 +136,13 @@ const TestAreaForAPIHooks = () => {
             beds={item.beds}
             sqft={item.building_size.size}
             price={item.price}
-            photo={item.thumbnail}/>
-            ))} </MDBRow>
-        
-          )
+            photo={item.thumbnail}
+            property_id={item.property_id}
             
-            
-                  
+            />
+          ))} </MDBRow>     
+
+          <TestPhotoDisplay/>   
             
         </>
     );

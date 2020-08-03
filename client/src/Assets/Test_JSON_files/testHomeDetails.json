@@ -1,0 +1,1795 @@
+{
+    "meta": {
+        "build": "3.23.117",
+        "schema": "core.3",
+        "tracking": "type|meta|data|resource_type|property_detail|query|client_id|rdc_mobile_native,13.3.0.53|schema|core.3|tag_version|v2^^^$0|1|2|$3|4|5|$6|7|8|9|A|B]]]",
+        "returned_rows": 1,
+        "matching_rows": 1,
+        "tracking_params": {
+            "ldpPropertyStatus": "ldp:not_for_sale",
+            "pageType": "ldp",
+            "leadDelivery": "unknown",
+            "leadEnhancements": "unknown",
+            "listingActivity": "unknown",
+            "productType": "basic",
+            "propertyStatus": "not_for_sale",
+            "listingId": "unknown",
+            "rentalDataSource": "unknown",
+            "advertiserIdAgent": "2821356",
+            "advertiserIdOffice": "1513383",
+            "communityId": "unknown",
+            "mprId": "3599084026",
+            "listingMls": "unknown",
+            "planId": "unknown",
+            "subId": "unknown",
+            "city": "Far Rockaway",
+            "neighborhood": "Rockaway Peninsula",
+            "state": "NY",
+            "zip": "11694",
+            "listingBaths": "1",
+            "listingBeds": "2",
+            "listingSqFt": "1200",
+            "listingEnhancements": "unknown",
+            "listingPrice": "686900",
+            "photoCount": "44",
+            "propertyType": "ldp:single_family",
+            "version": "1.0"
+        }
+    },
+    "properties": [
+        {
+            "property_id": "O3599084026",
+            "prop_status": "not_for_sale",
+            "prop_type": "single_family",
+            "suppression_flags": [
+                "suppress_foreclosure"
+            ],
+            "buyer_agent_for_far": {
+                "advertiser_id": 2821876,
+                "name": "Non Member",
+                "nrds_verified_id": null,
+                "mls_membership": {
+                    "member": {
+                        "id": "NM0000",
+                        "agent_system_id": "NM0000",
+                        "name": null,
+                        "abbreviation": "BONY"
+                    }
+                }
+            },
+            "broker": {
+                "name": "Weichert Realtors The Franzese Group",
+                "phone1": {
+                    "number": "7182321004",
+                    "type": "broker"
+                }
+            },
+            "year_built": 1930,
+            "beds": 2,
+            "description": "429 Beach 145th St, Far Rockaway, NY 11694 is a single family home built in 1930. This property was last sold for $705,000 in 2019 and currently has an estimated value of $686,900. According to the Far Rockaway public records, the property at 429 Beach 145th St, Far Rockaway, NY 11694 has approximately 1200 square feet, 2 beds and 1 baths with a lot size of 4,000 square feet. Nearby schools include Ps Ms 114 Belle Harbor. ",
+            "baths_full": 1,
+            "stories": 1,
+            "schools": [
+                {
+                    "nces_id": "360012302426",
+                    "id": "0751462661",
+                    "greatschools_id": "3602388",
+                    "name": "Ps Ms 114 Belle Harbor",
+                    "education_levels": [
+                        "elementary",
+                        "middle"
+                    ],
+                    "funding_type": "public",
+                    "lat": 40.577746,
+                    "lon": -73.854382,
+                    "student_count": 669,
+                    "student_teacher_ratio": 13,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "134-1 Cronston Avenue"
+                    },
+                    "phone": "(718) 634-3382",
+                    "distance_in_miles": 0.5,
+                    "grades": {
+                        "range": {
+                            "low": "PK",
+                            "high": "8"
+                        }
+                    },
+                    "relevance": "assigned",
+                    "ratings": {
+                        "great_schools_rating": 8,
+                        "parent_rating": 3
+                    }
+                },
+                {
+                    "nces_id": "360012306127",
+                    "id": "0751619511",
+                    "greatschools_id": "3613366",
+                    "name": "Waterside School For Leadership",
+                    "education_levels": [
+                        "middle"
+                    ],
+                    "funding_type": "public",
+                    "lat": 40.58099,
+                    "lon": -73.831621,
+                    "student_count": 228,
+                    "student_teacher_ratio": 11.1,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "190 Beach 110th Street"
+                    },
+                    "phone": "(718) 634-1128",
+                    "distance_in_miles": 1.7,
+                    "grades": {
+                        "range": {
+                            "low": "6",
+                            "high": "8"
+                        }
+                    },
+                    "relevance": "assigned",
+                    "ratings": {
+                        "great_schools_rating": 5,
+                        "parent_rating": 4
+                    }
+                },
+                {
+                    "nces_id": "360012305831",
+                    "id": "0751547551",
+                    "greatschools_id": "3608330",
+                    "name": "Scholars  Academy",
+                    "education_levels": [
+                        "middle",
+                        "high"
+                    ],
+                    "funding_type": "public",
+                    "lat": 40.584483,
+                    "lon": -73.825257,
+                    "student_count": 1375,
+                    "student_teacher_ratio": 19.4,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "320 Beach 104th Street"
+                    },
+                    "phone": "(718) 474-6918",
+                    "distance_in_miles": 2.1,
+                    "grades": {
+                        "range": {
+                            "low": "6",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "assigned",
+                    "ratings": {
+                        "great_schools_rating": 9,
+                        "parent_rating": 4
+                    }
+                },
+                {
+                    "nces_id": "360012306106",
+                    "id": "0751619501",
+                    "greatschools_id": "3613365",
+                    "name": "Waterside Children S Studio School",
+                    "education_levels": [
+                        "elementary"
+                    ],
+                    "funding_type": "public",
+                    "lat": 40.580893,
+                    "lon": -73.831603,
+                    "student_count": 500,
+                    "student_teacher_ratio": 13.2,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "190 Beach 110th Street"
+                    },
+                    "phone": "(718) 634-1344",
+                    "distance_in_miles": 1.7,
+                    "grades": {
+                        "range": {
+                            "low": "PK",
+                            "high": "5"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": 7,
+                        "parent_rating": 4
+                    }
+                },
+                {
+                    "nces_id": "360012305731",
+                    "id": "0751549151",
+                    "greatschools_id": "3608442",
+                    "name": "Channel View School For Research",
+                    "education_levels": [
+                        "middle",
+                        "high"
+                    ],
+                    "funding_type": "public",
+                    "lat": 40.586368,
+                    "lon": -73.823967,
+                    "student_count": 886,
+                    "student_teacher_ratio": 13.4,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "100-00 Beach Channel Drive"
+                    },
+                    "phone": "(718) 634-1970",
+                    "distance_in_miles": 2.2,
+                    "grades": {
+                        "range": {
+                            "low": "6",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": 5,
+                        "parent_rating": 3
+                    }
+                },
+                {
+                    "nces_id": "360012306277",
+                    "id": "0751623411",
+                    "greatschools_id": "3613639",
+                    "name": "Rockaway Collegiate High School",
+                    "education_levels": [
+                        "high"
+                    ],
+                    "funding_type": "public",
+                    "lat": 40.586225,
+                    "lon": -73.824013,
+                    "student_count": 322,
+                    "student_teacher_ratio": 13.1,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "100-00 Beach Channel Drive"
+                    },
+                    "phone": "(718) 734-3290",
+                    "distance_in_miles": 2.2,
+                    "grades": {
+                        "range": {
+                            "low": "9",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": 2,
+                        "parent_rating": null
+                    }
+                },
+                {
+                    "nces_id": "00935872",
+                    "id": "0751499921",
+                    "greatschools_id": "3604995",
+                    "name": "Yeshiva Of Belle Harbor",
+                    "education_levels": [
+                        "elementary",
+                        "middle"
+                    ],
+                    "funding_type": "private",
+                    "lat": 40.573962,
+                    "lon": -73.852097,
+                    "student_count": 93,
+                    "location": {
+                        "city_slug_id": "Queens_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Queens",
+                        "street": "134-1 Rockaway Beach Boulevard"
+                    },
+                    "phone": "(718) 474-0045",
+                    "distance_in_miles": 0.6,
+                    "grades": {
+                        "range": {
+                            "low": "PK",
+                            "high": "8"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": null,
+                        "parent_rating": 5
+                    }
+                },
+                {
+                    "nces_id": "AA890709",
+                    "id": "0751617531",
+                    "greatschools_id": "3613228",
+                    "name": "Yeshiva Mercaz Hatorah of Bell",
+                    "education_levels": [
+                        "high"
+                    ],
+                    "funding_type": "private",
+                    "lat": 40.579953,
+                    "lon": -73.850504,
+                    "location": {
+                        "city_slug_id": "Far-Rockaway_NY",
+                        "postal_code": "11694",
+                        "state": "NY",
+                        "county": "Queens",
+                        "city": "Far Rockaway",
+                        "street": "505 Beach St"
+                    },
+                    "phone": "(718) 474-3094",
+                    "distance_in_miles": 0.8,
+                    "grades": {
+                        "range": {
+                            "low": "9",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": null,
+                        "parent_rating": 1
+                    }
+                }
+            ],
+            "heating": null,
+            "cooling": null,
+            "address": {
+                "city": "Far Rockaway",
+                "line": "429 Beach 145th St",
+                "unit_value": null,
+                "street_direction": null,
+                "street_post_direction": null,
+                "postal_code": "11694",
+                "address_validation_code": "121",
+                "state_code": "NY",
+                "state": "New York",
+                "county": "Queens",
+                "time_zone": "America/New_York",
+                "lat": 40.574091,
+                "lon": -73.862966,
+                "neighborhood_name": "Rockaway Peninsula",
+                "neighborhoods": [
+                    {
+                        "name": "Rockaway Peninsula",
+                        "city": "Queens",
+                        "state_code": "NY",
+                        "level": "macro_neighborhood",
+                        "id": "8"
+                    },
+                    {
+                        "name": "Rockaway Beach",
+                        "city": "Queens",
+                        "state_code": "NY",
+                        "level": "neighborhood",
+                        "id": 0
+                    },
+                    {
+                        "name": "Neponsit",
+                        "city": "Queens",
+                        "state_code": "NY",
+                        "level": "residential_neighborhood",
+                        "id": "885"
+                    }
+                ]
+            },
+            "client_display_flags": {
+                "presentation_status": "not_for_sale"
+            },
+            "tax_history": [
+                {
+                    "assessment": {
+                        "building": 21698,
+                        "land": 8769,
+                        "total": 30467
+                    },
+                    "market": {
+                        "building": 527000,
+                        "land": 213000,
+                        "total": 740000
+                    },
+                    "tax": 6373,
+                    "year": 2018
+                },
+                {
+                    "assessment": {
+                        "building": 18899,
+                        "land": 10039,
+                        "total": 28938
+                    },
+                    "market": {
+                        "building": 401000,
+                        "land": 213000,
+                        "total": 614000
+                    },
+                    "tax": 5899,
+                    "year": 2017
+                },
+                {
+                    "assessment": {
+                        "building": 14520,
+                        "land": 12780,
+                        "total": 27300
+                    },
+                    "market": {
+                        "building": 242000,
+                        "land": 213000,
+                        "total": 455000
+                    },
+                    "tax": 5458,
+                    "year": 2016
+                },
+                {
+                    "assessment": {
+                        "building": 14520,
+                        "land": 12780,
+                        "total": 27300
+                    },
+                    "market": {
+                        "building": 242000,
+                        "land": 213000,
+                        "total": 455000
+                    },
+                    "tax": 5338,
+                    "year": 2015
+                },
+                {
+                    "assessment": null,
+                    "market": null,
+                    "tax": 4925,
+                    "year": 2014
+                },
+                {
+                    "assessment": null,
+                    "market": null,
+                    "tax": 4846,
+                    "year": 2013
+                },
+                {
+                    "assessment": {
+                        "building": 11607,
+                        "land": 16620,
+                        "total": 28227
+                    },
+                    "market": {
+                        "building": 220000,
+                        "land": 315000,
+                        "total": 535000
+                    },
+                    "tax": 4404,
+                    "year": 2012
+                },
+                {
+                    "assessment": {
+                        "building": 9317,
+                        "land": 17786,
+                        "total": 27103
+                    },
+                    "market": {
+                        "building": 183567,
+                        "land": 296433,
+                        "total": 480000
+                    },
+                    "tax": 4092,
+                    "year": 2011
+                },
+                {
+                    "assessment": {
+                        "building": 9165,
+                        "land": 16404,
+                        "total": 25569
+                    },
+                    "market": {
+                        "building": 217600,
+                        "land": 273400,
+                        "total": 491000
+                    },
+                    "tax": 3886,
+                    "year": 2010
+                },
+                {
+                    "assessment": null,
+                    "market": null,
+                    "tax": 3445,
+                    "year": 2009
+                }
+            ],
+            "sold_history": [
+                {
+                    "date": "2019-12-13T17:00:00Z",
+                    "source": "MLS #427356",
+                    "listing": {
+                        "price": 705000
+                    }
+                },
+                {
+                    "date": "2019-10-29T17:00:00Z",
+                    "source": "MLS #427356",
+                    "listing": {
+                        "price": 739000
+                    }
+                },
+                {
+                    "date": "2018-11-06T17:00:00Z",
+                    "source": "MLS #423425",
+                    "listing": {
+                        "price": 770000
+                    }
+                },
+                {
+                    "date": "2018-09-07T17:00:00Z",
+                    "source": "MLS #423425",
+                    "listing": {
+                        "price": 799000
+                    }
+                },
+                {
+                    "date": "2015-04-23T17:00:00Z",
+                    "source": "Public Record",
+                    "listing": {
+                        "price": 515000
+                    }
+                },
+                {
+                    "date": "1997-09-29T17:00:00Z",
+                    "source": "Public Record",
+                    "listing": {
+                        "price": 220000
+                    }
+                }
+            ],
+            "property_history": [
+                {
+                    "event_name": "Sold",
+                    "date": "2019-12-13T17:00:00Z",
+                    "price": 705000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -34000,
+                    "sqft": 1200,
+                    "datasource_name": "Brooklyn",
+                    "source": "MLS #427356",
+                    "listing": {
+                        "list_price": 739000,
+                        "last_status_change_date": "2019-12-14T03:49:29Z",
+                        "last_update_date": "2019-12-13T22:44:15Z",
+                        "status": "sold",
+                        "list_date": "2019-10-29T14:06:43Z",
+                        "listing_id": "2100953653",
+                        "suppression_flags": {
+                            "has_suppress_foreclosure": true
+                        },
+                        "photos": [
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3602131459s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2889256147s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2166896955s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2977139163s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m524082222s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m59849049s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2146622869s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2013079330s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1044647078s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3162848105s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1761917722s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m100944773s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3427865370s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2598424065s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1050865195s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2434547651s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3342211296s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1036820291s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2431826235s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m999010581s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4163399790s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3030467705s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3237334056s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1164125753s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m118604851s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1358619560s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2383746972s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3400957176s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1334022353s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m489777924s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3267113673s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1199445921s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m586469619s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4172765118s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1150347043s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m263575761s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4015499090s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1653360346s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1883906322s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m916531575s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2411069243s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4156101126s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1920811033s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3381057619s.jpg"
+                            }
+                        ],
+                        "description": {
+                            "text": "Charming single family on a 40'x100' lot on a wonderful block in Neponsit with private driveway and detached garage. This house features one master bedroom, a second small bedroom/office, 1 bathroom, Living room, Dining room, Kitchen and Den/Family room. Beautiful hardwood floors throughout. Large unfinished basement with high ceilings that, when finished, would make for a perfect entertaining area or play area for kids. Large front porch as well as a back deck that overlooks the yard. Priced to sell. Will not last. Lot: 40x100. Building: 30x40. Approx. Building Sq Ft: 1, 200. Est. Annual Taxes: $5, 400. Est. Annual Insurance: $1, 500. Zoning: R1-2. Approx. Year Built: 1930. Stories: 1."
+                        },
+                        "advertisers": [
+                            {
+                                "fulfillment_id": "2821356",
+                                "nrds_id": null,
+                                "name": "Thomas Losquadro",
+                                "email": "tlosquadro@weichert.co",
+                                "href": "",
+                                "slogan": "",
+                                "office": {
+                                    "fulfillment_id": "1513383",
+                                    "name": "Weichert Realtors The Franzese Group",
+                                    "email": "afranzese@weichert.com",
+                                    "href": "WWW.WEICHERTFRANZESE.COM",
+                                    "slogan": "",
+                                    "out_of_community": null,
+                                    "application_url": null,
+                                    "mls_set": "O-BONY-115000"
+                                },
+                                "broker": {
+                                    "fulfillment_id": "0",
+                                    "name": "",
+                                    "accent_color": "",
+                                    "logo": ""
+                                },
+                                "type": "seller",
+                                "mls_set": "A-BONY-TML1210"
+                            }
+                        ],
+                        "buyers": [
+                            {
+                                "fulfillment_id": "2821876",
+                                "nrds_id": null,
+                                "name": "Non Member",
+                                "email": "nonmember@bnymls.com",
+                                "href": "",
+                                "slogan": "",
+                                "type": "buyer",
+                                "mls_set": "A-BONY-NM0000",
+                                "address": {
+                                    "line": "No Address Line1 Specified",
+                                    "city": "",
+                                    "postal_code": "",
+                                    "state_code": "",
+                                    "state": "",
+                                    "country": "US",
+                                    "coordinate": {
+                                        "lat": null,
+                                        "lon": null
+                                    }
+                                },
+                                "office": {
+                                    "fulfillment_id": "1513899",
+                                    "name": "MCMLS",
+                                    "email": "",
+                                    "href": null,
+                                    "slogan": "",
+                                    "hours": null,
+                                    "out_of_community": null,
+                                    "application_url": null,
+                                    "mls_set": "O-BONY-112060",
+                                    "address": {
+                                        "line": "28 VILLAGE RD N STE 3F",
+                                        "city": "BROOKLYN",
+                                        "postal_code": "11223",
+                                        "state_code": "NY",
+                                        "state": "",
+                                        "country": "US"
+                                    },
+                                    "phones": null,
+                                    "county": {
+                                        "name": null
+                                    }
+                                },
+                                "phones": null,
+                                "broker": {
+                                    "fulfillment_id": "0",
+                                    "name": "",
+                                    "accent_color": "",
+                                    "logo": ""
+                                }
+                            }
+                        ],
+                        "source": {
+                            "id": "BONY",
+                            "agents": [
+                                {
+                                    "agent_id": "NM0000",
+                                    "agent_name": null,
+                                    "office_id": "112060",
+                                    "office_name": null,
+                                    "office_phone": null,
+                                    "type": "buyer"
+                                },
+                                {
+                                    "agent_id": "tml1210",
+                                    "agent_name": "Thomas Losquadro",
+                                    "office_id": "115000",
+                                    "office_name": null,
+                                    "office_phone": null,
+                                    "type": "seller"
+                                }
+                            ]
+                        }
+                    },
+                    "iso_date": "2019-12-13",
+                    "previous_event_price": 739000
+                },
+                {
+                    "event_name": "Listed",
+                    "date": "2019-10-29T17:00:00Z",
+                    "price": 739000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1200,
+                    "datasource_name": "Brooklyn",
+                    "source": "MLS #427356",
+                    "listing": {
+                        "list_price": 739000,
+                        "last_status_change_date": "2019-12-14T03:49:29Z",
+                        "last_update_date": "2019-12-13T22:44:15Z",
+                        "status": "sold",
+                        "list_date": "2019-10-29T14:06:43Z",
+                        "listing_id": "2100953653",
+                        "suppression_flags": {
+                            "has_suppress_foreclosure": true
+                        },
+                        "photos": [
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3602131459s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2889256147s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2166896955s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2977139163s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m524082222s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m59849049s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2146622869s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2013079330s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1044647078s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3162848105s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1761917722s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m100944773s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3427865370s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2598424065s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1050865195s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2434547651s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3342211296s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1036820291s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2431826235s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m999010581s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4163399790s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3030467705s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3237334056s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1164125753s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m118604851s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1358619560s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2383746972s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3400957176s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1334022353s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m489777924s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3267113673s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1199445921s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m586469619s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4172765118s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1150347043s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m263575761s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4015499090s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1653360346s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1883906322s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m916531575s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2411069243s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4156101126s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1920811033s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3381057619s.jpg"
+                            }
+                        ],
+                        "description": {
+                            "text": "Charming single family on a 40'x100' lot on a wonderful block in Neponsit with private driveway and detached garage. This house features one master bedroom, a second small bedroom/office, 1 bathroom, Living room, Dining room, Kitchen and Den/Family room. Beautiful hardwood floors throughout. Large unfinished basement with high ceilings that, when finished, would make for a perfect entertaining area or play area for kids. Large front porch as well as a back deck that overlooks the yard. Priced to sell. Will not last. Lot: 40x100. Building: 30x40. Approx. Building Sq Ft: 1, 200. Est. Annual Taxes: $5, 400. Est. Annual Insurance: $1, 500. Zoning: R1-2. Approx. Year Built: 1930. Stories: 1."
+                        },
+                        "advertisers": [
+                            {
+                                "fulfillment_id": "2821356",
+                                "nrds_id": null,
+                                "name": "Thomas Losquadro",
+                                "email": "tlosquadro@weichert.co",
+                                "href": "",
+                                "slogan": "",
+                                "office": {
+                                    "fulfillment_id": "1513383",
+                                    "name": "Weichert Realtors The Franzese Group",
+                                    "email": "afranzese@weichert.com",
+                                    "href": "WWW.WEICHERTFRANZESE.COM",
+                                    "slogan": "",
+                                    "out_of_community": null,
+                                    "application_url": null,
+                                    "mls_set": "O-BONY-115000"
+                                },
+                                "broker": {
+                                    "fulfillment_id": "0",
+                                    "name": "",
+                                    "accent_color": "",
+                                    "logo": ""
+                                },
+                                "type": "seller",
+                                "mls_set": "A-BONY-TML1210"
+                            }
+                        ],
+                        "buyers": [
+                            {
+                                "fulfillment_id": "2821876",
+                                "nrds_id": null,
+                                "name": "Non Member",
+                                "email": "nonmember@bnymls.com",
+                                "href": "",
+                                "slogan": "",
+                                "type": "buyer",
+                                "mls_set": "A-BONY-NM0000",
+                                "address": {
+                                    "line": "No Address Line1 Specified",
+                                    "city": "",
+                                    "postal_code": "",
+                                    "state_code": "",
+                                    "state": "",
+                                    "country": "US",
+                                    "coordinate": {
+                                        "lat": null,
+                                        "lon": null
+                                    }
+                                },
+                                "office": {
+                                    "fulfillment_id": "1513899",
+                                    "name": "MCMLS",
+                                    "email": "",
+                                    "href": null,
+                                    "slogan": "",
+                                    "hours": null,
+                                    "out_of_community": null,
+                                    "application_url": null,
+                                    "mls_set": "O-BONY-112060",
+                                    "address": {
+                                        "line": "28 VILLAGE RD N STE 3F",
+                                        "city": "BROOKLYN",
+                                        "postal_code": "11223",
+                                        "state_code": "NY",
+                                        "state": "",
+                                        "country": "US"
+                                    },
+                                    "phones": null,
+                                    "county": {
+                                        "name": null
+                                    }
+                                },
+                                "phones": null,
+                                "broker": {
+                                    "fulfillment_id": "0",
+                                    "name": "",
+                                    "accent_color": "",
+                                    "logo": ""
+                                }
+                            }
+                        ],
+                        "source": {
+                            "id": "BONY",
+                            "agents": [
+                                {
+                                    "agent_id": "NM0000",
+                                    "agent_name": null,
+                                    "office_id": "112060",
+                                    "office_name": null,
+                                    "office_phone": null,
+                                    "type": "buyer"
+                                },
+                                {
+                                    "agent_id": "tml1210",
+                                    "agent_name": "Thomas Losquadro",
+                                    "office_id": "115000",
+                                    "office_name": null,
+                                    "office_phone": null,
+                                    "type": "seller"
+                                }
+                            ]
+                        }
+                    },
+                    "iso_date": "2019-10-29",
+                    "listing_id": 2100953653,
+                    "previous_event_price": 770000
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2018-11-06T17:00:00Z",
+                    "price": 770000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -29000,
+                    "sqft": 1200,
+                    "datasource_name": "Brooklyn",
+                    "source": "MLS #423425",
+                    "listing": {
+                        "list_price": 770000,
+                        "last_status_change_date": "2018-12-09T06:22:21Z",
+                        "last_update_date": "2018-11-06T09:30:27Z",
+                        "status": "off_market",
+                        "list_date": "2018-09-07T21:49:24Z",
+                        "listing_id": "1387901333",
+                        "suppression_flags": {
+                            "has_suppress_foreclosure": true
+                        },
+                        "photos": [
+                            {
+                                "href": "http://ap.rdcpix.com/692835837/41768e395b6cde33289e892e84ec8e8bl-m0s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1405711149/41768e395b6cde33289e892e84ec8e8bl-m1s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1317828133/41768e395b6cde33289e892e84ec8e8bl-m2s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/524082222/41768e395b6cde33289e892e84ec8e8bl-m3s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/59849049/41768e395b6cde33289e892e84ec8e8bl-m4s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/2146622869/41768e395b6cde33289e892e84ec8e8bl-m5s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/2013079330/41768e395b6cde33289e892e84ec8e8bl-m6s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1044647078/41768e395b6cde33289e892e84ec8e8bl-m7s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1132119191/41768e395b6cde33289e892e84ec8e8bl-m8s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1761917722/41768e395b6cde33289e892e84ec8e8bl-m9s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/100944773/41768e395b6cde33289e892e84ec8e8bl-m10s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/867101926/41768e395b6cde33289e892e84ec8e8bl-m11s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1696543231/41768e395b6cde33289e892e84ec8e8bl-m12s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1050865195/41768e395b6cde33289e892e84ec8e8bl-m13s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1860419645/41768e395b6cde33289e892e84ec8e8bl-m14s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/952756000/41768e395b6cde33289e892e84ec8e8bl-m15s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1036820291/41768e395b6cde33289e892e84ec8e8bl-m16s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1863141061/41768e395b6cde33289e892e84ec8e8bl-m17s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/999010581/41768e395b6cde33289e892e84ec8e8bl-m18s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/131567506/41768e395b6cde33289e892e84ec8e8bl-m19s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1264499591/41768e395b6cde33289e892e84ec8e8bl-m20s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1057633240/41768e395b6cde33289e892e84ec8e8bl-m21s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1164125753/41768e395b6cde33289e892e84ec8e8bl-m22s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/118604851/41768e395b6cde33289e892e84ec8e8bl-m23s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1358619560/41768e395b6cde33289e892e84ec8e8bl-m24s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1911220324/41768e395b6cde33289e892e84ec8e8bl-m25s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/894010120/41768e395b6cde33289e892e84ec8e8bl-m26s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1334022353/41768e395b6cde33289e892e84ec8e8bl-m27s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/489777924/41768e395b6cde33289e892e84ec8e8bl-m28s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1027853623/41768e395b6cde33289e892e84ec8e8bl-m29s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1199445921/41768e395b6cde33289e892e84ec8e8bl-m30s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/586469619/41768e395b6cde33289e892e84ec8e8bl-m31s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/122202178/41768e395b6cde33289e892e84ec8e8bl-m32s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1150347043/41768e395b6cde33289e892e84ec8e8bl-m33s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/263575761/41768e395b6cde33289e892e84ec8e8bl-m34s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/279468206/41768e395b6cde33289e892e84ec8e8bl-m35s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1653360346/41768e395b6cde33289e892e84ec8e8bl-m36s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1883906322/41768e395b6cde33289e892e84ec8e8bl-m37s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/916531575/41768e395b6cde33289e892e84ec8e8bl-m38s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1883898053/41768e395b6cde33289e892e84ec8e8bl-m39s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/138866170/41768e395b6cde33289e892e84ec8e8bl-m40s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1920811033/41768e395b6cde33289e892e84ec8e8bl-m41s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/913909677/41768e395b6cde33289e892e84ec8e8bl-m42s.jpg"
+                            }
+                        ],
+                        "description": {
+                            "text": "Charming single family on a 40'x100' lot on a wonderful block in Neponsit with private driveway and detached garage. This house features one master bedroom, a second small bedroom/office, 1 bathroom, Living room, Dining room, Kitchen and Den/Family room. Beautiful hardwood floors throughout. Large unfinished basement with high ceilings that, when finished, would make for a perfect entertaining area or play area for kids. Large front porch as well as a back deck that overlooks the yard. Priced to sell. Will not last. Lot: 40x100. Building: 30x40. Approx. Building Sq Ft: 1, 200. Est. Annual Taxes: $5, 400. Est. Annual Insurance: $1, 500. Zoning: R1-2. Approx. Year Built: 1930. Stories: 1."
+                        },
+                        "advertisers": [
+                            {
+                                "fulfillment_id": "2821356",
+                                "nrds_id": null,
+                                "name": "Thomas Losquadro",
+                                "email": "tlosquadro@weichert.co",
+                                "href": "",
+                                "slogan": "",
+                                "office": {
+                                    "fulfillment_id": "1513383",
+                                    "name": "Weichert Realtors The Franzese Group",
+                                    "email": "afranzese@weichert.com",
+                                    "href": "WWW.WEICHERTFRANZESE.COM",
+                                    "slogan": "",
+                                    "out_of_community": null,
+                                    "application_url": null,
+                                    "mls_set": "O-BONY-115000"
+                                },
+                                "broker": {
+                                    "fulfillment_id": "0",
+                                    "name": "",
+                                    "accent_color": "",
+                                    "logo": ""
+                                },
+                                "type": "seller",
+                                "mls_set": "A-BONY-TML1210"
+                            }
+                        ],
+                        "buyers": null,
+                        "source": {
+                            "id": "BONY",
+                            "agents": [
+                                {
+                                    "agent_id": "tml1210",
+                                    "agent_name": "Thomas Losquadro",
+                                    "office_id": "115000",
+                                    "office_name": null,
+                                    "office_phone": null,
+                                    "type": "seller"
+                                }
+                            ]
+                        }
+                    },
+                    "iso_date": "2018-11-06",
+                    "previous_event_price": 799000
+                },
+                {
+                    "event_name": "Listed",
+                    "date": "2018-09-07T17:00:00Z",
+                    "price": 799000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1200,
+                    "datasource_name": "Brooklyn",
+                    "source": "MLS #423425",
+                    "listing": {
+                        "list_price": 770000,
+                        "last_status_change_date": "2018-12-09T06:22:21Z",
+                        "last_update_date": "2018-11-06T09:30:27Z",
+                        "status": "off_market",
+                        "list_date": "2018-09-07T21:49:24Z",
+                        "listing_id": "1387901333",
+                        "suppression_flags": {
+                            "has_suppress_foreclosure": true
+                        },
+                        "photos": [
+                            {
+                                "href": "http://ap.rdcpix.com/692835837/41768e395b6cde33289e892e84ec8e8bl-m0s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1405711149/41768e395b6cde33289e892e84ec8e8bl-m1s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1317828133/41768e395b6cde33289e892e84ec8e8bl-m2s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/524082222/41768e395b6cde33289e892e84ec8e8bl-m3s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/59849049/41768e395b6cde33289e892e84ec8e8bl-m4s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/2146622869/41768e395b6cde33289e892e84ec8e8bl-m5s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/2013079330/41768e395b6cde33289e892e84ec8e8bl-m6s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1044647078/41768e395b6cde33289e892e84ec8e8bl-m7s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1132119191/41768e395b6cde33289e892e84ec8e8bl-m8s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1761917722/41768e395b6cde33289e892e84ec8e8bl-m9s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/100944773/41768e395b6cde33289e892e84ec8e8bl-m10s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/867101926/41768e395b6cde33289e892e84ec8e8bl-m11s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1696543231/41768e395b6cde33289e892e84ec8e8bl-m12s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1050865195/41768e395b6cde33289e892e84ec8e8bl-m13s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1860419645/41768e395b6cde33289e892e84ec8e8bl-m14s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/952756000/41768e395b6cde33289e892e84ec8e8bl-m15s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1036820291/41768e395b6cde33289e892e84ec8e8bl-m16s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1863141061/41768e395b6cde33289e892e84ec8e8bl-m17s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/999010581/41768e395b6cde33289e892e84ec8e8bl-m18s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/131567506/41768e395b6cde33289e892e84ec8e8bl-m19s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1264499591/41768e395b6cde33289e892e84ec8e8bl-m20s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1057633240/41768e395b6cde33289e892e84ec8e8bl-m21s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1164125753/41768e395b6cde33289e892e84ec8e8bl-m22s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/118604851/41768e395b6cde33289e892e84ec8e8bl-m23s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1358619560/41768e395b6cde33289e892e84ec8e8bl-m24s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1911220324/41768e395b6cde33289e892e84ec8e8bl-m25s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/894010120/41768e395b6cde33289e892e84ec8e8bl-m26s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1334022353/41768e395b6cde33289e892e84ec8e8bl-m27s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/489777924/41768e395b6cde33289e892e84ec8e8bl-m28s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1027853623/41768e395b6cde33289e892e84ec8e8bl-m29s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1199445921/41768e395b6cde33289e892e84ec8e8bl-m30s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/586469619/41768e395b6cde33289e892e84ec8e8bl-m31s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/122202178/41768e395b6cde33289e892e84ec8e8bl-m32s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1150347043/41768e395b6cde33289e892e84ec8e8bl-m33s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/263575761/41768e395b6cde33289e892e84ec8e8bl-m34s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/279468206/41768e395b6cde33289e892e84ec8e8bl-m35s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1653360346/41768e395b6cde33289e892e84ec8e8bl-m36s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1883906322/41768e395b6cde33289e892e84ec8e8bl-m37s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/916531575/41768e395b6cde33289e892e84ec8e8bl-m38s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1883898053/41768e395b6cde33289e892e84ec8e8bl-m39s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/138866170/41768e395b6cde33289e892e84ec8e8bl-m40s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/1920811033/41768e395b6cde33289e892e84ec8e8bl-m41s.jpg"
+                            },
+                            {
+                                "href": "http://ap.rdcpix.com/913909677/41768e395b6cde33289e892e84ec8e8bl-m42s.jpg"
+                            }
+                        ],
+                        "description": {
+                            "text": "Charming single family on a 40'x100' lot on a wonderful block in Neponsit with private driveway and detached garage. This house features one master bedroom, a second small bedroom/office, 1 bathroom, Living room, Dining room, Kitchen and Den/Family room. Beautiful hardwood floors throughout. Large unfinished basement with high ceilings that, when finished, would make for a perfect entertaining area or play area for kids. Large front porch as well as a back deck that overlooks the yard. Priced to sell. Will not last. Lot: 40x100. Building: 30x40. Approx. Building Sq Ft: 1, 200. Est. Annual Taxes: $5, 400. Est. Annual Insurance: $1, 500. Zoning: R1-2. Approx. Year Built: 1930. Stories: 1."
+                        },
+                        "advertisers": [
+                            {
+                                "fulfillment_id": "2821356",
+                                "nrds_id": null,
+                                "name": "Thomas Losquadro",
+                                "email": "tlosquadro@weichert.co",
+                                "href": "",
+                                "slogan": "",
+                                "office": {
+                                    "fulfillment_id": "1513383",
+                                    "name": "Weichert Realtors The Franzese Group",
+                                    "email": "afranzese@weichert.com",
+                                    "href": "WWW.WEICHERTFRANZESE.COM",
+                                    "slogan": "",
+                                    "out_of_community": null,
+                                    "application_url": null,
+                                    "mls_set": "O-BONY-115000"
+                                },
+                                "broker": {
+                                    "fulfillment_id": "0",
+                                    "name": "",
+                                    "accent_color": "",
+                                    "logo": ""
+                                },
+                                "type": "seller",
+                                "mls_set": "A-BONY-TML1210"
+                            }
+                        ],
+                        "buyers": null,
+                        "source": {
+                            "id": "BONY",
+                            "agents": [
+                                {
+                                    "agent_id": "tml1210",
+                                    "agent_name": "Thomas Losquadro",
+                                    "office_id": "115000",
+                                    "office_name": null,
+                                    "office_phone": null,
+                                    "type": "seller"
+                                }
+                            ]
+                        }
+                    },
+                    "iso_date": "2018-09-07",
+                    "listing_id": 1387901333,
+                    "previous_event_price": 515000
+                },
+                {
+                    "event_name": "Sold",
+                    "date": "2015-04-23T17:00:00Z",
+                    "price": 515000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 0,
+                    "datasource_name": "",
+                    "source": "Public Record",
+                    "listing": null,
+                    "iso_date": "2015-04-23",
+                    "previous_event_price": 220000
+                },
+                {
+                    "event_name": "Sold",
+                    "date": "1997-09-29T17:00:00Z",
+                    "price": 220000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 0,
+                    "datasource_name": "",
+                    "source": "Public Record",
+                    "listing": null,
+                    "iso_date": "1997-09-29"
+                }
+            ],
+            "public_records": [
+                {
+                    "prop_type": "single_family",
+                    "baths": null,
+                    "baths_half": null,
+                    "baths_full": null,
+                    "baths_3qtr": null,
+                    "baths_1qtr": null,
+                    "beds": null,
+                    "distinct_baths": null,
+                    "sqft": 0,
+                    "building_sqft": null,
+                    "floor_1_sqft": null,
+                    "fireplace": null,
+                    "exterior1": null,
+                    "garage_sqft": null,
+                    "garage_spaces": null,
+                    "lot_size": 4000,
+                    "lot_width": 40,
+                    "lot_depth": 100,
+                    "stories": 1,
+                    "year_built": 1930,
+                    "year_renovated": 1930,
+                    "garage": null,
+                    "construction_quality": null,
+                    "rooms": null,
+                    "units": null,
+                    "heating": null,
+                    "cooling": null,
+                    "construction": null,
+                    "roofing": null,
+                    "pool": null,
+                    "style": null,
+                    "view": null,
+                    "cl_id": "7662B463544646B658C2BE4A7215327F",
+                    "date_updated": "07/04/2020"
+                }
+            ],
+            "products": [
+                "suppress_foreclosure"
+            ],
+            "office": {
+                "name": "Weichert Realtors The Franzese Group",
+                "advertiser_id": 1513383,
+                "href": "WWW.WEICHERTFRANZESE.COM",
+                "photo": {
+                    "href": ""
+                },
+                "email": "afranzese@weichert.com",
+                "slogan": "",
+                "phones": [
+                    {
+                        "number": "718-232-1004",
+                        "type": "office",
+                        "primary": true
+                    }
+                ],
+                "address": {
+                    "city": "Brooklyn",
+                    "state_code": "NY"
+                },
+                "mls_membership": {
+                    "member": {
+                        "office_system_id": "115000"
+                    }
+                },
+                "id": "33fb537ee27bfbf0303f8cfd324d03e0"
+            },
+            "agents": [
+                {
+                    "profile_name": "Thomas Losquadro",
+                    "name": "Thomas Losquadro",
+                    "advertiser_id": "2821356",
+                    "href": "",
+                    "photo": {
+                        "href": ""
+                    },
+                    "nrds_id": null,
+                    "nrds_verified_id": null,
+                    "office_name": "Weichert Realtors The Franzese Group",
+                    "phones": [
+                        {
+                            "number": "917-560-6329",
+                            "type": "office",
+                            "primary": true
+                        }
+                    ],
+                    "email": "tlosquadro@weichert.co",
+                    "slogan": "",
+                    "mls_memberships": {
+                        "member": {
+                            "agent_system_id": "TML1210",
+                            "name": "Thomas Losquadro",
+                            "office_system_id": "115000",
+                            "id": "TML1210",
+                            "abbreviation": "BONY"
+                        }
+                    },
+                    "id": "2821356",
+                    "primary": true
+                }
+            ],
+            "lot_size": {
+                "size": 4000,
+                "units": "sqft"
+            },
+            "building_size": {
+                "size": 1200,
+                "units": "sqft"
+            },
+            "price": 686900,
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/429-Beach-145th-St_Far-Rockaway_NY_11694_M35990-84026",
+            "rdc_app_url": "move-rdc://www.realtor.com/realestateandhomes-detail/429-Beach-145th-St_Far-Rockaway_NY_11694_M35990-84026",
+            "homevalue_web_url": "https://www.realtor.com/myhome/429-Beach-145th-St_Far-Rockaway_NY_11694_M35990-84026/homevalue",
+            "baths": 1,
+            "photo_count": 44,
+            "buyer_office": {
+                "name": "MCMLS",
+                "advertiser_id": 1513899,
+                "href": null,
+                "photo": {
+                    "href": ""
+                },
+                "address": {
+                    "city": "BROOKLYN",
+                    "state_code": "NY"
+                },
+                "slogan": "",
+                "email": "",
+                "mls_memberships": {
+                    "member": {
+                        "office_system_id": "112060"
+                    }
+                },
+                "id": "040f7addbfff926898b7575429836586",
+                "phones": []
+            },
+            "data_source_name": "public_records",
+            "detail_tracking": "type|property|data|prop_id|3599084026|address|city|Far+Rockaway|state|NY|postal|11694|neighborhood|Rockaway+Peninsula|county|Queens|price|data_source|public_records|advertiser_id|agent|office|property_status|product_code|advantage_code^EQ0K|1OGZ0|WFQF|4|0|0^^$0|1|2|$3|4|5|$6|7|8|9|A|B|C|D|E|F]|G|P|H|I|J|$K|Q|L|R]|M|S|N|T|O|U]]",
+            "photos": [
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3602131459x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2889256147x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2166896955x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2977139163x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m524082222x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m59849049x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2146622869x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2013079330x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1044647078x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3162848105x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1761917722x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m100944773x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3427865370x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2598424065x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1050865195x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2434547651x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3342211296x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1036820291x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2431826235x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m999010581x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4163399790x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3030467705x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3237334056x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1164125753x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m118604851x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1358619560x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2383746972x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3400957176x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1334022353x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m489777924x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3267113673x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1199445921x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m586469619x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4172765118x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1150347043x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m263575761x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4015499090x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1653360346x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1883906322x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m916531575x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m2411069243x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m4156101126x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m1920811033x.jpg"
+                },
+                {
+                    "href": "https://ap.rdcpix.com/7f3ebec74861b3523b7211ae2e513c6dl-m3381057619x.jpg"
+                }
+            ]
+        }
+    ]
+}

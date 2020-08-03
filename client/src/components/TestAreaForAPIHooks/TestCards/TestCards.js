@@ -5,7 +5,7 @@ import wash from "../../../Assets/WashburnSearch.png";
 import "../TestCards/TestCards.css";
 
 const TestCard = (props) => {
-  console.log(props); 
+  // console.log(props); 
 
   // const ConsoleLog = (props) => {
   //   console.log("these are the props:"+props.results);
