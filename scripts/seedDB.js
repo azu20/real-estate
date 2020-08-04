@@ -10,7 +10,7 @@ mongoose.connect(
 
 const propertySeed = [
   {
-    listingID: MLS165438,
+    listingID: 165438,
     listingAgent: "Melinda Poates",
     listingCompany: "Gerson Realty Co",
     daysListed: 5,
@@ -40,7 +40,7 @@ const propertySeed = [
     date: new Date(Date.now())
   },
   {
-    listingID: MLS654852,
+    listingID: 654852,
     listingAgent: "Cindy Trang",
     listingCompany: "Keller Williams Co",
     daysListed: 20,
@@ -70,7 +70,7 @@ const propertySeed = [
     date: new Date(Date.now())
   },
   {
-    listingID: MLS89767,
+    listingID: 89767,
     listingAgent: "Bob Kely",
     listingCompany: "ReMax Co",
     daysListed: 65,
