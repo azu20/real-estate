@@ -43,11 +43,13 @@ const TestPhotoDisplay = () => {
         {BartStreet.properties[0].photos.map(item => (
           <MDBCarouselItem itemId={photoCarId()}>
             <MDBView>
+              <p>{i} of {BartStreet.properties[0].photo_count}</p>
               <img
                 className="d-block w-100"
-                src={item.href}
+                src={item.href}></img>
+                
                
-              />
+              
             </MDBView>
           </MDBCarouselItem>
           ))}

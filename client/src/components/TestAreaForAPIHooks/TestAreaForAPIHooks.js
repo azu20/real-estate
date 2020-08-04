@@ -5,6 +5,7 @@ import axios from "axios";
 import TestCard from "./TestCards/TestCards";
 import testData from  "../../Assets/Test_JSON_files/testHomeData.json";
 import TestPhotoDisplay from "./TestPhotoDisplay/TestPhotoDisplay";
+import TestMapLeaflet from "./TestMapLeaflet/TestMapLeaflet";
 
 const TestAreaForAPIHooks = () => {
     const [search, setSearch] = useState("");
@@ -29,12 +30,12 @@ const TestAreaForAPIHooks = () => {
     //#Fake API Call
       const searchRealatorAPI = () => {
         // console.log("pre api call");
-        console.log(testData.properties)
+        // console.log(testData.properties)
         // console.log("post api call");
         setResults(testData.properties);
 
     }
-      //### WORKING RAPID-API Call 
+      //### WORKING RAPID-API Call for-sale listings
     // const searchRealatorAPI = () => {
     //   axios ({
     //     "method":"GET",
@@ -142,7 +143,8 @@ const TestAreaForAPIHooks = () => {
             />
           ))} </MDBRow>     
 
-          <TestPhotoDisplay/>   
+          <TestPhotoDisplay/> 
+          <TestMapLeaflet/>  
             
         </>
     );

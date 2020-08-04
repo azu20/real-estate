@@ -1,10 +1,14 @@
 import React from "react"
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../MapAndCardDispay/MapAndCardDispay.css";
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../Nav/Nav";
 import NavSubNav from "../NavSubNav/NavSubNav";
 import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
+
+
+
+
 
 
 const MapAndCardDispay = () => {
@@ -15,13 +19,13 @@ const MapAndCardDispay = () => {
 
             <MDBContainer fluid>
                 <MDBRow>
-                    <MDBCol size="6" className="areaForMap">
-                       MAP AREA
+                    <MDBCol size="" className="areaForMap">
+                       
 
-                </MDBCol>
-                    <MDBCol size="6">
-                        <CardHomeInfo></CardHomeInfo>
                     </MDBCol>
+                    {/* <MDBCol size="">
+                        <CardHomeInfo></CardHomeInfo>
+                    </MDBCol> */}
                 </MDBRow>
                 <MDBRow>
                 </MDBRow>

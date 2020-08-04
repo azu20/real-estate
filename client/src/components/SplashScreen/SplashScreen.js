@@ -13,7 +13,7 @@ const SplashScreen = (props) => {
           <input onClick={props.handleInputChange} className="form-control" type="text" placeholder="Search" aria-label="Search" />
           {/* remove NavLink for testing */}
           {/* <NavLink to="/mapandcard"><button>Search</button></NavLink> */}
-          <button onClick={props.handleFormSubmit}>Submit</button>
+          <NavLink to="/mapandcard"><button>Search</button></NavLink>
 
         </div>
       </MDBCol>

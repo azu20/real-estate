@@ -23,10 +23,12 @@ function App() {
       {/* <Nav />
       <MapAndSearchContainer/> */}
       <Router>
-        <Route path  ="/" component={TestAreaForAPIHooks}/>
+        {/* <Route path ="/" component={TestAreaForAPIHooks}/> */}
         {/* <Rout path = "/" component{stub_for_login_component} */}
         
-        <Route path = "/mapandcard" component={MapAndCardDisplay}/>
+        <Route path exact ="/" component={MapAndSearchContainer}/>
+        <Route path = "/mapandcard" component={TestAreaForAPIHooks}/>
+        {/* <Route path = "/mapandcard" component={MapAndCardDisplay}/> */}
         <Route path = "/favorites" component={Favorites}/>
         <Route path = "/adminarea" component={AdminArea}/>
       </Router>
