@@ -29,8 +29,12 @@ const propertySchema = new Schema({
   image: String,
   listingLink: String,
   propDetailSummary: String,
-  date: { type: Date, default: Date.now },
-  likedByUser: [ Number ]
+  createdDate: { type: Date, default: Date.now },
+  updatedDate: { type: Date, default: Date.now },
+  likedByUser: [{
+      user_id: Number, 
+      userFullName: String, 
+   }],
 });
 
 const Property = mongoose.model("Property", propertySchema);

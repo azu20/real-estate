@@ -7,8 +7,27 @@ const userSchema = new Schema({
   email: { type: String, required: true },
   password: { type: String, required: true },
   phone: { type: Number, required: true },
-  formDetails: String,
-  date: { type: Date, default: Date.now }
+  preferences: {
+    priceRange: {
+           from: {type:  Number, required: true},
+           to: {type: Number, require: true }
+      },
+    bedrooms: { type: Number, required: true }, 
+    bathrooms: { type: Number, required: true }, 
+    propertyType: { type: String, required: true },
+    creationDate: { type: Date, default: Date.now },
+    updateDate: { type: Date, default: Date.now }
+    }, 
+  favoriteProperties: [{
+        propertyID: { type: Number, required: true }, 
+        propertyAddress: { type: String, required: true ,
+        listPrice: { type: Number, required: true }, 
+        bedrooms: { type: Number, required: true }, 
+        bathrooms: { type: Number, required: true }, 
+        propertyImage: { type: String, required: true }, 
+  }],
+  registrationDate: { type: Date, default: Date.now }, 
+  updateDate: { type: Date, default: Date.now }
 });
 
 const User = mongoose.model("User", userSchema);
