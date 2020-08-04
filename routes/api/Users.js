@@ -1,14 +1,14 @@
 const router = require("express").Router();
 const userController = require("../../controllers/userController");
 
-// Matches with "/api/books"
-router.route("/")
+// Matches with "/api/users"
+router.route("/users")
   .get(userController.findAll)
   .post(userController.create);
 
-// Matches with "/api/books/:id"
+// Matches with "/api/users/:id"
 router
-  .route("/:id")
+  .route("/users/:id")
   .get(userController.findById)
   .put(userController.update)
   .delete(userController.remove);
