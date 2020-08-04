@@ -18,15 +18,16 @@ const propertySchema = new Schema({
   bathroom: { type: Number, required: true },
   price: { type: Number, required: true },
   subDivision: { type: String, required: true },
-  propDetailSummary: String,
-  propTax: String,
+  annualPropTax: Number,
   taxCounty: String,
   utilityCompany: String,
   schoolInfo: String,
   hoaInfo: String,
+  hoaFee: Number,
   propFeatures: String,
   image: String,
   listingLink: String,
+  propDetailSummary: String,
   date: { type: Date, default: Date.now }
 });
 
