@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const propertySchema = new Schema({
   listingID: { type: String, required: true },
   listingAgent: { type: String, required: true },
+  listingCompany: { type: String, required: true },
   daysListed: { type: Number, required: true },
   listStatus: { type: String, required: true },
   address: { type: String, required: true },
@@ -17,7 +18,6 @@ const propertySchema = new Schema({
   lotSqFeet: { type: Number, required: true },
   bedroom: { type: Number, required: true },
   bathroom: { type: Number, required: true },
-  price: { type: Number, required: true },
   subDivision: { type: String, required: true },
   annualPropTax: Number,
   taxCounty: String,
