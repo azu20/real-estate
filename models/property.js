@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const propertySchema = new Schema({
   listingID: { type: String, required: true },
+  listingAgent: { type: String, required: true },
   daysListed: { type: Number, required: true },
   listStatus: { type: String, required: true },
   address: { type: String, required: true },
@@ -28,7 +29,8 @@ const propertySchema = new Schema({
   image: String,
   listingLink: String,
   propDetailSummary: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
+  likedByUser: [ Number ]
 });
 
 const Property = mongoose.model("Property", propertySchema);
@@ -41,3 +43,7 @@ module.exports = Property;
 // definitions:
 // list status - for sale, rent, etc. propType= single family home, duplex, etc. 
 // prop details = description, propfeatures= appliances, heating/cooling, etc. 
+
+///dont need model for userLists, the PUT rest API call will add a relation to user and 
+// property.
+//added user_id - each property can be liked by multiple users, linking it through userID key
