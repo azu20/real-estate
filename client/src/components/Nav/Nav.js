@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, NavLink} from 'react-router-dom';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-
-
 import "../Nav/Nav.css";
+
 
 class Nav extends Component {
 state = {

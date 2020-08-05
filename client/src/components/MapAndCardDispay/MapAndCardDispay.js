@@ -5,12 +5,14 @@ import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCa
 import Nav from "../Nav/Nav";
 import NavSubNav from "../NavSubNav/NavSubNav";
 import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
+import LogoutButton from "../LogoutButton/LogoutButton";
 
 
 const MapAndCardDispay = () => {
     return (
         <>
             <Nav></Nav>
+            <LogoutButton />
             <NavSubNav></NavSubNav>
 
             <MDBContainer fluid>

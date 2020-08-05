@@ -13,6 +13,7 @@ import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSear
 import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
 import Favorites from "./components/Favorites/Favorites";
 import AdminArea from "./components/AdminArea/AdminArea";
+import Guest from "./components/Guest/Guest";
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       {/* <Nav />
       <MapAndSearchContainer/> */}
       <Router>
-        <Route path exact ="/" component={MapAndSearchContainer}/>
+      <Route path exact ="/" component={Guest}/>
+        {/* <Route path exact ="/" component={MapAndSearchContainer}/> */}
         <Route path = "/mapandcard" component={MapAndCardDisplay}/>
         <Route path = "/favorites" component={Favorites}/>
         <Route path = "/adminarea" component={AdminArea}/>
