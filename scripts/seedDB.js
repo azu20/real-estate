@@ -101,6 +101,45 @@ const propertySeed = [
   }
 ];
 
+// const userSeed = [
+//   {
+//     listingID: { type: String, required: true },
+//     listingAgent: { type: String, required: true },
+//     listingCompany: { type: String, required: true },
+//     daysListed: { type: Number, required: true },
+//     listStatus: { type: String, required: true },
+//     address: { type: String, required: true },
+//     city: { type: String, required: true },
+//     state: { type: String, required: true },
+//     zipcode: { type: Number, required: true },
+//     propType: { type: String, required: true },
+//     yearBuilt: { type: Number, required: true },
+//     listPrice: { type: Number, required: true },
+//     propSqFeet: { type: Number, required: true },
+//     lotSqFeet: { type: Number, required: true },
+//     bedroom: { type: Number, required: true },
+//     bathroom: { type: Number, required: true },
+//     subDivision: { type: String, required: true },
+//     annualPropTax: Number,
+//     taxCounty: String,
+//     utilityCompany: String,
+//     schoolInfo: String,
+//     hoaInfo: String,
+//     hoaFee: Number,
+//     propFeatures: String,
+//     image: String,
+//     listingLink: String,
+//     propDetailSummary: String,
+//     createdDate: { type: Date, default: Date.now },
+//     updatedDate: { type: Date, default: Date.now },
+//     likedByUser: [{
+//         user_id: Number, 
+//         userFullName: String, 
+//      }],
+//   }
+// ]
+
+
 db.Property
   .remove({})
   .then(() => db.Property.collection.insertMany(propertySeed))
@@ -112,3 +151,16 @@ db.Property
     console.error(err);
     process.exit(1);
   });
+
+  ///confirm how i can bring in both db models then .remove.then.catch
+  // db.Property, db.User
+  // .remove({})
+  // .then(() => db.Property.collection.insertMany(propertySeed, userSeed))
+  // .then(data => {
+  //   console.log(data.result.n + " records inserted!");
+  //   process.exit(0);
+  // })
+  // .catch(err => {
+  //   console.error(err);
+  //   process.exit(1);
+  // });
