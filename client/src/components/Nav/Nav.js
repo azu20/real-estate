@@ -53,7 +53,7 @@ render() {
               </MDBDropdown>
             </MDBNavItem> */}
           </MDBNavbarNav>
-          <MDBNavbarNav center>
+          <MDBNavbarNav center="true">
                 <MDBNavItem>
                 <NavLink to="/"><h1>WASHBURN</h1></NavLink>
                 </MDBNavItem>
