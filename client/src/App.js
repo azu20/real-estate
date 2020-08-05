@@ -8,12 +8,12 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
-
-import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSearchContainer.js";
-import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
+import SearchContainer from "./SearchContainer"
+// import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSearchContainer.js";
+// import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
 import Favorites from "./components/Favorites/Favorites";
 import AdminArea from "./components/AdminArea/AdminArea";
-
+import Nav from "./components/Nav/Nav"
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
       {/* <Nav />
       <MapAndSearchContainer/> */}
       <Router>
-        <Route path exact ="/" component={MapAndSearchContainer}/>
-        <Route path = "/mapandcard" component={MapAndCardDisplay}/>
+        <Route exact path ="/" component={SearchContainer}/>
+        {/* <Route path = "/mapandcard" component={MapAndCardDisplay}/> */}
         <Route path = "/favorites" component={Favorites}/>
         <Route path = "/adminarea" component={AdminArea}/>
       </Router>
