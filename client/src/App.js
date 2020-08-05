@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router,  Route} from "react-router-dom";
-import SearchContainer from "./components/Pages/Main/SearchContainer"
+import MainPage from "../src/components/Pages/MainPage/Main";
 import Favorites from "./components/Pages/Favorites/Favorites";
 import AdminArea from "./components/Pages/AdminArea/AdminArea";
 
@@ -11,7 +11,7 @@ function App() {
     <>
    
       <Router>
-        <Route exact path ="/" component={SearchContainer}/>
+        <Route exact path ="/" component={MainPage}/>
         <Route path = "/favorites" component={Favorites}/>
         <Route path = "/adminarea" component={AdminArea}/>
       </Router>

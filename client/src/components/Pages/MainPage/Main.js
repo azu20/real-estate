@@ -1,14 +1,13 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import API from "../../../utils/API"
 import SearchForm from "../../SearchForm/SearchForm";
-import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer } from 'mdbreact';
+import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../Nav/Nav";
 import CardHomeInfo from "../../CardHomeInfo/CardHomeInfo";
-import axios from "axios";
 import MapContainer from "../../MapContainer/MapContainer"
 
 
-class SearchContainer extends Component {
+class MainPage extends Component {
     state = {
         result: [],
         search: "Denver"
@@ -93,6 +92,6 @@ class SearchContainer extends Component {
 
 
 
-export default SearchContainer;
+export default MainPage;
 
 
