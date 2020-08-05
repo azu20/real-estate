@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import API from "./utils/API"
-import SearchForm from "./components/searchform/SearchForm";
+import API from "../../../utils/API"
+import SearchForm from "../../SearchForm/SearchForm";
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer } from 'mdbreact';
-import Nav from "./components/Nav/Nav";
-import CardHomeInfo from "./components/CardHomeInfo/CardHomeInfo";
+import Nav from "../../Nav/Nav";
+import CardHomeInfo from "../../CardHomeInfo/CardHomeInfo";
 import axios from "axios";
-import MapContainer from "./components/MapContainer/MapContainer"
+import MapContainer from "../../MapContainer/MapContainer"
 
 
 class SearchContainer extends Component {

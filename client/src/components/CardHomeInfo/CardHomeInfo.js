@@ -1,6 +1,5 @@
 import React from 'react';
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
-import wash from "../../Assets/WashburnSearch.png";
 
 import "../CardHomeInfo/CardHomeInfo.css";
 
