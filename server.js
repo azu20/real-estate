@@ -18,7 +18,8 @@ app.use(routes);
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/realestateapp");
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"
+  "mongodb+srv://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"  
+
 );
 // Start the API server
 app.listen(PORT, function() {
