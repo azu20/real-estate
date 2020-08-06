@@ -4,6 +4,8 @@ import {BrowserRouter as Router,  Route} from "react-router-dom";
 import MainPage from "../src/components/Pages/MainPage/Main";
 import Favorites from "./components/Pages/Favorites/Favorites";
 import AdminArea from "./components/Pages/AdminArea/AdminArea";
+import Guest from "./components/Guest/Guest"
+import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay"
 
 
 function App() {
