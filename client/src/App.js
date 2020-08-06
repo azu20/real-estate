@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router,  Route} from "react-router-dom";
-import MainPage from "../src/components/Pages/MainPage/Main";
-import Favorites from "./components/Pages/Favorites/Favorites";
-import AdminArea from "./components/Pages/AdminArea/AdminArea";
+import MainPage from "../src/Pages/MainPage/Main";
+import Favorites from "./Pages/Favorites/Favorites";
+import AdminArea from "./Pages/AdminArea/AdminArea";
 
 
 function App() {
