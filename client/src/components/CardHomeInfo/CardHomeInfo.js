@@ -1,49 +1,33 @@
 import React from 'react';
-import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
-import wash from "../../Assets/WashburnSearch.png";
+import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIcon } from 'mdbreact';
 
 import "../CardHomeInfo/CardHomeInfo.css";
 
 
 
-const CardHomeInfo = () => {
+const CardHomeInfo = (props) => {
   return (
-    <>
-    {/*#############  CHANGES ########## */}
-    {/*added customImage Class to control height for consistancy*/}
-    <MDBRow>
-    <MDBCol style={{maxWidth: "22rem"}}>
-      <MDBCard>
-        <MDBCardImage className="img-fluid customImage" src={wash} waves />
-        <MDBCardBody>
-          <MDBCardTitle>123 Easy Street Mesa, AZ</MDBCardTitle>
-          <MDBCardText>$359,000 |  4bd | 3ba | 2750 sqft</MDBCardText>
-          <MDBBtn href="#">Dallas I want this house!</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-      
-    <MDBCol style={{ maxWidth: "22rem" }} >
-      <MDBCard>
-        <MDBCardImage className="img-fluid customImage" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
-          waves />
-        <MDBCardBody>
-          <MDBCardTitle>1264 React Ct Reno,NV</MDBCardTitle>
-          <MDBCardText>$359,000 |  4bd | 3ba | 2750 sqft</MDBCardText>
-          <MDBBtn href="#">Dallas I want this house!</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol>
-
-    </MDBCol>
-
     
 
 
-    </MDBRow>
-    </>
+    <MDBRow>
+    <MDBCol style={{maxWidth: "22rem"}}>
+      <MDBCard>
+        <MDBCardImage className="img-fluid customImage" src={props.src} waves></MDBCardImage>
+        <MDBCardBody>
+        <MDBIcon className="heartIconPosition" far icon="heart" />
+          <MDBCardTitle>{props.address}</MDBCardTitle>
+          <MDBCardText>Price: ${props.price} |  Beds:{props.bedrooms} | Baths:{props.bathrooms} | Sqft:{props.sqft}</MDBCardText>
+          <MDBBtn href="#">Save Home</MDBBtn>
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCol>
+      </MDBRow>
+
+    
   )
 }
 
 export default CardHomeInfo;
+
+
