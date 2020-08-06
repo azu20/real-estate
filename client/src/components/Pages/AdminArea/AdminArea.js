@@ -1,7 +1,7 @@
 import React from "react";
 
 // import Nav from "../AdminNav/AdminNav";
-import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
+import CardHomeInfo from "../../CardHomeInfo/CardHomeInfo";
 import AdminNav from "./AdminNav/AdminNav";
 
 const AdminArea = () => {

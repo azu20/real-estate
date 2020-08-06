@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 
@@ -53,7 +53,7 @@ render() {
               </MDBDropdown>
             </MDBNavItem> */}
           </MDBNavbarNav>
-          <MDBNavbarNav center>
+          <MDBNavbarNav center="true">
                 <MDBNavItem>
                 <NavLink to="/"><h1>WASHBURN</h1></NavLink>
                 </MDBNavItem>
