@@ -5,7 +5,8 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"
+  "mongodb+srv://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"
+
 );
 
 const propertySeed = [
@@ -101,72 +102,65 @@ const propertySeed = [
   }
 ];
 
-// const userSeed = [
-//   {
-//     firstName: "Karl",
-//     lastName: "Marx",
-//     email: "socialism6549@gmail.com",
-//     password: "veryPrivate456",
-//     phone: 5426246496,
-//     preferences: {
-//       priceRange: {
-//              from: 475000,
-//              to: 550000
-//         },
-//       bedrooms: 4, 
-//       bathrooms: 2.5, 
-//       propertyType: "single family home",
-//       creationDate: new Date(Date.now()),
-//       updateDate: new Date(Date.now())
-//       }, 
-//     favoriteProperties: [{
-//           propertyID: "89767", 
-//           propertyAddress: "5637 E Casper Rd",
-//           listPrice: 225000, 
-//           bedrooms: 5, 
-//           bathrooms: 3.5, 
-//           propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
-//     }
-//   ],
-//     registrationDate:  new Date(Date.now()), 
-//     updateDate: new Date(Date.now())
-//   }
-// ]
+const userSeed = [
+  {
+    firstName: "Karl",
+    lastName: "Marx",
+    email: "socialism6549@gmail.com",
+    password: "veryPrivate456",
+    phone: 5426246496,
+    preferences: {
+      priceRange: {
+        from: 475000,
+        to: 550000
+      },
+      bedrooms: 4,
+      bathrooms: 2.5,
+      propertyType: "single family home",
+      creationDate: new Date(Date.now()),
+      updateDate: new Date(Date.now())
+    },
+    favoriteProperties: [{
+      propertyID: "89767",
+      propertyAddress: "5637 E Casper Rd",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }
+    ],
+    registrationDate: new Date(Date.now()),
+    updateDate: new Date(Date.now())
+  }
+];
 
 
 db.Property
   .remove({})
-  .then(() => db.Property.collection.insertMany(propertySeed))
+  .then(() => {
+    console.log("Inserting into Property");
+    return db.Property.collection.insertMany(propertySeed);
+  })
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+  })
+  .then(() => {
+    console.log("Starting User");
+    db.User
+      .remove({})
+      .then(() => {
+        console.log("Inserting into User");
+        return db.User.collection.insertMany(userSeed)
+      }).then(x => {
+        console.log(x.result.n + " records inserted!");
+        process.exit(0);
+      })
+      .catch(err => {
+        console.error(err);
+      });
   })
   .catch(err => {
     console.error("error: ", err.result);
-    process.exit(1);
-  });
 
-  // db.User
-  // .remove({})
-  // .then(() => db.User.collection.insertMany(userSeed))
-  // .then(data => {
-  //   console.log(data.result.n + " records inserted!");
-  //   process.exit(0);
-  // })
-  // .catch(err => {
-  //   console.error(err);
-  //   process.exit(1);
-  // });
-  
-  ///confirm how i can bring in both db models then .remove.then.catch
-  // db.Property, db.User
-  // .remove({})
-  // .then(() => db.Property.collection.insertMany(propertySeed, userSeed))
-  // .then(data => {
-  //   console.log(data.result.n + " records inserted!");
-  //   process.exit(0);
-  // })
-  // .catch(err => {
-  //   console.error(err);
-  //   process.exit(1);
-  // });
+  });
+ 
