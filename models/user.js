@@ -19,7 +19,7 @@ const userSchema = new Schema({
     updateDate: { type: Date, default: Date.now }
     }, 
   favoriteProperties: [{
-        propertyID: { type: Number, required: true }, 
+        propertyID: { type: String, required: true }, 
         propertyAddress: { type: String, required: true } ,
         listPrice: { type: Number, required: true }, 
         bedrooms: { type: Number, required: true }, 

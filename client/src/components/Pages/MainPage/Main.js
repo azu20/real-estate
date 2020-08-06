@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../../../utils/API"
-import SearchForm from "../../SearchForm/SearchForm";
+import SearchForm from "../../searchform/SearchForm.js";
 import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../Nav/Nav";
 import CardHomeInfo from "../../CardHomeInfo/CardHomeInfo";

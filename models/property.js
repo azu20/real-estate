@@ -32,7 +32,7 @@ const propertySchema = new Schema({
   createdDate: { type: Date, default: Date.now },
   updatedDate: { type: Date, default: Date.now },
   likedByUser: [{
-      user_id: Number, 
+      user_id: String, 
       userFullName: String, 
    }],
 });
