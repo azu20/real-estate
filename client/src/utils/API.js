@@ -95,7 +95,7 @@ export default {
     },"params":{
     "sort":"relevance",
     "city":city,
-    "limit":"200",
+    "limit":"5",
     "offset":"0",
     "state_code":stateCode
     }
