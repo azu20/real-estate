@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
+// This file empties he Books collection and inserts the books below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/realestateapp"
+  "mongodb://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"
 );
 
 const propertySeed = [
@@ -37,7 +37,7 @@ const propertySeed = [
     image: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg",
     listingLink: "https://www.realtor.com/realestateandhomes-detail/5635-E-Casper-Rd_Mesa_AZ_85205_M17393-80976?view=qv",
     propDetailSummary: "Adult 55+ Community Beautiful, well cared for home in the Velda Rose Estates community. This 2 bedroom 1.75 bath home has upgraded stovetop, oven and dishwasher that are less than 1 year old. AC replaced 4 years ago and 80% sun screens keep this property cool and comfortable. 2 living areas and 2 large bedrooms make this home feel spacious. Plenty of storage inside and out with a laundry room that could also be used as a small workshop. Backyard covered patio perfect to enjoy the beautiful backyard.",
-    date: new Date(Date.now())
+    date: "2020-08-04 07:16pm"
   },
   {
     listingID: 654852,
@@ -54,8 +54,8 @@ const propertySeed = [
     listPrice: 225000,
     propSqFeet: 1424,
     lotSqFeet: 7318,
-    bedroom: 2,
-    bathroom: 2,
+    bedroom: 4,
+    bathroom: 2.5,
     subDivision: "VELDA ROSE ESTATES 3",
     annualPropTax: 842,
     taxCounty: "Maricopa",
@@ -67,7 +67,7 @@ const propertySeed = [
     image: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg",
     listingLink: "https://www.realtor.com/realestateandhomes-detail/5635-E-Casper-Rd_Mesa_AZ_85205_M17393-80976?view=qv",
     propDetailSummary: "Adult 55+ Community Beautiful, well cared for home in the Velda Rose Estates community. This 2 bedroom 1.75 bath home has upgraded stovetop, oven and dishwasher that are less than 1 year old. AC replaced 4 years ago and 80% sun screens keep this property cool and comfortable. 2 living areas and 2 large bedrooms make this home feel spacious. Plenty of storage inside and out with a laundry room that could also be used as a small workshop. Backyard covered patio perfect to enjoy the beautiful backyard.",
-    date: new Date(Date.now())
+    date: "2020-08-04 07:16pm"
   },
   {
     listingID: 89767,
@@ -81,11 +81,11 @@ const propertySeed = [
     zipcode: "85205",
     propType: "Single Family Home",
     yearBuilt: 1965,
-    listPrice: 225000,
+    listPrice: 550000,
     propSqFeet: 1424,
     lotSqFeet: 7318,
-    bedroom: 2,
-    bathroom: 2,
+    bedroom: 5,
+    bathroom: 3.5,
     subDivision: "VELDA ROSE ESTATES 3",
     annualPropTax: 842,
     taxCounty: "Maricopa",
@@ -103,39 +103,33 @@ const propertySeed = [
 
 // const userSeed = [
 //   {
-//     listingID: { type: String, required: true },
-//     listingAgent: { type: String, required: true },
-//     listingCompany: { type: String, required: true },
-//     daysListed: { type: Number, required: true },
-//     listStatus: { type: String, required: true },
-//     address: { type: String, required: true },
-//     city: { type: String, required: true },
-//     state: { type: String, required: true },
-//     zipcode: { type: Number, required: true },
-//     propType: { type: String, required: true },
-//     yearBuilt: { type: Number, required: true },
-//     listPrice: { type: Number, required: true },
-//     propSqFeet: { type: Number, required: true },
-//     lotSqFeet: { type: Number, required: true },
-//     bedroom: { type: Number, required: true },
-//     bathroom: { type: Number, required: true },
-//     subDivision: { type: String, required: true },
-//     annualPropTax: Number,
-//     taxCounty: String,
-//     utilityCompany: String,
-//     schoolInfo: String,
-//     hoaInfo: String,
-//     hoaFee: Number,
-//     propFeatures: String,
-//     image: String,
-//     listingLink: String,
-//     propDetailSummary: String,
-//     createdDate: { type: Date, default: Date.now },
-//     updatedDate: { type: Date, default: Date.now },
-//     likedByUser: [{
-//         user_id: Number, 
-//         userFullName: String, 
-//      }],
+//     firstName: "Karl",
+//     lastName: "Marx",
+//     email: "socialism6549@gmail.com",
+//     password: "veryPrivate456",
+//     phone: 5426246496,
+//     preferences: {
+//       priceRange: {
+//              from: 475000,
+//              to: 550000
+//         },
+//       bedrooms: 4, 
+//       bathrooms: 2.5, 
+//       propertyType: "single family home",
+//       creationDate: new Date(Date.now()),
+//       updateDate: new Date(Date.now())
+//       }, 
+//     favoriteProperties: [{
+//           propertyID: "89767", 
+//           propertyAddress: "5637 E Casper Rd",
+//           listPrice: 225000, 
+//           bedrooms: 5, 
+//           bathrooms: 3.5, 
+//           propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+//     }
+//   ],
+//     registrationDate:  new Date(Date.now()), 
+//     updateDate: new Date(Date.now())
 //   }
 // ]
 
@@ -148,10 +142,22 @@ db.Property
     process.exit(0);
   })
   .catch(err => {
-    console.error(err);
+    console.error("error: ", err.result);
     process.exit(1);
   });
 
+  // db.User
+  // .remove({})
+  // .then(() => db.User.collection.insertMany(userSeed))
+  // .then(data => {
+  //   console.log(data.result.n + " records inserted!");
+  //   process.exit(0);
+  // })
+  // .catch(err => {
+  //   console.error(err);
+  //   process.exit(1);
+  // });
+  
   ///confirm how i can bring in both db models then .remove.then.catch
   // db.Property, db.User
   // .remove({})
