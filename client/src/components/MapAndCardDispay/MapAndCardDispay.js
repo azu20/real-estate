@@ -5,16 +5,13 @@ import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCa
 import Nav from "../Nav/Nav";
 // import NavSubNav from "../NavSubNav/NavSubNav";
 import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
-import LogoutButton from "../LogoutButton/LogoutButton";
-import { withAuthenticationRequired } from '@auth0/auth0-react';
 
 
 const MapAndCardDispay = () => {
     return (
         <>
             <Nav></Nav>
-            <LogoutButton />
-            <NavSubNav></NavSubNav>
+            {/* <NavSubNav></NavSubNav> */}
 
             <MDBContainer fluid>
                 <MDBRow>
@@ -35,9 +32,4 @@ const MapAndCardDispay = () => {
     )
 }
 
-// export default MapAndCardDispay;
-
-export default withAuthenticationRequired(MapAndCardDispay, {
-    // Show a message while the user waits to be redirected to the login page.
-    onRedirecting: () => (<div>Redirecting you to the login page...</div>)
-  });
+export default MapAndCardDispay;
