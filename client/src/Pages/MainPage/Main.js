@@ -5,6 +5,7 @@ import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import MapContainer from "../../components/MapContainer/MapContainer"
+import { withAuthenticationRequired } from '@auth0/auth0-react';
 
 
 class MainPage extends Component {
@@ -94,4 +95,9 @@ class MainPage extends Component {
 
 export default MainPage;
 
+
+// export default withAuthenticationRequired(MainPage, {
+//     // Show a message while the user waits to be redirected to the login page.
+//     onRedirecting: () => (<div>Redirecting you to the login page...</div>)
+//   });
 
