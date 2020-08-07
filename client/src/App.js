@@ -14,6 +14,7 @@ import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
 import Favorites from "./components/Favorites/Favorites";
 import AdminArea from "./components/AdminArea/AdminArea";
 import Guest from "./components/Guest/Guest";
+// import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 
 function App() {
