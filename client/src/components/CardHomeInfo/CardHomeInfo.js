@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIcon } from 'mdbreact';
 import "../CardHomeInfo/CardHomeInfo.css";
+import API from '../../utils/API';
 
 
 
@@ -8,29 +9,54 @@ class CardHomeInfo extends Component {
   constructor(props) {
     super(props);
 
+   
+
     this.state = {
-      isFavorite: false
-     };
+      isFavorite: false,
+      cardInfo: {}
+    }
+
+
   }
 
-  handleFavorites = event => {
-    if (this.state.isFavorite){
-        this.setState({isFavorite: false})
-        //then remove from db
-    }else{
-        this.setState({isFavorite: true});
-        //then add to database
-        console.log(event);
+
+  handleFavorites = (event) => {
+    // console.log(props)
+    if (this.state.isFavorite) {
+      this.setState({ isFavorite: false })
+
+      let property = {
+        address: this.props.address,
+        price: this.props.price,
+        src: this.props.src,
+        bedrooms: this.props.bedrooms,
+        bathrooms: this.props.bathrooms
+      }
+      //delete fave
+      
+ 
+    } else {
+      this.setState({ isFavorite: true });
+      let property = {
+        address: this.props.address,
+        price: this.props.price,
+        src: this.props.src,
+        bedrooms: this.props.bedrooms,
+        bathrooms: this.props.bathrooms
+      }
+      //add to fav
+      API.saveProperty(property) 
+   
     }
-    console.log(this.state.isFavorite);
-}
+   
+  }
   render() {
 
     return (
 
       <MDBRow>
         <MDBCol style={{ maxWidth: "22rem" }}>
-          <MDBCard>
+          <MDBCard >
             <MDBCardImage className="img-fluid customImage" src={this.props.src} waves></MDBCardImage>
             <MDBCardBody>
 
@@ -38,15 +64,21 @@ class CardHomeInfo extends Component {
                 (this.state.isFavorite === true)
                   ? <a
                     className="heartIconPosition"
-                    onClick={this.handleFavorites}>
+                    onClick={this.handleFavorites}
+                  // onClick={() => this.handleFavorites(this.props.bedrooms)} 
+                  >
                     <MDBIcon
                       className="styleIconRed"
                       icon="heart"
-                      size="2x" />
+                      size="2x" /
+
+                    >
                   </a>
                   : <a
                     className="heartIconPosition"
-                    onClick={this.handleFavorites}>
+                    onClick={this.handleFavorites}
+                  // onClick={() => this.handleFavorites(this.props.bedrooms)}
+                  >
                     <MDBIcon
                       className="styleIconRed"
                       far icon="heart"

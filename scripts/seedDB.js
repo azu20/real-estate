@@ -3,11 +3,13 @@ const db = require("../models");
 
 // This file empties he Books collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb+srv://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"
+// mongoose.connect(
+//   process.env.MONGODB_URI ||
+//   "mongodb+srv://azucena_1:wc5vclNd7KxqpytQ@cluster-p7dpjvmj.6prcb.mongodb.net/heroku_p7dpjvmj?retryWrites=true&w=majority"
 
-);
+// );
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/realestateapp");
 
 const propertySeed = [
   {
