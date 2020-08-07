@@ -13,10 +13,10 @@ function App() {
       <Router>
         <Route exact path="/" component={Guest} />
         {/* <Route path exact ="/" component={MapAndSearchContainer}/> */}
-        <Route path="/mapandcard" component={MapAndCardDisplay} />
-        {/* <Route exact path ="/" component={MainPage}/> */}
-        <Route path="/favorites" component={Favorites} />
-        <Route path="/adminarea" component={AdminArea} />
+        {/* <Route path="/mapandcard" component={MapAndCardDisplay} /> */}
+        <Route exact path ="/main" component={MainPage}/>
+        <Route exact path="/favorites" component={Favorites} />
+        <Route exact path="/adminarea" component={AdminArea} />
       </Router>
     </>
   );
