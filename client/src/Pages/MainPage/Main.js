@@ -5,6 +5,8 @@ import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import MapContainer from "../../components/MapContainer/MapContainer"
+import "./Main.css"
+
 
 
 class MainPage extends Component {
@@ -14,7 +16,7 @@ class MainPage extends Component {
     };
 
     componentDidMount() {
-        this.searchHouses("Denver", "CO");
+        // this.searchHouses("Denver,CO");
 
     }
 
@@ -57,14 +59,14 @@ class MainPage extends Component {
 
                 <MDBContainer fluid>
                     <MDBRow>
-                        <MDBCol size="6" className="">
+                        <MDBCol md="6" className="mapContainer">
                             <MapContainer properties={this.state.result} />
 
                         </MDBCol>
-                        <MDBCol size="6">
-                            <MDBRow>
+                        <MDBCol md="6">
+                            <MDBRow className="align-items-center">
                                 {this.state.result.map(property => (
-                                    <MDBCol size="6">
+                                    <MDBCol  md="6">
 
                                         <CardHomeInfo
                                             address={property.address.line}

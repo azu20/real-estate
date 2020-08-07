@@ -11,12 +11,12 @@ const CardHomeInfo = (props) => {
 
 
     <MDBRow>
-    <MDBCol style={{maxWidth: "22rem"}}>
+    <MDBCol className="homeCard text-center" style={{maxWidth: "22rem"}}>
       <MDBCard>
         <MDBCardImage className="img-fluid customImage" src={props.src} waves></MDBCardImage>
         <MDBCardBody>
-        <MDBIcon className="heartIconPosition" far icon="heart" />
-          <MDBCardTitle>{props.address}</MDBCardTitle>
+        <MDBIcon className="heartIconPosition" size="2x" far icon="heart" />
+          <MDBCardTitle className="homeAddress">{props.address}</MDBCardTitle>
           <MDBCardText>Price: ${props.price} |  Beds:{props.bedrooms} | Baths:{props.bathrooms} | Sqft:{props.sqft}</MDBCardText>
           <MDBBtn href="#">Save Home</MDBBtn>
         </MDBCardBody>

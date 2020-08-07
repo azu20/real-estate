@@ -6,13 +6,13 @@ const SearchForm = (props) => {
     return (
         <>
             <form>
-                <label>Search:</label>
+                <label>Search City and State:</label>
                 <input
                     value={props.search}
                     onChange={props.handleInputChange}
                     type="text"
                     name="search"
-                    placeholder="Denver"
+                    placeholder="Denver, CO"
                 ></input>
                 <button onClick={props.handleFormSubmit}>Search</button>
             </form>
