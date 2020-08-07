@@ -5,13 +5,13 @@ import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import MapContainer from "../../components/MapContainer/MapContainer"
-
+import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
 
 class MainPage extends Component {
     state = {
         result: [],
-        search: "Denver"
-    };
+        search: "Denver",
+       };
 
     componentDidMount() {
         this.searchHouses("Denver", "CO");
@@ -19,15 +19,17 @@ class MainPage extends Component {
     }
 
     searchHouses = (query) => {
-        let stateCodeArr = query.split(",");
-        let stateCode = stateCodeArr[1];
-        let city = stateCodeArr[0];
-        API.search(city,stateCode)
-            .then(data => this.setState({ result: data.data.properties }))
-            .catch(err => console.log(err));
+        // let stateCodeArr = query.split(",");
+        // let stateCode = stateCodeArr[1];
+        // let city = stateCodeArr[0];
+        // API.search(city,stateCode)
+        //     .then(data => this.setState({ result: data.data.properties }))
+        //     .catch(err => console.log(err));
+
+        // #######using this static list of properties for testing 
+        // console.log(TestAPIData.properties);
+        this.setState({result: TestAPIData.properties})
     };
-
-
 
     handleInputChange = event => {
         const value = event.target.value;
@@ -37,12 +39,12 @@ class MainPage extends Component {
         });
     };
 
-
-
     handleFormSubmit = event => {
         event.preventDefault();
         this.searchHouses(this.state.search);
     };
+
+
 
     render() {
         return (
@@ -72,7 +74,6 @@ class MainPage extends Component {
                                             src={property.thumbnail}
                                             bedrooms={property.beds}
                                             bathrooms={property.baths}
-
                                         // sqft={property.building_size}
                                         />
                                     </MDBCol>
