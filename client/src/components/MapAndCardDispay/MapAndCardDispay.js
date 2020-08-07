@@ -1,9 +1,9 @@
 import React from "react"
 import {Link} from "react-router-dom";
-import "../MapAndCardDispay/MapAndCardDispay.css";
+// import "./MapAndCardDispay.css";
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../Nav/Nav";
-import NavSubNav from "../NavSubNav/NavSubNav";
+// import NavSubNav from "../NavSubNav/NavSubNav";
 import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
 import LogoutButton from "../LogoutButton/LogoutButton";
 import { withAuthenticationRequired } from '@auth0/auth0-react';

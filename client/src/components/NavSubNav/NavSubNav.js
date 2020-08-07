@@ -7,7 +7,7 @@ export default () => (
 
     <MDBNav>
       <MDBNavItem>
-        <MDBNavLink active to="#!">Active</MDBNavLink>
+        <MDBNavLink active to="#!"><SearchForm></MDBNavLink>
       </MDBNavItem>
       <MDBNavItem>
         <MDBNavLink to="#!">Link</MDBNavLink>

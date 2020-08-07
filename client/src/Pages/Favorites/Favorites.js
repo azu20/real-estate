@@ -1,7 +1,7 @@
 import React from "react";
 
-import Nav from "../Nav/Nav";
-import CardHomeInfo from "../CardHomeInfo/CardHomeInfo";
+import Nav from "../../components/Nav/Nav";
+import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import "./Favorites.css"
 
 const Favorites = () => {
