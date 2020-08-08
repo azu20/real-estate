@@ -32,7 +32,7 @@ const MapContainer = (props) => {
                 return (
                     <Marker position={[property.address.lat, property.address.lon]} key={property.property_id}>
                         <Popup>
-                            <MDBCol class="popupCont">
+                            <MDBCol className="popupCont">
                                 <MDBCard style={{ height: "15rem", width: "15rem" }}>
                                     <MDBCardImage className="img-fluid" src={property.thumbnail} waves />
                                     <MDBCardBody>

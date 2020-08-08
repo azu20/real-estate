@@ -1,3 +1,11 @@
 h1{
     color:white;
 }
+
+h3 {
+    font-family: 'Playball', cursive;
+    font-size: 33px;
+}
+.logo{
+    margin-left: 75px;
+}
