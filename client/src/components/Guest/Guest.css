@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+
+.house {
+
+    background-image: url(../../Assets/three-houses.jpg);
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-position: center center;
+}
+
+.title {
+    font-weight: 500;
+    font-family: Teko;
+    
+}
+
+.subtitle {
+    font-weight: 500;
+}
