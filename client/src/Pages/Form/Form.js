@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react"
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
 import "./Form.css"
+import API from "../../utils/API"
 
 
 const Form = () => {
 
 
-    const [values, setValues] = useState({ firstName: "", lastName: "", email: "", phone: ""});
+    const [values, setValues] = useState({ firstName: "", lastName: "", email: "", phone: "", maxPrice: ""});
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -19,14 +20,24 @@ const Form = () => {
     }
 
     useEffect(() => {
+        
         //check to see if there are any errors, if not, then submit 
         if (Object.keys(errors).length === 0 && isSubmitting) {
             submit();
+            
         }
     }, [errors])
 
     function submit() {
-        console.log("Submitted Successfully")
+        
+        API.saveUser(values)
+            .then(response => {
+
+                setValues(response.data)
+            })
+            .catch(err => console.log(err))
+        
+        console.log("Submitted Successfully:", values)
     }
 
     function validation(values) {
@@ -96,8 +107,16 @@ const Form = () => {
                         value={values.phone}
                         onChange={handleChange} />
                         {errors.phone && <p className="error">{errors.phone}</p>}
-                    <MDBInput label="Price Range" />
+                    <MDBInput 
+                        className={`${errors.maxPrice && "inputError"}`}
+                        name="maxPrice" 
+                        label="Max Price" 
+                        value={values.maxPrice}
+                        onChange={handleChange} />
+                        {errors.maxPrice && <p className="error">{errors.maxPrice}</p>}
+
                     <MDBBtn type="submit" color="primary">Submit</MDBBtn>
+                    
                     </form>
                 </MDBCol>
 

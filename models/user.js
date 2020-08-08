@@ -5,16 +5,16 @@ const userSchema = new Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   email: { type: String, required: true },
-  password: { type: String, required: true },
+  password: { type: String},
   phone: { type: Number, required: true },
   preferences: {
     priceRange: {
-           from: {type:  Number, required: true},
-           to: {type: Number, require: true }
+           maxPrice: {type:  Number}
+          //  to: {type: Number}
       },
-    bedrooms: { type: Number, required: true }, 
-    bathrooms: { type: Number, required: true }, 
-    propertyType: { type: String, required: true },
+    bedrooms: { type: Number}, 
+    bathrooms: { type: Number}, 
+    propertyType: { type: String},
     creationDate: { type: Date, default: Date.now },
     updateDate: { type: Date, default: Date.now }
     }, 
