@@ -1,19 +1,29 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
+import "./Form.css"
 
 
 const Form = () => {
 
 
     const [values, setValues] = useState({ firstName: "", lastName: "", email: "", phone: ""});
-    const [errors, setErrors] = useState({ firstName: "", lastName: "", email: "", phone: ""});
+    const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = event => {
 
         event.preventDefault();
         setErrors(validation(values));
-        submit();
+        setIsSubmitting(true);
+        // submit();
     }
+
+    useEffect(() => {
+        //check to see if there are any errors, if not, then submit 
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            submit();
+        }
+    }, [errors])
 
     function submit() {
         console.log("Submitted Successfully")
@@ -30,10 +40,10 @@ const Form = () => {
             errors.lastName = "Last Name is required";
         }
         if (!values.email) {
-            errors.lastName = "Email is required";
+            errors.email = "Email is required";
         }
         if (!values.phone) {
-            errors.lastName = "Phone number is required";
+            errors.phone = "Phone number is required";
         }
         return errors;
     }
@@ -59,29 +69,33 @@ const Form = () => {
                 <MDBCol md="6">
                     <form onSubmit={handleSubmit}>
                     <MDBInput
+                        className={`${errors.firstName && "inputError"}`}
                         name="firstName"
                         label="First Name"
                         value={values.firstName}
                         onChange={handleChange} />
-                        {errors.firstName && <p>{errors.firstName}</p>}
+                        {errors.firstName && <p className="error">{errors.firstName}</p>}
                     <MDBInput 
+                        className={`${errors.lastName && "inputError"}`}
                         name="lastName" 
                         label="Last Name" 
                         value={values.lastName}
                         onChange={handleChange} />
-                        {errors.lastName && <p>{errors.lastName}</p>}
+                        {errors.lastName && <p className="error">{errors.lastName}</p>}
                     <MDBInput 
+                        className={`${errors.email && "inputError"}`}
                         name="email" 
                         label="Email" 
                         value={values.email}
                         onChange={handleChange} />
-                        {errors.lastName && <p>{errors.email}</p>}
+                        {errors.email && <p className="error">{errors.email}</p>}
                     <MDBInput 
+                        className={`${errors.phone && "inputError"}`}
                         name="phone" 
                         label="Phone" 
                         value={values.phone}
                         onChange={handleChange} />
-                        {errors.lastName && <p>{errors.phone}</p>}
+                        {errors.phone && <p className="error">{errors.phone}</p>}
                     <MDBInput label="Price Range" />
                     <MDBBtn type="submit" color="primary">Submit</MDBBtn>
                     </form>
