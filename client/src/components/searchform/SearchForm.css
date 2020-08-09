@@ -3,7 +3,7 @@ display: flex;}
 
 .box {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -11,8 +11,8 @@ display: flex;}
   .box select {
     background-color:#8B0000;
     color: white;
-    padding: 5px;
-    width: 250px;
+    padding: 3px;
+    width: 230px;
     border: none;
     font-size: 18px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
@@ -46,3 +46,13 @@ display: flex;}
     padding: 8px;
   }
 
+  .searchButton{
+    margin-left: 40px;
+  }
+
+  .cityAndState{
+    margin-left: 30px;
+  }
+
+  .searchColumn{
+  }
