@@ -7,6 +7,16 @@ import 'mdbreact/dist/css/mdb.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Auth0Provider } from "@auth0/auth0-react";
+import history from "./utils/history";
+
+
+const onRedirectCallback = (appState) => {
+  history.push(
+    appState && appState.returnTo
+      ? appState.returnTo
+      : window.location.pathname
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,8 +25,10 @@ ReactDOM.render(
       // domain="dev-gih3l9ps.us.auth0.com"
       clientId={process.env.REACT_APP_CLIENT_ID}
       // clientId="yTwcN7QFJgaXI9tdd1pGVSyc2iqdOdHP"
-      redirectUri="http://localhost:3000/main">
-       {/* redirectUri={window.location.origin}>  */}
+      // redirectUri={window.location.origin}
+      edirectUri="http://localhost:3000/main"
+      onRedirectCallback={onRedirectCallback} >
+       
     <App />
     </Auth0Provider>
   </React.StrictMode>,

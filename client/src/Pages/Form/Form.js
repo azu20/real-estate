@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react"
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
 import "./Form.css"
 import API from "../../utils/API"
-
+import { useAuth0 } from "@auth0/auth0-react";
+import LogoutButton from "../../components/LogoutButton/LogoutButton"
 
 const Form = () => {
 
-
+    const { user} = useAuth0();
+    console.log("user ", user)
     const [values, setValues] = useState({ firstName: "", lastName: "", email: "", phone: "", maxPrice: ""});
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,7 +78,8 @@ const Form = () => {
         <MDBContainer>
             <MDBRow>
                 <MDBCol md="3"></MDBCol>
-
+                
+                    
                 <MDBCol md="6">
                     <form onSubmit={handleSubmit}>
                     <MDBInput
@@ -116,7 +119,7 @@ const Form = () => {
                         {errors.maxPrice && <p className="error">{errors.maxPrice}</p>}
 
                     <MDBBtn type="submit" color="primary">Submit</MDBBtn>
-                    
+                    <LogoutButton />
                     </form>
                 </MDBCol>
 
