@@ -17,7 +17,7 @@ const CardHomeInfo = (props) => {
         <MDBCardBody>
         <MDBIcon className="heartIconPosition" size="2x" far icon="heart" />
           <MDBCardTitle className="homeAddress">{props.address}</MDBCardTitle>
-          <MDBCardText>Price: ${props.price} |  Beds:{props.bedrooms} | Baths:{props.bathrooms} | Sqft:{props.sqft}</MDBCardText>
+          <MDBCardText>Price: ${props.price} |  Beds:{props.bedrooms} | Baths:{props.bathrooms}</MDBCardText>
           <MDBBtn color="elegant" href="#">Save Home</MDBBtn>
         </MDBCardBody>
       </MDBCard>

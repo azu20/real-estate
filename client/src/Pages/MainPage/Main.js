@@ -18,12 +18,12 @@ class MainPage extends Component {
     };
 
     componentDidMount() {
-        // this.searchHouses("Denver,CO");
+        this.searchHouses("Denver, CO");
 
     }
 
     searchHouses = (query) => {
-        let stateCodeArr = query.split(",");
+        let stateCodeArr = query.split(", ");
         let stateCode = stateCodeArr[1];
         let city = stateCodeArr[0];
         API.search(city,stateCode)
@@ -52,7 +52,6 @@ class MainPage extends Component {
         return (
             <>
                 <Nav></Nav>
-                <LogoutButton />
                 <SearchForm
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
