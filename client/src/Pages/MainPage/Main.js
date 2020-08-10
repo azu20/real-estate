@@ -8,6 +8,7 @@ import MapContainer from "../../components/MapContainer/MapContainer"
 import "./Main.css"
 import LogoutButton from "../../components/LogoutButton/LogoutButton";
 import { withAuthenticationRequired } from '@auth0/auth0-react';
+import Contact from "../../components/Contact/Contact"
 
 
 
@@ -18,12 +19,12 @@ class MainPage extends Component {
     };
 
     componentDidMount() {
-        // this.searchHouses("Denver,CO");
+        // this.searchHouses("Denver, CO");
 
     }
 
     searchHouses = (query) => {
-        let stateCodeArr = query.split(",");
+        let stateCodeArr = query.split(", ");
         let stateCode = stateCodeArr[1];
         let city = stateCodeArr[0];
         API.search(city,stateCode)
@@ -52,7 +53,6 @@ class MainPage extends Component {
         return (
             <>
                 <Nav></Nav>
-                <LogoutButton />
                 <SearchForm
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
@@ -63,6 +63,8 @@ class MainPage extends Component {
                     <MDBRow>
                         <MDBCol md="6" className="mapContainer">
                             <MapContainer properties={this.state.result} />
+                            <br></br>
+                            <Contact />
 
                         </MDBCol>
                         <MDBCol md="6">
