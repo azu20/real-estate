@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import API from "../../utils/API"
 import SearchForm from "../../components/searchform/SearchForm.js";
 import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
