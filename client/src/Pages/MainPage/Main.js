@@ -5,6 +5,12 @@ import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import MapContainer from "../../components/MapContainer/MapContainer"
 import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
+import "./Main.css"
+import LogoutButton from "../../components/LogoutButton/LogoutButton";
+import { withAuthenticationRequired } from '@auth0/auth0-react';
+import Contact from "../../components/Contact/Contact"
+
+
 
 class MainPage extends Component {
     state = {
@@ -13,7 +19,7 @@ class MainPage extends Component {
        };
 
     componentDidMount() {
-        this.searchHouses("Denver", "CO");
+        this.searchHouses("Denver, CO");
 
     }
 
@@ -28,6 +34,12 @@ class MainPage extends Component {
         // #######using this static list of properties for testing 
         // console.log(TestAPIData.properties);
         this.setState({result: TestAPIData.properties})
+        // let stateCodeArr = query.split(", ");
+        // let stateCode = stateCodeArr[1];
+        // let city = stateCodeArr[0];
+        // API.search(city,stateCode)
+        //     .then(data => this.setState({ result: data.data.properties }))
+        //     .catch(err => console.log(err));
     };
 
     handleInputChange = event => {
@@ -49,7 +61,6 @@ class MainPage extends Component {
         return (
             <>
                 <Nav></Nav>
-
                 <SearchForm
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
@@ -58,14 +69,16 @@ class MainPage extends Component {
 
                 <MDBContainer fluid>
                     <MDBRow>
-                        <MDBCol size="6" className="">
+                        <MDBCol md="6" className="mapContainer">
                             <MapContainer properties={this.state.result} />
+                            <br></br>
+                            <Contact />
 
                         </MDBCol>
-                        <MDBCol size="6">
-                            <MDBRow>
+                        <MDBCol md="6">
+                            <MDBRow className="align-items-center">
                                 {this.state.result.map(property => (
-                                    <MDBCol size="6">
+                                    <MDBCol  md="6">
 
                                         <CardHomeInfo
                                             address={property.address.line}
@@ -94,4 +107,7 @@ class MainPage extends Component {
 
 export default MainPage;
 
-
+// export default withAuthenticationRequired(MainPage, {
+//     // Show a message while the user waits to be redirected to the login page.
+//     onRedirecting: () => (<div>Redirecting you to the login page...</div>)
+//   });

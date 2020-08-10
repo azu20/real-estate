@@ -27,24 +27,24 @@ class CardHomeInfo extends Component {
 
       let property = {
         address: this.props.address,
-        price: this.props.price,
-        src: this.props.src,
-        bedrooms: this.props.bedrooms,
-        bathrooms: this.props.bathrooms
+        id : "5f31b081a7c58d4838142d6f"
       }
-      //delete fave
-      
+    
+      API.deleteProperty(property);
+      //delete to fav
  
     } else {
       this.setState({ isFavorite: true });
       let property = {
         address: this.props.address,
-        price: this.props.price,
-        src: this.props.src,
-        bedrooms: this.props.bedrooms,
-        bathrooms: this.props.bathrooms
+        listPrice: this.props.price,
+        image: this.props.src,
+        bedroom: this.props.bedrooms,
+        bathroom: this.props.bathrooms,
+        id : '4'
       }
       //add to fav
+
       API.saveProperty(property) 
    
     }

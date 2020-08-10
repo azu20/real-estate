@@ -28,7 +28,8 @@ export default {
   },
   // Saves a property to the database
   saveProperty: async function (propertyData) {
-    let response = axios.post("localhotst:3001/api/properties/", propertyData)
+    console.log("this save property API")
+    let response = axios.post("/api/properties/", propertyData)
     .then(x => console.log("the response from posting the property is", x))
     .catch(error =>  
       {
@@ -90,12 +91,12 @@ export default {
     "headers":{
     "content-type":"application/octet-stream",
     "x-rapidapi-host":"realtor.p.rapidapi.com",
-    "x-rapidapi-key":"ade8544827msh9659d2e7e6c8896p12e1ddjsnd9a76903cb81",
+    "x-rapidapi-key":"11822a79cbmsh84f65be3e3c1181p1b273ejsn677317876206",
     "useQueryString":true
     },"params":{
     "sort":"relevance",
     "city":city,
-    "limit":"5",
+    "limit":"10",
     "offset":"0",
     "state_code":stateCode
     }

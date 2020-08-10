@@ -1,15 +1,26 @@
 .customImage{
-    min-height: 14rem;
+    height: 15rem;
+    width: 100%
 }
 
 .heartIconPosition{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 7px;
+    right: 25px;
     color: red;
-    size: 20px;
+    height: 20px;
+    width: 20px;
+}
+.heartIconPosition:hover{
+color: black;
 }
 
-.styleIconRed{
-    color: red;
+.homeCard {
+    padding: 10px;
+    /* height: 18rem; */
+    margin: 1px
+}
+
+.homeAddress {
+    font-size: 20px;
 }
