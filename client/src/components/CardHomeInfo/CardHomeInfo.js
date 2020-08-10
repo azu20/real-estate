@@ -30,7 +30,7 @@ class CardHomeInfo extends Component {
         id : "5f31b081a7c58d4838142d6f"
       }
     
-      API.deleteProperty(property);
+      // API.deleteProperty(property);
       //delete to fav
  
     } else {
@@ -41,7 +41,6 @@ class CardHomeInfo extends Component {
         image: this.props.src,
         bedroom: this.props.bedrooms,
         bathroom: this.props.bathrooms,
-        id : '4'
       }
       //add to fav
 
