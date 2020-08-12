@@ -9,14 +9,10 @@ class CardHomeInfo extends Component {
   constructor(props) {
     super(props);
 
-   
-
     this.state = {
       isFavorite: false,
       cardInfo: {}
     }
-
-
   }
 
 
@@ -27,7 +23,7 @@ class CardHomeInfo extends Component {
 
       let property = {
         address: this.props.address,
-        id : "5f31b081a7c58d4838142d6f"
+        id : ""
       }
     
       // API.deleteProperty(property);
