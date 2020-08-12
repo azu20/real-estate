@@ -2,33 +2,45 @@ const db = require("../models");
 
 // Defining methods for the booksController
 module.exports = {
-  findAllProperties: function(req, res) {
+  findAllProperties: function (req, res) {
     db.Property
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findPropertyById: function(req, res) {
+  findPropertyById: function (req, res) {
     db.Property
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  createProperty: function(req, res) {
+  findTopProperties: function (req, res) {
+    db.Property
+//      .aggregate([{ $unwind: "$likedByUser" }, { $sortByCount: "$likedByUser" }])
+      .find()
+      .sort({"likedByUser":-1})
+      .limit(2) 
+      .then(dbModel => {
+        //console.log("**************************", dbModel);
+        return res.json(dbModel);
+      })
+      .catch(err => res.status(422).json(err));
+  },
+  createProperty: function (req, res) {
     console.log ("in create property");
     db.Property
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  updateProperty: function(req, res) {
+  updateProperty: function (req, res) {
     db.Property
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  removeProperty: function(req, res) {
+  removeProperty: function (req, res) {
     db.Property
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
