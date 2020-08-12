@@ -28,6 +28,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   createProperty: function (req, res) {
+    console.log ("in create property");
     db.Property
       .create(req.body)
       .then(dbModel => res.json(dbModel))
