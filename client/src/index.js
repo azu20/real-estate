@@ -15,8 +15,9 @@ ReactDOM.render(
       // domain="dev-gih3l9ps.us.auth0.com"
       clientId={process.env.REACT_APP_CLIENT_ID}
       // clientId="yTwcN7QFJgaXI9tdd1pGVSyc2iqdOdHP"
-      redirectUri="http://localhost:3000/main">
-       {/* redirectUri={window.location.origin}>  */}
+      // redirectUri="http://localhost:3000/main">
+      redirectUri={window.location.origin}>
+      {/* redirectUri={`${window.location.origin}`/main}> */}
     <App />
     </Auth0Provider>
   </React.StrictMode>,
