@@ -8,9 +8,14 @@ router.route("/")
 
 // Matches with "/api/properties/:id"
 router
+  .route("/top/:number")
+  .get(propertyController.findTopProperties);
+
+router
   .route("/:id")
   .get(propertyController.findPropertyById)
   .put(propertyController.updateProperty)
   .delete(propertyController.removeProperty);
+
 
 module.exports = router;

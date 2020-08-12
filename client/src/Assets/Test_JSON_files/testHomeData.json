@@ -1,0 +1,1258 @@
+{
+    "meta": {
+        "build": "3.23.117",
+        "schema": "core.3",
+        "tracking_params": {
+            "channel": "for_sale",
+            "siteSection": "for_sale",
+            "city": "Gilbert",
+            "county": "unknown",
+            "neighborhood": "unknown",
+            "searchCityState": "Gilbert, AZ",
+            "state": "AZ",
+            "zip": "unknown",
+            "srpPropertyStatus": "srp:for_sale",
+            "listingActivity": "unknown",
+            "propertyStatus": "for_sale",
+            "propertyType": "any",
+            "searchBathrooms": "any",
+            "searchBedrooms": "any",
+            "searchMaxPrice": "unknown",
+            "searchMinPrice": "unknown",
+            "searchRadius": "unknown",
+            "searchHouseSqft": "any",
+            "searchLotSqft": "any",
+            "searchResults": "10",
+            "sortResults": "relevance",
+            "searchCoordinates": "unknown",
+            "version": "1.0"
+        },
+        "tracking": "type|meta|data|resource_type|property_list|query|client_id|rdc_mobile_native,13.3.0.53|prop_status|for_sale|schema|core.3|limit|offset|city|Gilbert|state_code|AZ|sort|relevance|count|total^A|0|A|U4^^$0|1|2|$3|4|5|$6|7|8|9|A|B|C|M|D|N|E|F|G|H|I|J]|8|9|K|O|L|P]]",
+        "returned_rows": 10,
+        "matching_rows": 1084
+    },
+    "properties": [
+        {
+            "property_id": "M2403020218",
+            "listing_id": "2919341957",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/2721-E-Bart-St_Gilbert_AZ_85295_M24030-20218",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "2721 E Bart St",
+                "postal_code": "85295",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.317596,
+                "lon": -111.731726,
+                "neighborhood_name": "Lyons Gate"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "Keller Williams Integrity First",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 309888,
+            "baths_full": 3,
+            "baths": 3,
+            "beds": 4,
+            "building_size": {
+                "size": 1884,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "1264366",
+                    "id": "1264366",
+                    "photo": {
+                        "href": "https://p.rdcpix.com/v01/aee4a1300-c0od-r7_w110.jpg"
+                    },
+                    "name": "Shelsi Guthrie"
+                }
+            ],
+            "office": {
+                "id": "4c47b30409c72913a10ff5ed149e7282",
+                "name": "Keller Williams Integrity First"
+            },
+            "last_update": "2020-08-02T14:17:12Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 46,
+            "thumbnail": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m605312108x.jpg",
+            "page_no": 1,
+            "rank": 1,
+            "list_tracking": "type|property|data|prop_id|2403020218|list_id|2919341957|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|1|0|1|R3LA|1QZEC|2AGX2|35T|9HS|1^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 2989,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111796",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M2511362736",
+            "listing_id": "2919339712",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/918-E-Rojo-Way_Gilbert_AZ_85297_M25113-62736",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "918 E Rojo Way",
+                "postal_code": "85297",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.265658,
+                "lon": -111.769966,
+                "neighborhood_name": "Layton Lakes"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "My Home Group Real Estate",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 430000,
+            "baths_full": 2,
+            "baths": 2,
+            "beds": 3,
+            "building_size": {
+                "size": 1897,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "1617194",
+                    "id": "1617194",
+                    "photo": {
+                        "href": "https://ap.rdcpix.com/391269735/cb7c3336e962c22e8bce1f3233ec4aa5a-e0od-r7_w110.jpg"
+                    },
+                    "name": "Patrick Halpine"
+                }
+            ],
+            "office": {
+                "id": "4400e10cff31599c7095f5c67f98078d",
+                "name": "My Home Group Real Estate"
+            },
+            "last_update": "2020-08-02T12:09:37Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 62,
+            "thumbnail": "https://ap.rdcpix.com/1193b9c954cc6faa190576ab0261317dl-m2201443860x.jpg",
+            "page_no": 1,
+            "rank": 2,
+            "list_tracking": "type|property|data|prop_id|2511362736|list_id|2919339712|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|2|0|1|YNU2|1R4UY|29K0F|35T|9HS|5^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 10115,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111757",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M1407770063",
+            "listing_id": "2919339178",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/1243-E-Julian-Dr_Gilbert_AZ_85295_M14077-70063",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "1243 E Julian Dr",
+                "postal_code": "85295",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.293432,
+                "lon": -111.76315,
+                "neighborhood_name": "The Spectrum at Val Vista"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "OZ Realty",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 335000,
+            "baths_half": 1,
+            "baths_full": 2,
+            "baths": 3,
+            "beds": 3,
+            "building_size": {
+                "size": 1615,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "1896334",
+                    "id": "1896334",
+                    "photo": {
+                        "href": "https://ap.rdcpix.com/786420295/dcdd8f24c8b2d9889f4523c716bf0f2da-e0od-r7_w110.jpg"
+                    },
+                    "name": "Sanjog Gopal"
+                }
+            ],
+            "office": {
+                "id": "3c0dc051ca6aba6efb0b3d26590d075c",
+                "name": "OZ Realty"
+            },
+            "last_update": "2020-08-02T10:48:11Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 25,
+            "thumbnail": "https://ap.rdcpix.com/4b08137ef13ace12303fc4e0a49949a6l-m1655384446x.jpg",
+            "page_no": 1,
+            "rank": 3,
+            "list_tracking": "type|property|data|prop_id|1407770063|list_id|2919339178|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|property_status|product_code|advantage_code^1|3|0|1|14N7Y|110RD|35T|9HS|1^^$0|1|2|$3|4|5|6|7|I|8|J|9|$A|K|B|L]|C|$D|M|E|N]|F|O|G|P|H|Q]]",
+            "lot_size": {
+                "size": 4595,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111752",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M2359311822",
+            "listing_id": "2919335519",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/1257-N-Layman-St_Gilbert_AZ_85233_M23593-11822",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "1257 N Layman St",
+                "postal_code": "85233",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.373274,
+                "lon": -111.82874,
+                "neighborhood_name": "El Dorado Lakes Golf Community"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "Realty ONE Group",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 535000,
+            "baths_full": 3,
+            "baths": 3,
+            "beds": 5,
+            "building_size": {
+                "size": 2732,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "1967807",
+                    "id": "1967807",
+                    "photo": {
+                        "href": "https://ap.rdcpix.com/1201846058/0370c6a96ffb042ae4d930f921e49dd8a-c0od-r7_w110.jpg"
+                    },
+                    "name": "Christopher Love"
+                }
+            ],
+            "office": {
+                "id": "5db53218ead0b374c40bf569062ce510",
+                "name": "Realty ONE Group"
+            },
+            "last_update": "2020-08-02T02:15:04Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 37,
+            "thumbnail": "https://ap.rdcpix.com/2428521c3c2c0f2c5b4441b274af2b80l-m3937111765x.jpg",
+            "page_no": 1,
+            "rank": 4,
+            "list_tracking": "type|property|data|prop_id|2359311822|list_id|2919335519|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|4|0|1|166DB|XP35|1R6FP|35T|9HS|5^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 6839,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111685",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M1744539237",
+            "listing_id": "2919335527",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/970-E-Redondo-Dr_Gilbert_AZ_85296_M17445-39237",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "970 E Redondo Dr",
+                "postal_code": "85296",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.335201,
+                "lon": -111.769104
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "Realty One Group",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 310000,
+            "baths_half": 1,
+            "baths_full": 2,
+            "baths": 3,
+            "beds": 3,
+            "building_size": {
+                "size": 1632,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "3722538",
+                    "id": "3722538",
+                    "photo": {
+                        "href": "https://ap.rdcpix.com/11430391/256ab979dc16afbf80b50ef1eefa432da-e0od-r7_w110.jpg"
+                    },
+                    "name": "Cabrina My Le"
+                }
+            ],
+            "office": {
+                "id": "d0c6265a1e35bc839d8c7c89ea4bbe00",
+                "name": "Realty One Group"
+            },
+            "last_update": "2020-08-02T02:15:04Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 27,
+            "thumbnail": "https://ap.rdcpix.com/fbec31e2261fe6c0e8173c30d498c9cfl-m2106007801x.jpg",
+            "page_no": 1,
+            "rank": 5,
+            "list_tracking": "type|property|data|prop_id|1744539237|list_id|2919335527|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|5|0|1|27SBU|1R6FV|1R6FP|35T|9HS|5^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 3262,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6109485",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M1887425084",
+            "listing_id": "2919335531",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/2581-E-Shannon-St_Gilbert_AZ_85295_M18874-25084",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "2581 E Shannon St",
+                "postal_code": "85295",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.316837,
+                "lon": -111.734465,
+                "neighborhood_name": "Crossroads"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "DPR Realty",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 480000,
+            "baths_half": 1,
+            "baths_full": 3,
+            "baths": 4,
+            "beds": 6,
+            "building_size": {
+                "size": 3350,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "3705919",
+                    "id": "3705919",
+                    "photo": null,
+                    "name": "Ashley Compean"
+                }
+            ],
+            "office": {
+                "id": "9080c30f5a6827a42af2fa1d37bacfeb",
+                "name": "DPR Realty"
+            },
+            "last_update": "2020-08-02T02:15:02Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 1,
+            "thumbnail": "https://ap.rdcpix.com/26eae13794215d68ed55a5c1da94bf11l-m3817844549x.jpg",
+            "page_no": 1,
+            "rank": 6,
+            "list_tracking": "type|property|data|prop_id|1887425084|list_id|2919335531|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|6|0|1|27FI7|19JJA|27FEF|35T|9HS|5^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 9129,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111545",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M1594971014",
+            "listing_id": "2919330197",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/4864-S-Summit-Ct_Gilbert_AZ_85298_M15949-71014",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "4864 S Summit Ct",
+                "postal_code": "85298",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.262002,
+                "lon": -111.760527,
+                "neighborhood_name": "Vista Dorada"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "Arizona Gateway Real Estate",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 415000,
+            "baths_half": 1,
+            "baths_full": 2,
+            "baths": 3,
+            "beds": 5,
+            "building_size": {
+                "size": 2320,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "405122",
+                    "id": "405122",
+                    "photo": {
+                        "href": "https://ap.rdcpix.com/1051539921/1ff33cef5a11240058ae96b3cc6525fca-e0od-r7_w110.jpg"
+                    },
+                    "name": "The Kerry Jackson Team Kerry Jackson And Christin Jackson"
+                }
+            ],
+            "office": {
+                "id": "60377aaca4dbe46573dc5fb472ed577b",
+                "name": "Arizona Gateway Real Estate"
+            },
+            "last_update": "2020-08-01T23:57:50Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": false,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "is_contingent": true,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 47,
+            "thumbnail": "https://ap.rdcpix.com/e02fcb523f60077b746a7d7cce9a67b5l-m494537522x.jpg",
+            "page_no": 1,
+            "rank": 7,
+            "list_tracking": "type|property|data|prop_id|1594971014|list_id|2919330197|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|broker|property_status|product_code|advantage_code^1|7|0|1|8OLE|10946|2T4X|9HS|1^^$0|1|2|$3|4|5|6|7|I|8|J|9|$A|K|B|L]|C|$D|M|E|N]|F|O|G|P|H|Q]]",
+            "lot_size": {
+                "size": 10338,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6109350",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M1987828460",
+            "listing_id": "2919328352",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/161-N-Tiago-Dr_Gilbert_AZ_85233_M19878-28460",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "161 N Tiago Dr",
+                "postal_code": "85233",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.352945,
+                "lon": -111.807455,
+                "neighborhood_name": "Summer Meadows East"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "Randolph Properties",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 320000,
+            "baths_full": 2,
+            "baths": 2,
+            "beds": 3,
+            "building_size": {
+                "size": 1358,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "125022",
+                    "id": "125022",
+                    "photo": {
+                        "href": "https://p.rdcpix.com/v01/a5ee80100-c0od-r7_w110.jpg"
+                    },
+                    "name": "DONNA RANDOLPH"
+                }
+            ],
+            "office": {
+                "id": "a31e2419a6bb8728ca701ced2f2c3468",
+                "name": "Randolph Properties"
+            },
+            "last_update": "2020-08-02T00:14:43Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 8,
+            "thumbnail": "https://ap.rdcpix.com/37a6c0acee3981748e00860abb54955al-m4203004772x.jpg",
+            "page_no": 1,
+            "rank": 8,
+            "list_tracking": "type|property|data|prop_id|1987828460|list_id|2919328352|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|property_status|product_code|advantage_code^1|8|0|1|2OGU|1AAEU|35T|9HS|1^^$0|1|2|$3|4|5|6|7|I|8|J|9|$A|K|B|L]|C|$D|M|E|N]|F|O|G|P|H|Q]]",
+            "lot_size": {
+                "size": 6020,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111667",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M1380800523",
+            "listing_id": "2919327724",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/420-E-Bruce-Ave-Unit-C_Gilbert_AZ_85234_M13808-00523",
+            "prop_type": "condo",
+            "prop_sub_type": "townhomes",
+            "address": {
+                "city": "Gilbert",
+                "line": "420 E Bruce Ave Unit C",
+                "postal_code": "85234",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.352672,
+                "lon": -111.780819,
+                "neighborhood_name": "Meadowbrook Village"
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "Realty One Group",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 198900,
+            "baths_full": 2,
+            "baths": 2,
+            "beds": 2,
+            "building_size": {
+                "size": 813,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "59913",
+                    "id": "59913",
+                    "photo": {
+                        "href": "https://p.rdcpix.com/v01/a09ea0000-c0od-r7_w110.jpg"
+                    },
+                    "name": "Barbara Buckingham"
+                }
+            ],
+            "office": {
+                "id": "d0c6265a1e35bc839d8c7c89ea4bbe00",
+                "name": "Realty One Group"
+            },
+            "last_update": "2020-08-02T12:35:37Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 29,
+            "thumbnail": "https://ap.rdcpix.com/37ddb743e6bde8281ec41199f3eeb4e5l-m3840377093x.jpg",
+            "page_no": 1,
+            "rank": 9,
+            "list_tracking": "type|property|data|prop_id|1380800523|list_id|2919327724|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|9|0|1|1A89|1PYE8|1R6FP|35T|9HS|5^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 793,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111649",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        },
+        {
+            "property_id": "M2632247245",
+            "listing_id": "2919326688",
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/2905-E-Sagebrush-St_Gilbert_AZ_85296_M26322-47245",
+            "prop_type": "single_family",
+            "address": {
+                "city": "Gilbert",
+                "line": "2905 E Sagebrush St",
+                "postal_code": "85296",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "lat": 33.34026,
+                "lon": -111.727511
+            },
+            "branding": {
+                "listing_office": {
+                    "list_item": {
+                        "name": "eXp Realty",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "prop_status": "for_sale",
+            "price": 819900,
+            "baths_full": 4,
+            "baths": 4,
+            "beds": 6,
+            "building_size": {
+                "size": 4553,
+                "units": "sqft"
+            },
+            "agents": [
+                {
+                    "primary": true,
+                    "advertiser_id": "294861",
+                    "id": "294861",
+                    "photo": {
+                        "href": "https://ap.rdcpix.com/880158786/c1bb8b9f82055aad4673495920472aa2a-e0od-r7_w110.jpg"
+                    },
+                    "name": "Mark Palacio"
+                }
+            ],
+            "office": {
+                "id": "4affe4394bf52361a16e291dd3520bc6",
+                "name": "eXp Realty"
+            },
+            "last_update": "2020-08-01T19:06:05Z",
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "photo_count": 23,
+            "thumbnail": "https://ap.rdcpix.com/e26ba03ca4a9b7ea50e1cc3b2be0fa4bl-m1723831700x.jpg",
+            "page_no": 1,
+            "rank": 10,
+            "list_tracking": "type|property|data|prop_id|2632247245|list_id|2919326688|page|rank|list_branding|listing_agent|listing_office|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|A|0|1|6BIL|2EQC4|10946|35T|9HS|1^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|$D|N|E|O|F|P]|G|Q|H|R|I|S]]",
+            "lot_size": {
+                "size": 9100,
+                "units": "sqft"
+            },
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111623",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls"
+            }
+        }
+    ]
+}

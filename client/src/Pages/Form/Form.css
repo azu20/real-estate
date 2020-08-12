@@ -1,0 +1,11 @@
+.error {
+    color: red;
+    font-size: 10px;
+    margin:0px;
+    padding: 0px;
+}
+
+.inputError {
+
+    border-color: red;;
+}

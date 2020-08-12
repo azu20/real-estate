@@ -7,6 +7,11 @@ export default {
     .catch(err => console.log("error: ", err));
     return response;
   },
+  getTopProperties: async function(how_many){
+    let response = await axios.get("/api/properties/top/" + how_many)
+    .catch(err => console.log("error: ", err));
+    return response;
+  },
   // Gets the property with the given id
   getProperty:  async function (id) {
     let response = axios.get("/api/properties/" + id)
@@ -28,6 +33,7 @@ export default {
   },
   // Saves a property to the database
   saveProperty: async function (propertyData) {
+    console.log("this save property API")
     let response = axios.post("/api/properties/", propertyData)
     .then(x => console.log("the response from posting the property is", x))
     .catch(error =>  

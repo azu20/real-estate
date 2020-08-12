@@ -16,7 +16,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "recharts": "^1.8.5"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
@@ -25,7 +26,7 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\" \"npm run seed\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",

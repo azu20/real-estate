@@ -2,9 +2,13 @@ import React from "react";
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 import LoginButton from "../LoginButton/LoginButton.js";
 import "./Guest.css"
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 const Guest = () => {
+  const { user, isAuthenticated } = useAuth0();
   return (
+
     <MDBContainer>
       <MDBRow>
         <MDBCol>
@@ -12,7 +16,7 @@ const Guest = () => {
             <MDBCol className="house text-white text-center py-5 px-4 my-5">
               <MDBCol className="py-5">
                 <MDBCardTitle className="display-3 title h1-responsive m-5 font-bold">
-                Your dream home is a few clicks aways. <br></br>
+                Your dream home is a few clicks away. <br></br>
                 What are you waiting for?
                     </MDBCardTitle>
                 <p className="subtitle mx-5 mb-5">

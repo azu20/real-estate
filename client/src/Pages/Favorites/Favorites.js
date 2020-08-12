@@ -5,6 +5,8 @@ import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import "./Favorites.css"
 
 const Favorites = () => {
+
+    
     return (
         <>
             <Nav />

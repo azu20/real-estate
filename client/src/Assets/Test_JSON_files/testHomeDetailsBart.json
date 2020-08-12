@@ -1,0 +1,2012 @@
+{
+    "meta": {
+        "build": "3.23.117",
+        "schema": "core.3",
+        "tracking": "type|meta|data|resource_type|property_detail|query|client_id|rdc_mobile_native,13.3.0.53|schema|core.3|tag_version|v2^^^$0|1|2|$3|4|5|$6|7|8|9|A|B]]]",
+        "returned_rows": 1,
+        "matching_rows": 1,
+        "tracking_params": {
+            "ldpPropertyStatus": "ldp:for_sale",
+            "pageType": "ldp",
+            "leadDelivery": "co_broke",
+            "leadEnhancements": "classic,rcm",
+            "listingActivity": "active",
+            "productType": "core.agent",
+            "propertyStatus": "for_sale",
+            "listingId": "2919341957",
+            "rentalDataSource": "unknown",
+            "advertiserIdAgent": "1264366",
+            "advertiserIdBroker": "3847718",
+            "advertiserIdOffice": "2938548",
+            "communityId": "unknown",
+            "mprId": "2403020218",
+            "listingMls": "PHAZ",
+            "planId": "unknown",
+            "subId": "unknown",
+            "city": "Gilbert",
+            "neighborhood": "Lyons Gate",
+            "state": "AZ",
+            "zip": "85295",
+            "listingBaths": "3",
+            "listingBeds": "4",
+            "listingSqFt": "1884",
+            "listingEnhancements": "broker-phone-btm",
+            "listingPrice": "309888",
+            "photoCount": "46",
+            "propertyType": "ldp:single_family",
+            "version": "1.0"
+        }
+    },
+    "properties": [
+        {
+            "property_id": "M2403020218",
+            "prop_status": "for_sale",
+            "listing_id": "2919341957",
+            "prop_type": "single_family",
+            "list_date": "2020-08-02T19:26:15Z",
+            "hoa_fee": 90,
+            "hoa_historic_fee": true,
+            "last_update": "2020-08-02T14:17:12Z",
+            "broker": {
+                "advertiser_id": 3847718,
+                "name": "Keller Williams Integrity First"
+            },
+            "year_built": 2006,
+            "listing_status": "Active",
+            "beds": 4,
+            "description": "Beautiful 4 bedroom, 3 bathroom home in the Lyons Gate Community. Upgraded kitchen cabinets, gas appliances, granite counter tops, Brand New Upgraded Carpet, gorgeous wood like tile throughout downstairs, surround sound, two car garage, covered back patio, professionally paved backyard, large master bedroom, master bathroom with dual vanities and large walk-in closet are just a few of the features/upgrades that this home includes. With no yard-work required, you'll have plenty of time to take advantage of all of the amenities this community has to offer, including: basketball courts, large playground, grassy common areas, dog park, and a community pool/spa. Come check it out!",
+            "baths_full": 3,
+            "stories": 2,
+            "schools": [
+                {
+                    "nces_id": "040378001392",
+                    "id": "075725341",
+                    "greatschools_id": "0400775",
+                    "name": "Higley Traditional Academy",
+                    "education_levels": [
+                        "elementary",
+                        "middle"
+                    ],
+                    "funding_type": "public",
+                    "lat": 33.309901,
+                    "lon": -111.718273,
+                    "student_count": 662,
+                    "student_teacher_ratio": 17.9,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85295",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "3391 East Vest Avenue"
+                    },
+                    "phone": "(480) 279-6800",
+                    "distance_in_miles": 0.9,
+                    "grades": {
+                        "range": {
+                            "low": "PK",
+                            "high": "8"
+                        }
+                    },
+                    "relevance": "assigned",
+                    "ratings": {
+                        "great_schools_rating": 8,
+                        "parent_rating": 4
+                    }
+                },
+                {
+                    "nces_id": "040378002805",
+                    "id": "075765711",
+                    "greatschools_id": "0403600",
+                    "name": "Chaparral Elementary School",
+                    "education_levels": [
+                        "elementary",
+                        "middle"
+                    ],
+                    "funding_type": "public",
+                    "lat": 33.300542,
+                    "lon": -111.717358,
+                    "student_count": 876,
+                    "student_teacher_ratio": 20.5,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85295",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "3380 East Frye Road"
+                    },
+                    "phone": "(480) 279-7900",
+                    "distance_in_miles": 1.4,
+                    "grades": {
+                        "range": {
+                            "low": "K",
+                            "high": "8"
+                        }
+                    },
+                    "relevance": "assigned",
+                    "ratings": {
+                        "great_schools_rating": 7,
+                        "parent_rating": 5
+                    }
+                },
+                {
+                    "nces_id": "040378002835",
+                    "id": "075767301",
+                    "greatschools_id": "0403711",
+                    "name": "Williams Field High School",
+                    "education_levels": [
+                        "high"
+                    ],
+                    "funding_type": "public",
+                    "lat": 33.313872,
+                    "lon": -111.721989,
+                    "student_count": 1753,
+                    "student_teacher_ratio": 23.4,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85295",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "2076 South Higley Road"
+                    },
+                    "phone": "(480) 279-8000",
+                    "distance_in_miles": 0.6,
+                    "grades": {
+                        "range": {
+                            "low": "9",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "assigned",
+                    "ratings": {
+                        "great_schools_rating": 8,
+                        "parent_rating": 3
+                    }
+                },
+                {
+                    "nces_id": "040090803439",
+                    "id": "075812161",
+                    "greatschools_id": "0406853",
+                    "name": "Pieceful Solutions Charter School",
+                    "education_levels": [
+                        "elementary"
+                    ],
+                    "funding_type": "public",
+                    "lat": 33.322903,
+                    "lon": -111.71875,
+                    "student_count": 36,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85296",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "1515 South Higley Road"
+                    },
+                    "phone": "(480) 309-4792",
+                    "distance_in_miles": 0.8,
+                    "grades": {
+                        "range": {
+                            "low": "K",
+                            "high": "5"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": null,
+                        "parent_rating": null
+                    }
+                },
+                {
+                    "nces_id": "040378003381",
+                    "id": "075811211",
+                    "greatschools_id": "0406785",
+                    "name": "Cooley Middle School",
+                    "education_levels": [
+                        "middle"
+                    ],
+                    "funding_type": "public",
+                    "lat": 33.330471,
+                    "lon": -111.70738,
+                    "student_count": 844,
+                    "student_teacher_ratio": 20,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85296",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "1100 South Recker Road"
+                    },
+                    "phone": "(480) 279-7000",
+                    "distance_in_miles": 1.7,
+                    "grades": {
+                        "range": {
+                            "low": "7",
+                            "high": "8"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": 7,
+                        "parent_rating": 4
+                    }
+                },
+                {
+                    "nces_id": "040973102785",
+                    "id": "075791321",
+                    "greatschools_id": "0405393",
+                    "name": "Evit - Williams Field High School",
+                    "education_levels": [
+                        "high"
+                    ],
+                    "funding_type": "public",
+                    "lat": 33.31422,
+                    "lon": -111.721924,
+                    "student_count": 0,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85295",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "2076 South Higley Road"
+                    },
+                    "phone": "(480) 461-4000",
+                    "distance_in_miles": 0.6,
+                    "grades": {
+                        "range": {
+                            "low": "9",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": null,
+                        "parent_rating": null
+                    }
+                },
+                {
+                    "nces_id": "A9700116",
+                    "id": "075748741",
+                    "greatschools_id": "0402413",
+                    "name": "Gilbert Christian Schools",
+                    "education_levels": [
+                        "elementary",
+                        "middle",
+                        "high"
+                    ],
+                    "funding_type": "private",
+                    "lat": 33.324254,
+                    "lon": -111.727544,
+                    "student_count": 608,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85296",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "3632 East Jasper Drive - High School campus"
+                    },
+                    "phone": "(480) 699-1215",
+                    "distance_in_miles": 0.5,
+                    "grades": {
+                        "range": {
+                            "low": "PK",
+                            "high": "12"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": null,
+                        "parent_rating": 4
+                    }
+                },
+                {
+                    "nces_id": "9d1962ac44971fe853a2de0b0a1d0f44",
+                    "id": "075800361",
+                    "greatschools_id": "0406027",
+                    "name": "Creo Montessori School",
+                    "education_levels": [
+                        "elementary"
+                    ],
+                    "funding_type": "private",
+                    "lat": 33.323784,
+                    "lon": -111.719398,
+                    "location": {
+                        "city_slug_id": "Gilbert_AZ",
+                        "postal_code": "85296",
+                        "state": "AZ",
+                        "county": "Maricopa",
+                        "city": "Gilbert",
+                        "street": "1475 S Higley Rd"
+                    },
+                    "phone": "(480) 208-0256",
+                    "distance_in_miles": 0.8,
+                    "grades": {
+                        "range": {
+                            "low": "PK",
+                            "high": "5"
+                        }
+                    },
+                    "relevance": "nearby",
+                    "ratings": {
+                        "great_schools_rating": null,
+                        "parent_rating": 4
+                    }
+                }
+            ],
+            "garage": "2",
+            "heating": "Unknown",
+            "cooling": "Refrigerator",
+            "feature_tags": [
+                "laundry_room",
+                "recreation_facilities",
+                "community_swimming_pool",
+                "two_or_more_stories",
+                "garage_1_or_more",
+                "garage_2_or_more",
+                "updated_kitchen",
+                "basketball_court",
+                "master_bathroom",
+                "master_bedroom",
+                "multi_storey",
+                "garage_1",
+                "garage_2"
+            ],
+            "branding": {
+                "listing_agent": {
+                    "photo_attribution": {
+                        "name": "Shelsi Guthrie",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    },
+                    "details": {
+                        "name": "Shelsi Guthrie",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": true,
+                        "link": "/realestateagents/Shelsi-Guthrie_Gilbert_AZ_1264366_613779258",
+                        "accent_color": null
+                    }
+                },
+                "listing_office": {
+                    "photo_attribution": {
+                        "name": "Keller Williams Integrity First",
+                        "photo": null,
+                        "phone": null,
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    },
+                    "details": {
+                        "name": "Keller Williams Integrity First",
+                        "photo": null,
+                        "phone": "(480) 225-7445",
+                        "slogan": null,
+                        "show_realtor_logo": false,
+                        "link": null,
+                        "accent_color": null
+                    }
+                }
+            },
+            "address": {
+                "city": "Gilbert",
+                "line": "2721 E Bart St",
+                "postal_code": "85295",
+                "address_validation_code": "121",
+                "state_code": "AZ",
+                "state": "Arizona",
+                "county": "Maricopa",
+                "fips_code": "04013",
+                "time_zone": "America/Phoenix",
+                "lat": 33.317596,
+                "lon": -111.731726,
+                "neighborhood_name": "Lyons Gate",
+                "neighborhoods": [
+                    {
+                        "name": "Lyons Gate",
+                        "city": "Gilbert",
+                        "state_code": "AZ",
+                        "level": "neighborhood",
+                        "id": "2"
+                    }
+                ]
+            },
+            "features": [
+                {
+                    "category": "Interior Features",
+                    "parent_category": "Interior",
+                    "text": [
+                        "9+ Flat Ceilings",
+                        "Flooring: Carpet, Tile"
+                    ]
+                },
+                {
+                    "category": "Bedrooms",
+                    "parent_category": "Interior",
+                    "text": [
+                        "Bedrooms: 4",
+                        "Master Bedroom Features: Upstairs"
+                    ]
+                },
+                {
+                    "category": "Bathrooms",
+                    "parent_category": "Interior",
+                    "text": [
+                        "Total Bathrooms: 3.00",
+                        "Full Bathrooms: 3",
+                        "Master Bathroom Description: Full Bth Master Bdrm, Private Toilet Room"
+                    ]
+                },
+                {
+                    "category": "Kitchen and Dining",
+                    "parent_category": "Interior",
+                    "text": [
+                        "Built-in Microwave",
+                        "Dishwasher",
+                        "Granite Countertops",
+                        "Pantry",
+                        "Range/Oven Gas",
+                        "Refrigerator"
+                    ]
+                },
+                {
+                    "category": "Appliances",
+                    "parent_category": "Interior",
+                    "text": [
+                        "Laundry Facilities: Dryer Included, Washer Included"
+                    ]
+                },
+                {
+                    "category": "Heating and Cooling",
+                    "parent_category": "Interior",
+                    "text": [
+                        "Cooling Features: Refrigeration",
+                        "Heating Features: Gas Heat"
+                    ]
+                },
+                {
+                    "category": "Pool and Spa",
+                    "parent_category": "Exterior",
+                    "text": [
+                        "Pool Features: No Pool"
+                    ]
+                },
+                {
+                    "category": "Exterior and Lot Features",
+                    "parent_category": "Exterior",
+                    "text": [
+                        "Fencing: Block"
+                    ]
+                },
+                {
+                    "category": "Land Info",
+                    "parent_category": "Exterior",
+                    "text": [
+                        "Landscaping: Desert Front, Gravel/Stone Back",
+                        "Lot Size Acres: 0.068618",
+                        "Lot Size Square Feet: 2989"
+                    ]
+                },
+                {
+                    "category": "Garage and Parking",
+                    "parent_category": "Exterior",
+                    "text": [
+                        "Garage Spaces: 2",
+                        "Parking Features: Electric Door Opener"
+                    ]
+                },
+                {
+                    "category": "Homeowners Association",
+                    "parent_category": "Community",
+                    "text": [
+                        "Association: Yes",
+                        "Association Amenities: Prof Managed",
+                        "Association Fee: 90",
+                        "Association Fee Frequency: Monthly",
+                        "Association Fee Includes: Common Area Maint",
+                        "Calculated Total Monthly Association Fees: 90",
+                        "Association Name: city property"
+                    ]
+                },
+                {
+                    "category": "School Information",
+                    "parent_category": "Community",
+                    "text": [
+                        "Elementary School: Higley Traditional Academy",
+                        "Elementary School District: 060 - Higley Unified District",
+                        "High School: Higley High School",
+                        "High School District: 060 - Higley Unified District",
+                        "Middle School: Higley Traditional Academy"
+                    ]
+                },
+                {
+                    "category": "Amenities and Community Features",
+                    "parent_category": "Community",
+                    "text": [
+                        "Community Features: Children's Playgrnd, Community Pool, Community Spa"
+                    ]
+                },
+                {
+                    "category": "Other Property Info",
+                    "parent_category": "Listing",
+                    "text": [
+                        "Annual Tax Amount: 1861.00",
+                        "Source Listing Status: Active",
+                        "County: Maricopa",
+                        "Cross Street: Higley and Ray",
+                        "Directions: GO WEST ON RAY TO CONSTELLATION, TURN SOUTH ON CONSTELLATION, WEST ON DUBLIN, TURN SOUTH ON ROANOKE TO BART. (Home is 2nd one in on your left)",
+                        "Tax Year: 2019",
+                        "Source Property Type: Single Family - Detached",
+                        "Source Neighborhood: LYONS GATE PHASE 1 AND 2",
+                        "Parcel Number: 313.00-13.00-",
+                        "Postal Code Plus 4: 0612",
+                        "Subdivision: LYONS GATE PHASE 1 AND 2",
+                        "Source System Name: C2C"
+                    ]
+                },
+                {
+                    "category": "Building and Construction",
+                    "parent_category": "Features",
+                    "text": [
+                        "Total Square Feet Living: 1, 801-2, 000",
+                        "Year Built: 2006",
+                        "Building Exterior Type: Stucco",
+                        "Construction Materials: Frame - Wood",
+                        "Property Age: 14",
+                        "Roof: Tile",
+                        "Levels or Stories: 2",
+                        "Structure Type: A",
+                        "House Style: Santa Barbara/Tuscan",
+                        "Architectural Style: Detached"
+                    ]
+                },
+                {
+                    "category": "Utilities",
+                    "parent_category": "Features",
+                    "text": [
+                        "Sewer: Sewer - Public",
+                        "Services: City Services",
+                        "Utilities: SRP",
+                        "Cable TV Expense: 6024374777",
+                        "Water Source: City Water"
+                    ]
+                },
+                {
+                    "category": "Legal and finance",
+                    "text": [
+                        "HOA Frequency: Monthly/90",
+                        "HOA fee: $90"
+                    ]
+                }
+            ],
+            "mls": {
+                "name": "ArizonaRegionalMLS",
+                "id": "6111796",
+                "plan_id": null,
+                "abbreviation": "PHAZ",
+                "type": "mls",
+                "disclaimer": {
+                    "photo": null,
+                    "href": null,
+                    "text": "©2020  Arizona Regional Multiple Listing Service, Inc. All rights reserved."
+                }
+            },
+            "client_display_flags": {
+                "presentation_status": "for_sale",
+                "is_showcase": false,
+                "lead_form_phone_required": true,
+                "price_change": 0,
+                "is_co_broke_email": true,
+                "has_open_house": false,
+                "is_foreclosure": false,
+                "is_short_sale": false,
+                "is_co_broke_phone": false,
+                "is_new_listing": true,
+                "is_new_plan": false,
+                "is_new_construction": false,
+                "is_turbo": false,
+                "is_office_standard_listing": false,
+                "suppress_map_pin": false,
+                "show_contact_a_lender_in_lead_form": true,
+                "show_veterans_united_in_lead_form": true,
+                "is_showcase_choice_enabled": false
+            },
+            "tax_history": [
+                {
+                    "assessment": {
+                        "building": 15310,
+                        "land": 3820,
+                        "total": 19130
+                    },
+                    "tax": 1861,
+                    "year": "2019"
+                },
+                {
+                    "assessment": null,
+                    "tax": 1800,
+                    "year": "2018"
+                },
+                {
+                    "assessment": {
+                        "building": 13090,
+                        "land": 3270,
+                        "total": 16360
+                    },
+                    "tax": 1739,
+                    "year": "2017"
+                },
+                {
+                    "assessment": {
+                        "building": 12560,
+                        "land": 3140,
+                        "total": 15700
+                    },
+                    "tax": 1761,
+                    "year": "2016"
+                },
+                {
+                    "assessment": {
+                        "building": 11800,
+                        "land": 2950,
+                        "total": 14750
+                    },
+                    "tax": 1521,
+                    "year": "2015"
+                },
+                {
+                    "assessment": {
+                        "building": 10100,
+                        "land": 2520,
+                        "total": 12620
+                    },
+                    "tax": 1495,
+                    "year": "2014"
+                },
+                {
+                    "assessment": {
+                        "building": 8710,
+                        "land": 2170,
+                        "total": 10880
+                    },
+                    "tax": 1416,
+                    "year": "2013"
+                },
+                {
+                    "assessment": {
+                        "building": 8870,
+                        "land": 2210,
+                        "total": 11080
+                    },
+                    "tax": 1192,
+                    "year": "2012"
+                },
+                {
+                    "assessment": {
+                        "building": 9760,
+                        "land": 2440,
+                        "total": 12200
+                    },
+                    "tax": 1214,
+                    "year": "2011"
+                },
+                {
+                    "assessment": null,
+                    "tax": 1120,
+                    "year": "2010"
+                },
+                {
+                    "assessment": {
+                        "building": 14440,
+                        "land": 3610,
+                        "total": 18050
+                    },
+                    "tax": 1347,
+                    "year": "2009"
+                },
+                {
+                    "assessment": {
+                        "building": 17280,
+                        "land": 4320,
+                        "total": 21600
+                    },
+                    "tax": 1456,
+                    "year": "2008"
+                }
+            ],
+            "sold_history": [
+                {
+                    "date": "2013-10-31T07:00:00Z",
+                    "source": "public record",
+                    "listing": {
+                        "price": 185000
+                    }
+                },
+                {
+                    "date": "2010-04-27T07:00:00Z",
+                    "source": "public record",
+                    "listing": {
+                        "price": 148000
+                    }
+                },
+                {
+                    "date": "2006-10-20T07:00:00Z",
+                    "source": "public record",
+                    "listing": {
+                        "price": 263615
+                    }
+                }
+            ],
+            "property_history": [
+                {
+                    "event_name": "Listed",
+                    "date": "2020-08-02T17:00:00Z",
+                    "price": 309888,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #6111796"
+                },
+                {
+                    "event_name": "Sold",
+                    "date": "2013-10-31T17:00:00Z",
+                    "price": 185000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1884,
+                    "datasource_name": "",
+                    "source": "Public Record"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2013-09-21T17:00:00Z",
+                    "price": 194900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -100,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2013-09-12T17:00:00Z",
+                    "price": 195000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -4900,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2013-09-09T17:00:00Z",
+                    "price": 199900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -5000,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2013-09-01T17:00:00Z",
+                    "price": 204900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -100,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2013-08-22T17:00:00Z",
+                    "price": 205000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -3000,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2013-08-14T17:00:00Z",
+                    "price": 208000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -2000,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Listed",
+                    "date": "2013-08-03T17:00:00Z",
+                    "price": 210000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4977642"
+                },
+                {
+                    "event_name": "Sold",
+                    "date": "2010-04-27T17:00:00Z",
+                    "price": 148000,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1884,
+                    "datasource_name": "",
+                    "source": "Public Record"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2010-03-25T17:00:00Z",
+                    "price": 149900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -10000,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4305586"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2010-02-24T17:00:00Z",
+                    "price": 159900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -5000,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4305586"
+                },
+                {
+                    "event_name": "Price Changed",
+                    "date": "2010-01-07T17:00:00Z",
+                    "price": 164900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": -5000,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4305586"
+                },
+                {
+                    "event_name": "Listed",
+                    "date": "2009-12-15T17:00:00Z",
+                    "price": 169900,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1884,
+                    "datasource_name": "ArizonaRegionalMLS",
+                    "source": "MLS #4305586"
+                },
+                {
+                    "event_name": "Sold",
+                    "date": "2006-10-20T17:00:00Z",
+                    "price": 263615,
+                    "price_range_min": null,
+                    "price_range_max": null,
+                    "price_changed": 0,
+                    "sqft": 1884,
+                    "datasource_name": "",
+                    "source": "Public Record"
+                }
+            ],
+            "public_records": [
+                {
+                    "baths": 3,
+                    "baths_1qtr": null,
+                    "baths_3qtr": null,
+                    "baths_full": null,
+                    "baths_half": null,
+                    "beds": null,
+                    "construction": null,
+                    "cooling": "Refrigerator",
+                    "cl_id": "18D1900C96805B2D47EE32F1DAEDB521",
+                    "date_updated": "06/19/2020",
+                    "distinct_baths": 3,
+                    "exterior1": "Frame/Wood",
+                    "exterior2": null,
+                    "fireplace": null,
+                    "garage": null,
+                    "garage_spaces": null,
+                    "heating": "Unknown",
+                    "lot_size": 2989,
+                    "pool": null,
+                    "prop_type": "single_family",
+                    "roofing": "Concrete Tile",
+                    "rooms": null,
+                    "sqft": 1884,
+                    "stories": 2,
+                    "style": null,
+                    "units": null,
+                    "view": null,
+                    "year_built": 2006,
+                    "year_renovated": null,
+                    "zoning": "SF-D"
+                }
+            ],
+            "products": [
+                "core.agent",
+                "co_broke"
+            ],
+            "office": {
+                "name": "Keller Williams Integrity First",
+                "advertiser_id": 2938548,
+                "mls_set": "O-PHAZ-KWIF10",
+                "href": null,
+                "photo": {
+                    "href": ""
+                },
+                "email": "jimkellander@kw.com",
+                "slogan": "",
+                "phones": [
+                    {
+                        "number": "480-225-7445",
+                        "type": "home",
+                        "primary": true
+                    }
+                ],
+                "address": {
+                    "city": "MESA",
+                    "state_code": "AZ"
+                },
+                "mls_membership": {
+                    "member": {
+                        "office_system_id": "KWIF10"
+                    }
+                },
+                "id": "4c47b30409c72913a10ff5ed149e7282"
+            },
+            "agents": [
+                {
+                    "name": "Shelsi Guthrie",
+                    "profile_name": "Shelsi Guthrie",
+                    "advertiser_id": "1264366",
+                    "href": "",
+                    "photo": {
+                        "href": "https://p.rdcpix.com/v01/aee4a1300-c0l.jpg"
+                    },
+                    "nrds_id": "147022683",
+                    "nrds_verified_id": "147022683",
+                    "nrds_verification_method": "Claimed",
+                    "office_name": "Keller Williams Integrity First",
+                    "email": "shelsiguthrie@gmail.com",
+                    "slogan": "",
+                    "mls_memberships": {
+                        "member": {
+                            "agent_system_id": "SG343",
+                            "name": "Shelsi Guthrie",
+                            "office_system_id": "KWIF10",
+                            "id": "SG343",
+                            "abbreviation": "PHAZ"
+                        }
+                    },
+                    "id": "1264366",
+                    "primary": true
+                }
+            ],
+            "lead_forms": {
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "show": true
+                },
+                "show_agent": false,
+                "show_broker": false,
+                "show_builder": false,
+                "show_contact_a_lender": true,
+                "show_veterans_united": true,
+                "form_type": "classic",
+                "lead_type": "co_broke",
+                "is_lcm_enabled": false,
+                "flip_the_market_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false
+            },
+            "lot_size": {
+                "size": 2989,
+                "units": "sqft"
+            },
+            "building_size": {
+                "size": 1884,
+                "units": "sqft"
+            },
+            "price": 309888,
+            "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/2721-E-Bart-St_Gilbert_AZ_85295_M24030-20218",
+            "rdc_app_url": "move-rdc://www.realtor.com/realestateandhomes-detail/2721-E-Bart-St_Gilbert_AZ_85295_M24030-20218",
+            "baths": 3,
+            "photo_count": 46,
+            "raw": {
+                "status": "Active",
+                "style": [
+                    "Santa Barbara/Tuscan"
+                ],
+                "tax_amount": 1861
+            },
+            "photo_attribution": [
+                "Presented by Shelsi Guthrie with Keller Williams Integrity First"
+            ],
+            "mortgage": {
+                "rates_url": "https://www.realtor.com/mortgage/rates/?from=mobile#zip=85295&property_price=309888&mlid=2919341957",
+                "estimate": {
+                    "loan_amount": 247910,
+                    "rate": 3.191,
+                    "term": 30,
+                    "monthly_payment": 1393,
+                    "principal_and_interest": 1071,
+                    "monthly_property_taxes": 155,
+                    "monthly_home_insurance": 77,
+                    "hoa_fees": 90,
+                    "monthly_mortgage_insurance": 0,
+                    "total_payment": 385528,
+                    "down_payment": 61978
+                }
+            },
+            "data_source_name": "mls",
+            "trend": {
+                "listing_count": {
+                    "for_sale": 59,
+                    "rental": 17,
+                    "sold": 27
+                },
+                "active_listing_count": 59,
+                "asking_to_sold_price_percent_change": 0,
+                "median": {
+                    "age_days": 45,
+                    "listing_price": 345400,
+                    "listing_price_sqft": 167,
+                    "rental_listing_price": null,
+                    "closing_price": 333000,
+                    "by_prop_type": {
+                        "single_family": {
+                            "listing_price": 345400,
+                            "closing_price": 333000
+                        },
+                        "multi_family": {
+                            "listing_price": null,
+                            "closing_price": null
+                        },
+                        "condo_townhome_rowhome_coop": {
+                            "listing_price": null,
+                            "closing_price": null
+                        },
+                        "condos": {
+                            "listing_price": null,
+                            "closing_price": null
+                        },
+                        "townhomes": {
+                            "listing_price": null,
+                            "closing_price": null
+                        }
+                    }
+                },
+                "hotmarket_rank": null,
+                "hotmarket_index": null,
+                "sales_to_inventory_count_percent": 45.76,
+                "sales_to_inventory_count_percent_market_type": "seller",
+                "hotmarket_temperature": null,
+                "year": 2020,
+                "month": 6,
+                "geo": {
+                    "state_code": "AZ",
+                    "city": "Gilbert",
+                    "neighborhood": "Lyons Gate"
+                }
+            },
+            "detail_tracking": "type|property|data|prop_id|2403020218|list_id|2919341957|address|city|Gilbert|state|AZ|postal|85295|neighborhood|Lyons+Gate|county|Maricopa|mls|id|6111796|abbr|PHAZ|price|detail_branding|listing_agent|listing_office|data_source|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^6N40|4AV5|FSX|R3LA|1QZEC|2AGX2|35T|9HS|1^^$0|1|2|$3|4|5|6|7|$8|9|A|B|C|D|E|F|G|H]|I|$J|K|L|M]|N|Z|O|$P|10|Q|11]|R|I|S|$T|12|U|13|V|14]|W|15|X|16|Y|17]]",
+            "photos": [
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m605312108x.jpg",
+                    "tags": [
+                        {
+                            "label": "house_view",
+                            "probability": 0.9507750272750854
+                        },
+                        {
+                            "label": "road_view",
+                            "probability": 0.043716754764318466
+                        },
+                        {
+                            "label": "porch_yard",
+                            "probability": 0.004454373847693205
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m224705989x.jpg",
+                    "tags": [
+                        {
+                            "label": "porch",
+                            "probability": 0.8762860298156738
+                        },
+                        {
+                            "label": "road_view",
+                            "probability": 0.10029102116823196
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0065044197253882885
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1331503509x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.9079774022102356
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.051897864788770676
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.026749370619654655
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1995517993x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.5491933822631836
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.4471476972103119
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.002018263563513756
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m734748646x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.9645248651504517
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.027763165533542633
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.007481107022613287
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m734748646x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.996764063835144
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.0019858733285218477
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.0010635373182594776
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m4207816949x.jpg",
+                    "tags": [
+                        {
+                            "label": "living_room",
+                            "probability": 0.5177741646766663
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.43937453627586365
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.04250910133123398
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m4076850187x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.7213184833526611
+                        },
+                        {
+                            "label": "dining_room",
+                            "probability": 0.2760639488697052
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.0015042651211842895
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m418675775x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.6746308207511902
+                        },
+                        {
+                            "label": "dining_room",
+                            "probability": 0.3219330906867981
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.0024346979334950447
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2758893699x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9103522300720215
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.08898483961820602
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.0003801477432716638
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m442194271x.jpg",
+                    "tags": [
+                        {
+                            "label": "kitchen",
+                            "probability": 0.9999563694000244
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.000039206493966048583
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.0000029530740448535653
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m292200070x.jpg",
+                    "tags": [
+                        {
+                            "label": "kitchen",
+                            "probability": 0.9999897480010986
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.000009825244887906592
+                        },
+                        {
+                            "label": "dining_room",
+                            "probability": 1.2832363438519678e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2783100087x.jpg",
+                    "tags": [
+                        {
+                            "label": "kitchen",
+                            "probability": 0.9422956705093384
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.05768149718642235
+                        },
+                        {
+                            "label": "dining_room",
+                            "probability": 0.000006339085302897729
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m719459792x.jpg",
+                    "tags": [
+                        {
+                            "label": "kitchen",
+                            "probability": 0.9952612519264221
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.004731425549834967
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.00000206131244340213
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m417349802x.jpg",
+                    "tags": [
+                        {
+                            "label": "kitchen",
+                            "probability": 0.9994822144508362
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.0002932373317889869
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.00017971728811971843
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1341790415x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9017302393913269
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.08708050101995468
+                        },
+                        {
+                            "label": "kitchen",
+                            "probability": 0.005921351723372936
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2925196105x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9874362945556641
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.012445847503840923
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.00004526148404693231
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3820453968x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.944401204586029
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.055105164647102356
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.00030043930746614933
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2923666311x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9992200136184692
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0007788703660480678
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 9.373177363158902e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3917702870x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9979473948478699
+                        },
+                        {
+                            "label": "kitchen",
+                            "probability": 0.0012223171070218086
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0006243184325285256
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m4087660260x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999285936355591
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.00005289341424941085
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.000013210446013545152
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m875652540x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.9998189806938171
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.00011314876610413194
+                        },
+                        {
+                            "label": "dining_room",
+                            "probability": 0.000020532026610453613
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3164640224x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.9997832179069519
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.00015061417070683092
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.000048648180381860584
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3392844626x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.8203228712081909
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.1430502086877823
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.025412682443857193
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2538750525x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.5736820697784424
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.4070388376712799
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.019171200692653656
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1168060073x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.994952917098999
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.003478044643998146
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.0015677895862609148
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m544145932x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9994602799415588
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0005308683030307293
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.000008803662240097765
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m567027363x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9996858835220337
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.00031009677331894636
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 0.000004079796781297773
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3083221895x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999796152114868
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.000007187496521510184
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0000070306737143255305
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3347906574x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999935626983643
+                        },
+                        {
+                            "label": "bedroom",
+                            "probability": 0.000003969511908508139
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.000001898211507977976
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m919954926x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999949932098389
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0000046610352910647634
+                        },
+                        {
+                            "label": "yard",
+                            "probability": 9.953294011211256e-8
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2033529072x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.6574265360832214
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.3387147784233093
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.002909817034378648
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2380149022x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.9866895079612732
+                        },
+                        {
+                            "label": "kitchen",
+                            "probability": 0.006311738397926092
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.005251184105873108
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1283157991x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9835889339447021
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.015251421369612217
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.000637014047242701
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3493067279x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9983545541763306
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0016429641982540488
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.0000010728720098995836
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1796224367x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9998563528060913
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.00014345080126076937
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 1.0068282563224784e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3298289450x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9994320273399353
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0005674181156791747
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 3.1559022772853496e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1658197278x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9795095324516296
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.020477458834648132
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.00000596766540184035
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1832797038x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.999993085861206
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.000006894300895510241
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 4.5780236490600146e-8
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1470867453x.jpg",
+                    "tags": [
+                        {
+                            "label": "bedroom",
+                            "probability": 0.9988916516304016
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0011069229803979397
+                        },
+                        {
+                            "label": "living_room",
+                            "probability": 8.532360311619414e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m805054249x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9996123909950256
+                        },
+                        {
+                            "label": "kitchen",
+                            "probability": 0.00028723932337015867
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.00006730223685735837
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1741507909x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999923706054688
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.000006470510470535373
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 6.136842785053886e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m3097452162x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999967813491821
+                        },
+                        {
+                            "label": "kitchen",
+                            "probability": 0.0000016303469010381377
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 7.725009254500037e-7
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2697063896x.jpg",
+                    "tags": [
+                        {
+                            "label": "bathroom",
+                            "probability": 0.9999443292617798
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.0000482049144920893
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.000005948605576122645
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m1194693707x.jpg",
+                    "tags": [
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.742229700088501
+                        },
+                        {
+                            "label": "unknown",
+                            "probability": 0.23366409540176392
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.02350097894668579
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                },
+                {
+                    "description": "",
+                    "href": "https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m4208977447x.jpg",
+                    "tags": [
+                        {
+                            "label": "unknown",
+                            "probability": 0.9070737361907959
+                        },
+                        {
+                            "label": "bathroom",
+                            "probability": 0.0576380118727684
+                        },
+                        {
+                            "label": "laundry_room",
+                            "probability": 0.02874015085399151
+                        }
+                    ],
+                    "type": "realtordotcom_mls_listing_image"
+                }
+            ]
+        }
+    ]
+}
