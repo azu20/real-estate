@@ -30,7 +30,7 @@ const SearchForm = (props) => {
                 </MDBCol>
                 <MDBCol md="2">
                     <div className="box">
-                        <h5 className="text-center">Maximum Bedrooms</h5>
+                        <h5 className="text-center">Minimum Bathrooms</h5>
                         <select placeholder="1">
                             <option selected>0</option>
                             <option>1</option>
@@ -43,7 +43,7 @@ const SearchForm = (props) => {
                 </MDBCol>
                 <MDBCol md="2">
                     <div className="box">
-                        <h5 className="text-center">Minimum Bathrooms</h5>
+                        <h5 className="text-center">Minimum SqFt</h5>
                         <select>
                         <option selected>0</option>
                             <option>1</option>
