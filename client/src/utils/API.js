@@ -84,7 +84,7 @@ export default {
     });
     return response;
   },
-  search: (city, stateCode ) => axios({
+  search: (city, stateCode, beds, priceMin, baths, priceMax, sqft  ) => axios({
     "method":"GET",
     "url":"https://realtor.p.rapidapi.com/properties/v2/list-for-sale",
     "headers":{
@@ -93,7 +93,12 @@ export default {
     "x-rapidapi-key":"11822a79cbmsh84f65be3e3c1181p1b273ejsn677317876206",
     "useQueryString":true
     },"params":{
+    "beds_min":beds,
+    "price_min":priceMin,
     "sort":"relevance",
+    "baths_min":baths,
+    "price_max":priceMax,
+    "sqft_min":sqft,
     "city":city,
     "limit":"10",
     "offset":"0",
