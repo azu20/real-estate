@@ -104,12 +104,16 @@ class MainPage extends Component {
 
                                         <CardHomeInfo
                                             address={property.address.line}
+                                            city={property.address.city}
+                                            state={property.address.state}
+                                            zip={property.address.postal_code}
                                             price={property.price}
                                             src={property.thumbnail}
                                             bedrooms={property.beds}
                                             bathrooms={property.baths}
                                             email={this.props.user.email}
-                                        // sqft={property.building_size}
+                                            property_id={property.property_id}
+                                            sqft={property.building_size.size}
                                         />
                                     </MDBCol>
                                 ))}

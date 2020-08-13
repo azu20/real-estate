@@ -29,6 +29,7 @@ class CardHomeInfo extends Component {
       this.setState({ isFavorite: true });
 
       //make API call for details, need property id
+      //this.props.property_id
       //then send all info to db
 
       let property = {
@@ -36,9 +37,14 @@ class CardHomeInfo extends Component {
         listPrice: this.props.price,
         image: this.props.src,
         bedroom: this.props.bedrooms,
-        bathroom: this.props.bathrooms
+        bathroom: this.props.bathrooms,
+        city: this.props.city,
+        state: this.props.state,
+        zipcode: this.props.zip,
+        
 
         //**will need  property model updates */
+        // listing_id: this.props.property_id
         // email: this.props.email
         // photoGallery: result
         // extendedDetails: result
@@ -85,9 +91,11 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
-              <MDBCardTitle>{this.props.address}</MDBCardTitle>
-              <MDBCardText>Price: ${this.props.price} |  Beds:{this.props.bedrooms} | Baths:{this.props.bathrooms} | Sqft:{this.props.sqft}</MDBCardText>
-              <MDBBtn href="#">Save Home</MDBBtn>
+              <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
+              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} | Sqft: {this.props.sqft}</MDBCardText>
+              <MDBCardText>{this.props.address} </MDBCardText>
+              <MDBCardText>{this.props.city}, {this.props.state} {this.props.zip}</MDBCardText>
+              {/* <MDBBtn href="#">Save Home</MDBBtn> */}
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
