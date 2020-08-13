@@ -10,6 +10,7 @@ import ConditionalPage from "./components/InvisiblePage/InvisiblePage"
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
 import Home from "../src/components/Home/Home";
+import UserDetails from './Pages/UserDetails/UserDetails';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route exact path ="/main" component={MainPage}/>
         <Route exact path = "/favorites" component={Favorites}/>
         <Route exact path = "/adminarea" component={AdminArea}/>
+        <Route exact path = "/userdetails" component={UserDetails}/>
       </Router>
     </>
   );

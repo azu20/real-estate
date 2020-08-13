@@ -14,7 +14,6 @@
 /* .chartsCol  {
   margin: 20px;
 } */
-
 .topProperties {
   color: black;
   text-align: center;
@@ -24,3 +23,16 @@
   color: black;
   text-align: center;
 }
+
+.MDBListGroupItem  {
+  color: black;
+  text-align: center;
+}
+
+.col-md-4 {
+  padding: 1rem;
+  /* background-color: #f5efef; */
+  border: 2px;
+  color: blue;
+  text-align: center;
+  }

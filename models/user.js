@@ -28,7 +28,8 @@ const userSchema = new Schema({
   }
 ],
   registrationDate: { type: Date, default: Date.now }, 
-  updateDate: { type: Date, default: Date.now }
+  updateDate: { type: Date, default: Date.now },
+  lastLogin:  { type: Date, default: Date.now, required: true} 
 });
 
 const User = mongoose.model("User", userSchema);
