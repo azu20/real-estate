@@ -33,8 +33,6 @@ module.exports = {
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-      console.log ("show req.body", req.body);
-      console.log("console log response", res.body)
   },
   updateProperty: function (req, res) {
     db.Property
