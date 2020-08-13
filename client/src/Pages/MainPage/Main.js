@@ -3,10 +3,8 @@ import SearchForm from "../../components/searchform/SearchForm.js";
 import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
-
 import MapContainer from "../../components/MapContainer/MapContainer"
 import "./Main.css"
-import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
 import Contact from "../../components/Contact/Contact";
 import API from "../../utils/API";
 
