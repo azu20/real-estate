@@ -4,12 +4,8 @@ import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 
-import MapContainer from "../../components/MapContainer/MapContainer"
 import "./Main.css"
-// import LogoutButton from "../../components/LogoutButton/LogoutButton";
-// import { withAuthenticationRequired } from '@auth0/auth0-react';
-import Contact from "../../components/Contact/Contact"
-import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
+
 import Contact from "../../components/Contact/Contact";
 // import API from "../../utils/API";
 
@@ -49,24 +45,6 @@ class MainPage extends Component {
         API.search(city,stateCode, beds, priceMin, baths, priceMax, sqft)
             .then(data => this.setState({ result: data.data.properties }))
             .catch(err => console.log(err));
-
-        // let stateCodeArr = query.split(",");
-        // let stateCode = stateCodeArr[1];
-        // let city = stateCodeArr[0];
-        // API.search(city,stateCode)
-        //     .then(data => this.setState({ result: data.data.properties }))
-        //     .catch(err => console.log(err));
-
-        // #######using this static list of properties for testing 
-        // console.log(TestAPIData.properties);
-        this.setState({result: TestAPIData.properties})
-        // let stateCodeArr = query.split(", ");
-        // let stateCode = stateCodeArr[1];
-        // let city = stateCodeArr[0];
-        // API.search(city,stateCode)
-        //     .then(data => this.setState({ result: data.data.properties }))
-        //     .catch(err => console.log(err));
-
     };
 
     handleInputChange = event => {
