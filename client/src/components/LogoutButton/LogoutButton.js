@@ -4,8 +4,9 @@ import { MDBBtn } from "mdbreact";
 
 const LogoutButton = () => {
   const { logout } = useAuth0();
+  const navColor = {backgroundColor:'#8B0000' }
 
-  return <MDBBtn color="elegant" 
+  return <MDBBtn color="elegant"
             type="submit"
             onClick={() => logout({ returnTo: window.location.origin, })}>
               Logout
