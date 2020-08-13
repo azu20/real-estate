@@ -6,9 +6,10 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
 
   return <MDBBtn color="elegant" 
-            // type="submit"
-            // onClick={() => logout({ returnTo: window.location.origin, })}>
-            onClick={() => logout()}>Log Out
+            type="submit"
+            onClick={() => logout({ returnTo: window.location.origin, })}>
+              Logout
+            {/* onClick={() => logout()}>Log Out */}
         </MDBBtn>;
 };
 
