@@ -8,25 +8,27 @@ import MapContainer from "../../components/MapContainer/MapContainer"
 import "./Main.css"
 import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
 import Contact from "../../components/Contact/Contact";
-// import API from "../../utils/API";
+import API from "../../utils/API";
 
 
 
 
 class MainPage extends Component {
-    state = {
-        result: [],
-        search: "Denver",
-
-        selectedBed: null,
-        selectedBath:null,
-        selectedMax:null,
-        selectedMin:null,
-        selectedSqFt:null
-
+    constructor(props) {
+        super(props)
+        this.state = {
+            result: [],
+            search: "Denver",
+    
+            selectedBed: null,
+            selectedBath:null,
+            selectedMax:null,
+            selectedMin:null,
+            selectedSqFt:null
+          
+           };
     };
 
-       };
 
 
     componentDidMount() {
@@ -47,23 +49,8 @@ class MainPage extends Component {
             .then(data => this.setState({ result: data.data.properties }))
             .catch(err => console.log(err));
 
-        // let stateCodeArr = query.split(",");
-        // let stateCode = stateCodeArr[1];
-        // let city = stateCodeArr[0];
-        // API.search(city,stateCode)
-        //     .then(data => this.setState({ result: data.data.properties }))
-        //     .catch(err => console.log(err));
-
-        // #######using this static list of properties for testing 
-        // console.log(TestAPIData.properties);
-        this.setState({result: TestAPIData.properties})
-        // let stateCodeArr = query.split(", ");
-        // let stateCode = stateCodeArr[1];
-        // let city = stateCodeArr[0];
-        // API.search(city,stateCode)
-        //     .then(data => this.setState({ result: data.data.properties }))
-        //     .catch(err => console.log(err));
-
+        //this.setState({result: TestAPIData.properties})
+ 
     };
 
     handleInputChange = event => {
