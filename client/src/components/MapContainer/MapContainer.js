@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol,MDBIcon } from 'mdbreact';
+import {  MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol,MDBIcon } from 'mdbreact';
 
 import "./MapContainer.css"
 // import CardHomeInfo from "../CardHomeInfo/CardHomeInfo"
@@ -10,8 +10,8 @@ const MapContainer = (props) => {
 
     // const [center] = useState([39.7392, -104.9903])
     
-    const position = props.properties[0];
-    console.log(position);
+    // const position = props.properties[0];
+    // console.log(position);
     
     
     

@@ -3,13 +3,16 @@ import SearchForm from "../../components/searchform/SearchForm.js";
 import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
-import MapContainer from "../../components/MapContainer/MapContainer";
+
+import MapContainer from "../../components/MapContainer/MapContainer"
+import "./Main.css"
+// import LogoutButton from "../../components/LogoutButton/LogoutButton";
+// import { withAuthenticationRequired } from '@auth0/auth0-react';
+import Contact from "../../components/Contact/Contact"
 import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
-import "./Main.css";
-import LogoutButton from "../../components/LogoutButton/LogoutButton";
-import { withAuthenticationRequired } from '@auth0/auth0-react';
 import Contact from "../../components/Contact/Contact";
 // import API from "../../utils/API";
+
 
 
 
@@ -17,7 +20,17 @@ class MainPage extends Component {
     state = {
         result: [],
         search: "Denver",
+
+        selectedBed: null,
+        selectedBath:null,
+        selectedMax:null,
+        selectedMin:null,
+        selectedSqFt:null
+
+    };
+
        };
+
 
     componentDidMount() {
         this.searchHouses("Denver, CO");
@@ -25,6 +38,18 @@ class MainPage extends Component {
     }
 
     searchHouses = (query) => {
+        let stateCodeArr = query.split(", ");
+        let stateCode = stateCodeArr[1];
+        let city = stateCodeArr[0];
+        let beds = this.state.selectedBed;
+        let baths = this.state.selectedBath;
+        let priceMin = this.state.selectedMin;
+        let priceMax = this.state.selectedMax;
+        let sqft = this.state.selectedSqFt;
+        API.search(city,stateCode, beds, priceMin, baths, priceMax, sqft)
+            .then(data => this.setState({ result: data.data.properties }))
+            .catch(err => console.log(err));
+
         // let stateCodeArr = query.split(",");
         // let stateCode = stateCodeArr[1];
         // let city = stateCodeArr[0];
@@ -41,6 +66,7 @@ class MainPage extends Component {
         // API.search(city,stateCode)
         //     .then(data => this.setState({ result: data.data.properties }))
         //     .catch(err => console.log(err));
+
     };
 
     handleInputChange = event => {
@@ -49,11 +75,17 @@ class MainPage extends Component {
         this.setState({
             [name]: value
         });
+        
     };
 
     handleFormSubmit = event => {
+        let beds = this.state.selectedBed;
+        let baths = this.state.selectedBath;
+        let priceMin = this.state.selectedMin;
+        let priceMax = this.state.selectedMax;
+        let sqft = this.state.selectedSqFt;
         event.preventDefault();
-        this.searchHouses(this.state.search);
+        this.searchHouses(this.state.search,beds,priceMin,baths,priceMax,sqft);
     };
 
 
@@ -62,11 +94,16 @@ class MainPage extends Component {
         return (
             <>
                 <Nav></Nav>
-                <SearchForm
+
+                       
+                <SearchForm className="searchBox"
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit}
+                    
                 />
+                
+
 
                 <MDBContainer fluid>
                     <MDBRow>
