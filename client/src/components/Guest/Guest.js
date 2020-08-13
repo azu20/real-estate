@@ -16,7 +16,7 @@ const Guest = () => {
             <MDBCol className="house text-white text-center py-5 px-4 my-5">
               <MDBCol className="py-5">
                 <MDBCardTitle className="display-3 title h1-responsive m-5 font-bold">
-                Your dream home is a few clicks away. <br></br>
+                Your dream home is a few clicks aways. <br></br>
                 What are you waiting for?
                     </MDBCardTitle>
                 <p className="subtitle mx-5 mb-5">
