@@ -38,7 +38,7 @@ class CardHomeInfo extends Component {
       let property = {
         address: this.props.address,
         listPrice: this.props.price,
-        image: this.props.src,
+        // image: this.props.src,
         bedroom: this.props.bedrooms,
         bathroom: this.props.bathrooms,
       }

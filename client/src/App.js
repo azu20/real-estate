@@ -21,9 +21,9 @@ function App() {
     <>
       <Router history={history}>
         <Route exact path="/" component={Home} />
-        <Route exact path="/main" component={MainPage} />
-        <Route exact path="/favorites" component={Favorites} />
-        <Route exact path="/adminarea" component={AdminArea} />
+        <Route  path="/main" component={MainPage} />
+        <Route  path="/favorites" component={Favorites} />
+        <Route  path="/adminarea" component={AdminArea} />
       </Router>
     </>
   );
