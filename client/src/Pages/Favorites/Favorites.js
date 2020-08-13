@@ -3,7 +3,9 @@ import Nav from "../../components/Nav/Nav";
 import CardHomeInfo from "../../components/CardHomeInfo/CardHomeInfo";
 import "./Favorites.css";
 import API from "../../utils/API";
-import {MDBRow, MDBCol, MDBContainer } from 'mdbreact';
+import { MDBRow, MDBCol, MDBContainer } from 'mdbreact';
+import dummyPhoto from "../../Assets/three-houses.jpg";
+
 class Favorites extends Component {
     state = {
         result: []
@@ -19,7 +21,7 @@ class Favorites extends Component {
                 for (let oneProperty of theProperties) {
                     cardData.push({ name: oneProperty.address, listprice: oneProperty.listPrice, image: oneProperty.Image });
                 }
-                this.setState({result: cardData})
+                this.setState({ result: cardData })
                 console.log("this is card data: ", cardData)
             })
             .catch(err => console.log(err));
@@ -31,26 +33,42 @@ class Favorites extends Component {
 
     render() {
         return (
-        <>
-            <Nav />
-            <div className="divColor">
-                This is the FAVORITES AREA
-            </div>
-            {this.state.result.map(property => (
-                <MDBCol  md="6">
+            <>
+                <Nav />
+                <div class="jumbotron">
+                    <h2 class="display-4">Hello, world!</h2>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4" />
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </div>
 
-                    <CardHomeInfo
-                        address={property.address}
-                        price={property.listPrice}
-                        image={property.image}
-                        bedrooms={property.bedroom}
-                        bathrooms={property.bathroom}
-                    // sqft={property.building_size}
-                    />
-                </MDBCol>
-            ))}
+                {this.state.result.map(property => (
+                    <MDBCol md="6">
+
+                        <CardHomeInfo
+                            address={property.name}
+                            price={property.listprice}
+                            src={dummyPhoto}
+
+                        // address={property.address.line}
+                        // city={property.address.city}
+                        // state={property.address.state}
+                        // zip={property.address.postal_code}
+                        // price={property.price}
+                        // src={property.thumbnail}
+                        // bedrooms={property.beds}
+                        // bathrooms={property.baths}
+                        // email={this.props.user.email}
+                        // property_id={property.property_id}
+                        // sqft={property.building_size.size}
+
+
+                        />
+                    </MDBCol>
+                ))}
             </>
-                );
+        );
     }
 }
 
