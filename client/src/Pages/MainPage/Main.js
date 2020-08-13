@@ -14,10 +14,16 @@ import Contact from "../../components/Contact/Contact";
 
 
 class MainPage extends Component {
-    state = {
-        result: [],
-        search: "Denver",
-       };
+    constructor(props) {
+        super(props);
+        this.state = {
+            result: [],
+            search: "Denver",
+           };
+        // here is the email props information
+        console.log("what is this?"+(props.user.email));
+      }
+
 
     componentDidMount() {
         this.searchHouses("Denver, CO");
@@ -25,22 +31,9 @@ class MainPage extends Component {
     }
 
     searchHouses = (query) => {
-        // let stateCodeArr = query.split(",");
-        // let stateCode = stateCodeArr[1];
-        // let city = stateCodeArr[0];
-        // API.search(city,stateCode)
-        //     .then(data => this.setState({ result: data.data.properties }))
-        //     .catch(err => console.log(err));
-
-        // #######using this static list of properties for testing 
-        // console.log(TestAPIData.properties);
+ 
         this.setState({result: TestAPIData.properties})
-        // let stateCodeArr = query.split(", ");
-        // let stateCode = stateCodeArr[1];
-        // let city = stateCodeArr[0];
-        // API.search(city,stateCode)
-        //     .then(data => this.setState({ result: data.data.properties }))
-        //     .catch(err => console.log(err));
+  
     };
 
     handleInputChange = event => {
@@ -70,16 +63,16 @@ class MainPage extends Component {
 
                 <MDBContainer fluid>
                     <MDBRow>
-                        <MDBCol md="6" className="mapContainer">
+                        {/* hide on screens smaller than lg */}
+                        <MDBCol className="d-none d-lg-block" lg="8" xl="6">  
                             <MapContainer properties={this.state.result} />
                             <br></br>
                             <Contact />
-
                         </MDBCol>
-                        <MDBCol md="6">
+                        <MDBCol  lg="4" xl="6">
                             <MDBRow className="align-items-center">
                                 {this.state.result.map(property => (
-                                    <MDBCol  md="6">
+                                    <MDBCol>
 
                                         <CardHomeInfo
                                             address={property.address.line}
@@ -87,6 +80,7 @@ class MainPage extends Component {
                                             src={property.thumbnail}
                                             bedrooms={property.beds}
                                             bathrooms={property.baths}
+                                            email={this.props.user.email}
                                         // sqft={property.building_size}
                                         />
                                     </MDBCol>
