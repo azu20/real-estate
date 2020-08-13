@@ -36,8 +36,8 @@ class CardHomeInfo extends Component {
     } else {
       this.setState({ isFavorite: true });
       let property = {
-        address: this.props.address,
-        listPrice: this.props.price,
+        address: this.props.address
+        // listPrice: this.props.price
         // image: this.props.src,
         //bedroom: this.props.bedrooms,
         //bathroom: this.props.bathrooms,
