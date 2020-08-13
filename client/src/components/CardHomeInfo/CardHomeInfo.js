@@ -39,8 +39,8 @@ class CardHomeInfo extends Component {
         address: this.props.address,
         listPrice: this.props.price,
         // image: this.props.src,
-        bedroom: this.props.bedrooms,
-        bathroom: this.props.bathrooms,
+        //bedroom: this.props.bedrooms,
+        //bathroom: this.props.bathrooms,
       }
       //add to fav
 
