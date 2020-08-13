@@ -1,7 +1,6 @@
-// import React from "react";
 import React, { useState, useEffect } from "react";
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine } from 'recharts';
-import { MDBRow, MDBCol, MDBContainer, MDBListGroup, MDBListGroupItem } from 'mdbreact';
+import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { MDBRow, MDBCol, MDBListGroup, MDBListGroupItem } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import "./AdminArea.css";
 import API from "../../utils/API";
@@ -25,7 +24,6 @@ const renderCustomizedLabel = ({
 
 function AdminArea() {
 
-    const jsfiddleUrl = 'https://jsfiddle.net/alidingling/c9pL8k61/';
     const [properties, setProperties] = useState([]);
     const [_users, setUsers] = useState([]);
     const [pieData, setPieData] = useState([]);
@@ -81,7 +79,7 @@ function AdminArea() {
         <>
             <Nav />
             <br></br>
-                <MDBRow className="titles align-items-center">
+                <MDBRow c>
                     <MDBCol md="4">
                         <h1 className="userStats align-center">User List</h1>
                     </MDBCol>
