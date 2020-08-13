@@ -113,7 +113,7 @@ class MainPage extends Component {
                                             bathrooms={property.baths}
                                             email={this.props.user.email}
                                             property_id={property.property_id}
-                                            sqft={property.building_size.size}
+                                            // sqft={property.building_size.size}
                                         />
                                     </MDBCol>
                                 ))}

@@ -92,7 +92,7 @@ class CardHomeInfo extends Component {
                   </a>
               }
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
-              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} | Sqft: {this.props.sqft}</MDBCardText>
+              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
               <MDBCardText>{this.props.address} </MDBCardText>
               <MDBCardText>{this.props.city}, {this.props.state} {this.props.zip}</MDBCardText>
               {/* <MDBBtn href="#">Save Home</MDBBtn> */}
