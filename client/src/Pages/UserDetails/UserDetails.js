@@ -8,16 +8,23 @@ import "./UserDetails.css";
 
 function UserDetails() {
     const [user, setUser] = useState({})
+    const [preferences, setUserPreferences] = useState({})
+    const [favorites, setUserFavoritesProperties] = useState({})
     const { id } = useParams()
 
     useEffect(() => {
         API.getUser(id)
-            .then(res => setUser(res.data))
+            .then(res => {
+                const userData = res.data;
+                setUser(userData);
+                setUserPreferences(userData.preferences);
+                setUserFavoritesProperties(userData.favoriteProperties);
+                console.log("preferences ",userData.preferences);
+                console.log("favorites ",userData.favoriteProperties);
+            })
             .catch(err => console.log(err));
-        console.log("calling", setUser);
-
     }, [])
-
+    
     return (
         <>
             <Nav />
@@ -25,69 +32,63 @@ function UserDetails() {
             {/* <MDBContainer> */}
             <MDBRow className="d-flex" style={{ backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)`, padding: 60 }}>
                 <MDBJumbotron fluid className="mt-5 text-center" style={{ width: "75rem", margin: "auto", padding: "auto" }}>
-                    <h2 className="display-4 font-weight-bold text-center">Name:{user.firstName} {user.lastName}</h2>
-                    <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                    <p>Email:{user.email}</p>
-                    <p>Phone:{user.phone}</p>
-                    <p>registration date:{user.registrationDate}</p>
-                    <p>last login:{user.lastLogin}</p>
+                    <h2 className="display-4 font-weight-bold text-center">{user.firstName} {user.lastName}</h2>
+                    <p>Email: {user.email}</p>
+                    <p>Phone Contact: {user.phone}</p>
+                    <p>Bedrooms: {preferences.bedrooms}</p>
+                    <p>Bathrooms: {preferences.bathrooms}</p>
+                    <p>Price Range: $ { preferences.priceRange ? preferences.priceRange.from : "?"  } - $ { preferences.priceRange ? preferences.priceRange.to : "?"  }</p>
+                    <hr className="my-2" />
+                    <p>Registration date: {user.registrationDate}</p>
+                    <p>Last Login: {user.lastLogin}</p>
                     <MDBBtn outline color="primary" className="waves-effect" href="/adminarea" >
                         ← Back to Admin Page
                     </MDBBtn>
                 </MDBJumbotron>
             </MDBRow>
-            {/* </MDBContainer> */}
-
-            {/* <MDBContainer fluid>
-            <MDBRow className="d-flex">
-                <MDBCol md="6" className="align-items-center">
-                        <CardHomeInfo
-                            address={user.phone}
-                            price={user.phone}
-                            // src={user.phone}
-                            // bedrooms={user.phone}
-                            // bathrooms={user.phone}
-                            // sqft={user.phone}
-                        />
-                </MDBCol>
-            </MDBRow>
-            </MDBContainer> */}
             <MDBRow>
-            <MDBMedia list style={{ margin: "auto"}}  className="mt-3"> 
-                <MDBMedia tag="li">
-                    <MDBMedia left href="#">
-                        <MDBMedia object src="https://mdbootstrap.com/img/Photos/Others/placeholder7.jpg" alt="Generic placeholder image" />
+
+                <MDBMedia list style={{ margin: "auto" }} className="mt-3">
+                    <MDBMedia tag="li" key={user._id}>
+                        <MDBMedia left href="#">
+                            <MDBMedia object src={favorites.propertyImage ? favorites.propertyImage : "https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg"} alt="No picture available" />
+                        </MDBMedia>
+                        <MDBMedia body>
+                            <MDBMedia heading>
+                                <h3> { favorites.propertyAddress ? favorites.propertyAddress : "No favorites available"  } </h3>
+                            </MDBMedia>
+                            <p>List Price: { favorites.listPrice? favorites.listPrice : "No list price available"  }</p>
+                            <p>Bedrooms:{ favorites.bedrooms ? favorites.bedrooms : "No bedrooms available"  }</p>
+                            <p>Bathrooms:{ favorites.bathrooms ? favorites.bathrooms : "No bathrooms available"  }</p>
+                            <hr className="my-2" />
+                        </MDBMedia>
                     </MDBMedia>
-                    <MDBMedia body>
-                        <MDBMedia heading>
-                            List-based media object
+
+                    {/* <MDBMedia tag="li">
+                        <MDBMedia left href="#">
+                            <MDBMedia object src="https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg" alt="Generic placeholder image" />
+                        </MDBMedia>
+                        <MDBMedia body>
+                            <MDBMedia heading>
+                                List-based media object
           </MDBMedia>
           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </MDBMedia>
-                </MDBMedia>
-                <MDBMedia tag="li">
-                    <MDBMedia left href="#">
-                        <MDBMedia object src="https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg" alt="Generic placeholder image" />
-                    </MDBMedia>
-                    <MDBMedia body>
-                        <MDBMedia heading>
-                            List-based media object
-          </MDBMedia>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </MDBMedia>
-                </MDBMedia>
-                <MDBMedia tag="li">
-                    <MDBMedia left href="#">
-                        <MDBMedia object src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg" alt="Generic placeholder image" />
-                    </MDBMedia>
-                    <MDBMedia body>
-                        <MDBMedia heading>
-                            List-based media object
+          <hr className="my-2" />
+                        </MDBMedia>
+                    </MDBMedia> */}
+                    {/* <MDBMedia tag="li">
+                        <MDBMedia left href="#">
+                            <MDBMedia object src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg" alt="Generic placeholder image" />
+                        </MDBMedia>
+                        <MDBMedia body>
+                            <MDBMedia heading>
+                                List-based media object
           </MDBMedia>
           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </MDBMedia>
+          <hr className="my-2" />
+                        </MDBMedia>
+                    </MDBMedia> */}
                 </MDBMedia>
-            </MDBMedia>
             </MDBRow>
         </>
     );

@@ -132,7 +132,7 @@ const propertySeed = [
 
 const userSeed = [
   {
-    lastLogin: new Date(Date.now() - 12),
+    lastLogin: new Date(Date.now() - 12*1000 * 3600 * 24),
     firstName: "Karl",
     lastName: "Marx",
     email: "socialism6549@gmail.com",
@@ -162,7 +162,7 @@ const userSeed = [
     updateDate: new Date(Date.now())
   },
   {
-    lastLogin: new Date(Date.now() - 5),
+    lastLogin: new Date(Date.now() - 5*1000 * 3600 * 24),
     firstName: "John",
     lastName: "Doe",
     email: "socialism6549@yahoo.com",
@@ -237,7 +237,7 @@ const userSeed = [
     updateDate: new Date(Date.now())
   }, 
   {
-    lastLogin: new Date(Date.now() - 10),
+    lastLogin: new Date(Date.now() - 10*1000 * 3600 * 24),
     firstName: "Jean",
     lastName: "Grey",
     email: "thepheonix@gmail.com",

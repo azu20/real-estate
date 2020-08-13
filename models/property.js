@@ -42,12 +42,3 @@ const Property = mongoose.model("Property", propertySchema);
 module.exports = Property;
 
 
-/******Notes:*************/
-// try to capture as much info as possible per property if and when available, review if needed. ****
-// definitions:
-// list status - for sale, rent, etc. propType= single family home, duplex, etc. 
-// prop details = description, propfeatures= appliances, heating/cooling, etc. 
-
-///dont need model for userLists, the PUT rest API call will add a relation to user and 
-// property.
-//added user_id - each property can be liked by multiple users, linking it through userID key
