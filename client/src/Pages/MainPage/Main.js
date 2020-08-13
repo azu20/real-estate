@@ -8,10 +8,10 @@ import MapContainer from "../../components/MapContainer/MapContainer"
 import "./Main.css"
 // import LogoutButton from "../../components/LogoutButton/LogoutButton";
 // import { withAuthenticationRequired } from '@auth0/auth0-react';
-import Contact from "../../components/Contact/Contact"
+
 import TestAPIData from "../../Assets/Test_JSON_files/testHomeData.json";
 import Contact from "../../components/Contact/Contact";
-// import API from "../../utils/API";
+import API from "../../utils/API";
 
 
 
@@ -29,7 +29,7 @@ class MainPage extends Component {
 
     };
 
-       };
+
 
 
     componentDidMount() {
