@@ -26,8 +26,8 @@ function App() {
         {/* <Route path ="/" component={TestAreaForAPIHooks}/> */}
         {/* <Rout path = "/" component{stub_for_login_component} */}
         
-        <Route path exact ="/" component={MapAndSearchContainer}/>
-        <Route path = "/mapandcard" component={TestAreaForAPIHooks}/>
+        {/* <Route path exact ="/" component={MapAndSearchContainer}/> */}
+        <Route exact path = "/mapandcard" component={TestAreaForAPIHooks}/>
         {/* <Route path = "/mapandcard" component={MapAndCardDisplay}/> */}
         <Route path = "/favorites" component={Favorites}/>
         <Route path = "/adminarea" component={AdminArea}/>

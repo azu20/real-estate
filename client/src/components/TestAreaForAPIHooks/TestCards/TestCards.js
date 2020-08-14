@@ -3,6 +3,7 @@ import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCa
 import wash from "../../../Assets/WashburnSearch.png";
 
 import "../TestCards/TestCards.css";
+import PhotoModal from '../TestModals/PhotoModal';
 
 const TestCard = (props) => {
   // console.log(props); 
@@ -16,9 +17,11 @@ const TestCard = (props) => {
     {/*added customImage Class to control height for consistancy*/}
   
     <MDBCol style={{maxWidth: "22rem"}}>
-      <MDBCard>
+      <MDBCard>  
         <MDBCardImage className="img-fluid customImage" src={props.photo} waves />
-        <MDBCardBody>
+
+          <MDBCardBody>
+          <a className="cameraIconPosition"><PhotoModal src={props.photo}></PhotoModal></a>
           <MDBCardTitle>{props.street}, {props.city}, {props.state}</MDBCardTitle>
           <MDBCardText>{props.price} |  {props.beds} bd | {props.baths} ba | {props.sqft} sqft</MDBCardText>
           <MDBBtn href="#">Dallas I want this house!</MDBBtn>

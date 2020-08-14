@@ -43,47 +43,14 @@ const TestPhotoDisplay = () => {
         {BartStreet.properties[0].photos.map(item => (
           <MDBCarouselItem itemId={photoCarId()}>
             <MDBView>
-              <p>{i} of {BartStreet.properties[0].photo_count}</p>
               <img
                 className="d-block w-100"
                 src={item.href}></img>
-                
-               
-              
-            </MDBView>
+              <div className="positionCount">{i} of {BartStreet.properties[0].photo_count}</div>  
+              </MDBView>
           </MDBCarouselItem>
           ))}
 
-
-          {/* <MDBCarouselItem itemId="2">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m734748646x.jpg"
-                alt="Second slide"
-              />
-            </MDBView>
-          </MDBCarouselItem> */}
-
-          {/* <MDBCarouselItem itemId="3">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m2758893699x.jpg"
-                alt="Third slide"
-              />
-            </MDBView>
-          </MDBCarouselItem> */}
-
-          {/* <MDBCarouselItem itemId="4">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://ap.rdcpix.com/eb4acd1091bba69e3bdfc8ad47cc0470l-m418675775x.jpg"
-                alt="Third slide"
-              />
-            </MDBView>
-          </MDBCarouselItem> */}
         </MDBCarouselInner>
       </MDBCarousel>
     </MDBContainer>
