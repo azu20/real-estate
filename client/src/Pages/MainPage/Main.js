@@ -31,6 +31,7 @@ class MainPage extends Component {
 
     componentDidMount() {
         this.searchHouses("Denver, CO");
+        console.log("chickens")
 
     }
 
