@@ -19,8 +19,8 @@ function App() {
   }
 
   return (
-    <>
-      <Router history={history}>
+  
+      <Router history={History}>
         <Route exact path="/" component={Home} />
         <Route  path="/main" component={MainPage} />
         <Route  path="/favorites" component={Favorites} />
