@@ -21,7 +21,7 @@ class Favorites extends Component {
                 console.log("the top x properties", theProperties);
                 let cardData = [];
                 for (let oneProperty of theProperties) {
-                    cardData.push({ name: oneProperty.address, listprice: oneProperty.listPrice, image: oneProperty.Image });
+                    cardData.push({ name: oneProperty.address, listprice: oneProperty.listPrice, image: oneProperty.image });
                 }
                 this.setState({ result: cardData })
                 console.log("this is card data: ", cardData)
@@ -56,7 +56,7 @@ class Favorites extends Component {
                                         <CardHomeInfo
                                             address={property.name}
                                             price={property.listprice}
-                                            src={dummyPhoto}
+                                            src={property.image}
 
                                         // address={property.address.line}
                                         // city={property.address.city}
