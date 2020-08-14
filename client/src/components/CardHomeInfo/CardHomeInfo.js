@@ -10,37 +10,45 @@ class CardHomeInfo extends Component {
     super(props);
 
    
-
     this.state = {
       isFavorite: false,
       cardInfo: {}
     }
-
-
+    // console.log("this is props"+ this.props.email)
   }
 
 
   handleFavorites = (event) => {
-    // console.log(props)
     if (this.state.isFavorite) {
       this.setState({ isFavorite: false })
 
-      let property = {
-        address: this.props.address,
-        id : "5f31b081a7c58d4838142d6f"
-      }
-    
-      // API.deleteProperty(property);
+        // API.deleteProperty(property);
       //delete to fav
  
     } else {
       this.setState({ isFavorite: true });
+
+      //make API call for details, need property id
+      //this.props.property_id
+      //then send all info to db
+
       let property = {
-        address: this.props.address
-        // listPrice: this.props.price
-        // image: this.props.src,
-        //bedroom: this.props.bedrooms,
-        //bathroom: this.props.bathrooms,
+        address: this.props.address,
+        listPrice: this.props.price,
+        image: this.props.src,
+        bedroom: this.props.bedrooms,
+        bathroom: this.props.bathrooms,
+        city: this.props.city,
+        state: this.props.state,
+        zipcode: this.props.zip,
+        
+
+        //**will need  property model updates */
+        // listing_id: this.props.property_id
+        // email: this.props.email
+        // photoGallery: result
+        // extendedDetails: result
+        
       }
       //add to fav
 
@@ -54,8 +62,8 @@ class CardHomeInfo extends Component {
     return (
 
       <MDBRow>
-        <MDBCol style={{ maxWidth: "22rem" }}>
-          <MDBCard >
+        <MDBCol >
+          <MDBCard className="cardSizing">
             <MDBCardImage className="img-fluid customImage" src={this.props.src} waves></MDBCardImage>
             <MDBCardBody>
 
@@ -69,10 +77,9 @@ class CardHomeInfo extends Component {
                     <MDBIcon
                       className="styleIconRed"
                       icon="heart"
-                      size="2x" /
-
-                    >
+                      size="2x" />
                   </a>
+                  
                   : <a
                     className="heartIconPosition"
                     onClick={this.handleFavorites}
@@ -84,9 +91,11 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
-              <MDBCardTitle>{this.props.address}</MDBCardTitle>
-              <MDBCardText>Price: ${this.props.price} |  Beds:{this.props.bedrooms} | Baths:{this.props.bathrooms} | Sqft:{this.props.sqft}</MDBCardText>
-              <MDBBtn href="#">Save Home</MDBBtn>
+              <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
+              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} | Sqft: {this.props.sqft}</MDBCardText>
+              <MDBCardText>{this.props.address} </MDBCardText>
+              <MDBCardText>{this.props.city}, {this.props.state} {this.props.zip}</MDBCardText>
+              {/* <MDBBtn href="#">Save Home</MDBBtn> */}
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
