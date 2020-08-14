@@ -19,6 +19,7 @@ function UserDetails() {
                 setUser(userData);
                 setUserPreferences(userData.preferences);
                 setUserFavoritesProperties(userData.favoriteProperties);
+                console.log("userdata ", userData);
                 console.log("preferences ",userData.preferences);
                 console.log("favorites ",userData.favoriteProperties);
             })
@@ -54,10 +55,10 @@ function UserDetails() {
                             <MDBMedia object src={favorites.propertyImage ? favorites.propertyImage : "https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg"} alt="No picture available" />
                         </MDBMedia>
                         <MDBMedia body>
+
                             <MDBMedia heading>
                                 <h3> { favorites.propertyAddress ? favorites.propertyAddress : "No favorites available"  } </h3>
                             </MDBMedia>
-                            <p>List Price: { favorites.listPrice? favorites.listPrice : "No list price available"  }</p>
                             <p>Bedrooms:{ favorites.bedrooms ? favorites.bedrooms : "No bedrooms available"  }</p>
                             <p>Bathrooms:{ favorites.bathrooms ? favorites.bathrooms : "No bathrooms available"  }</p>
                             <hr className="my-2" />
