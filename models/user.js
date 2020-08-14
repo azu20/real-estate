@@ -25,12 +25,10 @@ const userSchema = new Schema({
   }
 ],
   registrationDate: { type: Date, default: Date.now }, 
-  updateDate: { type: Date, default: Date.now }
+  lastLogin:  { type: Date, default: Date.now} 
 });
 
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;
 
-/********Notes: *********/
-//formDetails will capture any info the user filled on the login form. Including details like price range, bedrooms, sq. footage, etc. 
