@@ -15,6 +15,8 @@ class PhotoModal extends Component {
 
 
   toggle = nr => () => {
+    //
+    
     let modalNumber = 'modal' + nr
     this.setState({
       [modalNumber]: !this.state[modalNumber]
@@ -35,6 +37,7 @@ class PhotoModal extends Component {
           <MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
             <MDBModalHeader toggle={this.toggle(14)} className="cardFont">About this Property</MDBModalHeader>
             <MDBModalBody>
+
              <PhotoCarousel/>
 
             </MDBModalBody>
