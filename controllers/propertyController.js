@@ -4,7 +4,7 @@ const db = require("../models");
 module.exports = {
   findAllProperties: function (req, res) {
     db.Property
-      .find(req.query)
+      .find()
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
