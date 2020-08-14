@@ -24,7 +24,8 @@ const userSchema = new Schema({
         listPrice: { type: Number }, 
         bedrooms: { type: Number }, 
         bathrooms: { type: Number }, 
-        propertyImage: { type: String }
+        propertyImage: { type: String }, 
+        // propertyImageGallery: [{ type: String }]
   }
 ],
   registrationDate: { type: Date, default: Date.now }, 

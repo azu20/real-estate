@@ -27,6 +27,7 @@ const propertySchema = new Schema({
   hoaFee: Number,
   propFeatures: String,
   image: String,
+//   imageGallery: [{String}],
   listingLink: String,
   propDetailSummary: String,
   createdDate: { type: Date, default: Date.now },
