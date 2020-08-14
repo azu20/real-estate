@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all properties
   getProperties: async function () {
-    let response = axios.get("/api/properties/")
+    let response = await axios.get("/api/properties/")
     .catch(err => console.log("error: ", err));
     return response;
   },
