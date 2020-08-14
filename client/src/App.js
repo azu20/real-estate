@@ -9,6 +9,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
 import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 import history from "../src/utils/history"
+import UserDetails from './Pages/UserDetails/UserDetails';
+
 
 function App() {
   const { isLoading } = useAuth0();
