@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all properties
   getProperties: async function () {
-    let response = axios.get("/api/properties/")
+    let response = await axios.get("/api/properties/")
     .catch(err => console.log("error: ", err));
     return response;
   },
@@ -111,5 +111,24 @@ export default {
     "offset":"0",
     "state_code":stateCode
     }
+    }),
+    
+  detailedSearch: (property_id) => axios({
+    "method":"GET",
+    "url":"https://realtor.p.rapidapi.com/properties/v2/detail",
+    "headers":{
+    "content-type":"application/octet-stream",
+    "x-rapidapi-host":"realtor.p.rapidapi.com",
+    "x-rapidapi-key":"96c74fd5e4mshb8a226bc658c059p1b6d81jsnc089e2cbf5e3",
+    "useQueryString":true
+    },"params":{
+    "property_id":property_id
+    }
     })
+    .then((response)=>{
+      console.log(response)
+    })
+    .catch((error)=>{
+      console.log(error)
+  })
 };
