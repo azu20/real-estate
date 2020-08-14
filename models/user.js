@@ -19,21 +19,19 @@ const userSchema = new Schema({
     updateDate: { type: Date, default: Date.now }
     }, 
   favoriteProperties: [{
-        propertyID: { type: String, required: true }, 
-        propertyAddress: { type: String, required: true } ,
-        listPrice: { type: Number, required: true }, 
-        bedrooms: { type: Number, required: true }, 
-        bathrooms: { type: Number, required: true }, 
-        propertyImage: { type: String, required: true }
+        propertyID: { type: String }, 
+        propertyAddress: { type: String } ,
+        listPrice: { type: Number }, 
+        bedrooms: { type: Number }, 
+        bathrooms: { type: Number }, 
+        propertyImage: { type: String }
   }
 ],
   registrationDate: { type: Date, default: Date.now }, 
-  updateDate: { type: Date, default: Date.now }
+  lastLogin:  { type: Date, default: Date.now} 
 });
 
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;
 
-/********Notes: *********/
-//formDetails will capture any info the user filled on the login form. Including details like price range, bedrooms, sq. footage, etc. 
