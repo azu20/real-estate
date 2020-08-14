@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIcon } from 'mdbreact';
 import "../CardHomeInfo/CardHomeInfo.css";
+import PhotoModal from "../PhotoModal/PhotoModal";
 import API from '../../utils/API';
 
 
@@ -91,8 +92,9 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
+              <a className="cameraIconPosition"><PhotoModal></PhotoModal></a>
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
-              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} | Sqft: {this.props.sqft}</MDBCardText>
+              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
               <MDBCardText>{this.props.address} </MDBCardText>
               <MDBCardText>{this.props.city}, {this.props.state} {this.props.zip}</MDBCardText>
               {/* <MDBBtn href="#">Save Home</MDBBtn> */}

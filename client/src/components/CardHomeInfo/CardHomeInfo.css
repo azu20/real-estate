@@ -6,6 +6,7 @@
 .cardSizing {
     max-width: 26rem;
     min-width: 18rem;
+    margin-bottom: 10px;
 }
 
 .heartIconPosition{
