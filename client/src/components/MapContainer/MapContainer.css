@@ -1,0 +1,29 @@
+.mapDiv {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100px;
+}
+
+.popupCont {
+    height: 16rem;
+    width: 16rem;
+    align-content: center;
+    padding: 5px;
+}
+
+.popUpButton{
+    font-size: 8px;
+    color: white;
+    margin-top: -15px; 
+    margin-left:50px;
+    padding: 6px;   
+}
+
+.popupTitle {
+    font-size: 15px;
+}

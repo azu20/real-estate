@@ -2,33 +2,47 @@ const db = require("../models");
 
 // Defining methods for the booksController
 module.exports = {
-  findAll: function(req, res) {
-    db.Book
-      .find(req.query)
+  findAllProperties: function (req, res) {
+    db.Property
+      .find()
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
-    db.Book
+  findPropertyById: function (req, res) {
+    db.Property
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
-    db.Book
+  findTopProperties: function (req, res) {
+    db.Property
+//      .aggregate([{ $unwind: "$likedByUser" }, { $sortByCount: "$likedByUser" }])
+      .find()
+      .sort({"likedByUser":-1})
+      .limit(2) 
+      .then(dbModel => {
+        //console.log("**************************", dbModel);
+        return res.json(dbModel);
+      })
+      .catch(err => res.status(422).json(err));
+  },
+  createProperty: function (req, res) {
+    console.log("this is the req.body" +req.body);
+    db.Property
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+      console.log ("show req.body", req.body);
   },
-  update: function(req, res) {
-    db.Book
+  updateProperty: function (req, res) {
+    db.Property
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  remove: function(req, res) {
-    db.Book
+  removeProperty: function (req, res) {
+    db.Property
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))

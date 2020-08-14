@@ -1,38 +1,35 @@
 import React from 'react';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
 
-import MapAndSearchContainer from "./components/MapAndSearchContainer/MapAndSearchContainer.js";
-import MapAndCardDisplay from "./components/MapAndCardDispay/MapAndCardDispay";
-import Favorites from "./components/Favorites/Favorites";
-import AdminArea from "./components/AdminArea/AdminArea";
-import TestAreaForAPIHooks from "./components/TestAreaForAPIHooks/TestAreaForAPIHooks";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import MainPage from "../src/Pages/MainPage/Main";
+import Favorites from "./Pages/Favorites/Favorites";
+import AdminArea from "./Pages/AdminArea/AdminArea";
+import { useAuth0 } from "@auth0/auth0-react";
+import Loading from "./components/Loading/Loading";
+import UserDetails from './Pages/UserDetails/UserDetails';
 
 
 function App() {
+  const { isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
-    <>
-      {/* need to crete sub nav here for search options on this page */}
-      {/* <Nav />
-      <MapAndSearchContainer/> */}
+    
       <Router>
-        {/* <Route path ="/" component={TestAreaForAPIHooks}/> */}
-        {/* <Rout path = "/" component{stub_for_login_component} */}
-        
-        {/* <Route path exact ="/" component={MapAndSearchContainer}/> */}
-        <Route exact path = "/mapandcard" component={TestAreaForAPIHooks}/>
-        {/* <Route path = "/mapandcard" component={MapAndCardDisplay}/> */}
-        <Route path = "/favorites" component={Favorites}/>
-        <Route path = "/adminarea" component={AdminArea}/>
+
+      <Route exact path ="/" component={Home}/>
+        <Route exact path ="/main" component={MainPage}/>
+        <Route exact path = "/favorites" component={Favorites}/>
+        <Route exact path = "/adminarea" component={AdminArea}/>
+       <Route exact path="/users/:id" component={UserDetails}/>
+
+
       </Router>
-    </>
+   
   );
 }
 

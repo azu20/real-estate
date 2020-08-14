@@ -1,0 +1,30 @@
+/* .adminPage {
+    margin: 0;
+  } */
+  /* .adminPage {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+  }
+   */
+/* .chartsCol  {
+  margin: 20px;
+} */
+.topProperties {
+  color: black;
+  text-align: center;
+}
+
+.userStats {
+  color: black;
+  text-align: center;
+}
+
+.MDBListGroupItem  {
+  color: black;
+  text-align: center;
+}

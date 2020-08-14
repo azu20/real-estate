@@ -1,49 +1,111 @@
-import React from 'react';
-import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
-import wash from "../../Assets/WashburnSearch.png";
-
+import React, { Component } from 'react';
+import { MDBBtn, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIcon } from 'mdbreact';
 import "../CardHomeInfo/CardHomeInfo.css";
+import PhotoModal from "../PhotoModal/PhotoModal";
+import API from '../../utils/API';
 
 
 
-const CardHomeInfo = () => {
-  return (
-    <>
-    {/*#############  CHANGES ########## */}
-    {/*added customImage Class to control height for consistancy*/}
-    <MDBRow>
-    <MDBCol style={{maxWidth: "22rem"}}>
-      <MDBCard>
-        <MDBCardImage className="img-fluid customImage" src={wash} waves />
-        <MDBCardBody>
-          <MDBCardTitle>123 Easy Street Mesa, AZ</MDBCardTitle>
-          <MDBCardText>$359,000 |  4bd | 3ba | 2750 sqft</MDBCardText>
-          <MDBBtn href="#">Dallas I want this house!</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-      
-    <MDBCol style={{ maxWidth: "22rem" }} >
-      <MDBCard>
-        <MDBCardImage className="img-fluid customImage" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
-          waves />
-        <MDBCardBody>
-          <MDBCardTitle>1264 React Ct Reno,NV</MDBCardTitle>
-          <MDBCardText>$359,000 |  4bd | 3ba | 2750 sqft</MDBCardText>
-          <MDBBtn href="#">Dallas I want this house!</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol>
+class CardHomeInfo extends Component {
+  constructor(props) {
+    super(props);
 
-    </MDBCol>
-
-    
+   
+    this.state = {
+      isFavorite: false,
+      cardInfo: {}
+    }
+    // console.log("this is props"+ this.props.email)
+  }
 
 
-    </MDBRow>
-    </>
-  )
+  handleFavorites = (event) => {
+    if (this.state.isFavorite) {
+      this.setState({ isFavorite: false })
+
+        // API.deleteProperty(property);
+      //delete to fav
+ 
+    } else {
+      this.setState({ isFavorite: true });
+
+      //make API call for details, need property id
+      //this.props.property_id
+      //then send all info to db
+
+      let property = {
+        address: this.props.address,
+        listPrice: this.props.price,
+        image: this.props.src,
+        bedroom: this.props.bedrooms,
+        bathroom: this.props.bathrooms,
+        city: this.props.city,
+        state: this.props.state,
+        zipcode: this.props.zip,
+        
+
+        //**will need  property model updates */
+        // listing_id: this.props.property_id
+        // email: this.props.email
+        // photoGallery: result
+        // extendedDetails: result
+        
+      }
+      //add to fav
+
+      API.saveProperty(property) 
+   
+    }
+   
+  }
+  render() {
+
+    return (
+
+      <MDBRow>
+        <MDBCol >
+          <MDBCard className="cardSizing">
+            <MDBCardImage className="img-fluid customImage" src={this.props.src} waves></MDBCardImage>
+            <MDBCardBody>
+
+              { //Ternary operator for icon state 
+                (this.state.isFavorite === true)
+                  ? <a
+                    className="heartIconPosition"
+                    onClick={this.handleFavorites}
+                  // onClick={() => this.handleFavorites(this.props.bedrooms)} 
+                  >
+                    <MDBIcon
+                      className="styleIconRed"
+                      icon="heart"
+                      size="2x" />
+                  </a>
+                  
+                  : <a
+                    className="heartIconPosition"
+                    onClick={this.handleFavorites}
+                  // onClick={() => this.handleFavorites(this.props.bedrooms)}
+                  >
+                    <MDBIcon
+                      className="styleIconRed"
+                      far icon="heart"
+                      size="2x" />
+                  </a>
+              }
+              <a className="cameraIconPosition"><PhotoModal></PhotoModal></a>
+              <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
+              <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
+              <MDBCardText>{this.props.address} </MDBCardText>
+              <MDBCardText>{this.props.city}, {this.props.state} {this.props.zip}</MDBCardText>
+              {/* <MDBBtn href="#">Save Home</MDBBtn> */}
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
+    )
+  }
 }
 
 export default CardHomeInfo;
+
+
