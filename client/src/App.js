@@ -9,6 +9,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
 import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 import UserDetails from './Pages/UserDetails/UserDetails';
+import history from "../src/utils/history";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   }
 
   return (
-    <>
+    
       <Router history={history}>
         <Route exact path="/" component={Home} />
         <Route  path="/main" component={MainPage} />
