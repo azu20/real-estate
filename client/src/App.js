@@ -8,6 +8,7 @@ import Home from "../src/components/Home/Home";
 import history from "./utils/history";
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
+import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route  path="/main" component={MainPage} />
         <Route  path="/favorites" component={Favorites} />
         <Route  path="/adminarea" component={AdminArea} />
+        <Route   path="/invisible" component={InvisiblePage}/>
       </Router>
     </>
   );

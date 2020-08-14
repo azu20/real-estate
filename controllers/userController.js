@@ -12,8 +12,14 @@ module.exports = {
   findUserById: function(req, res) {
     db.User
       .findUserById(req.params.id)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+      .then(dbModel =>{ 
+        console.log("this is success findUserByID");
+        res.json(dbModel)
+      })
+      .catch(err => {
+        console.log("this is error message area");
+        res.status(422).json(err)
+      });
   },
   createUser: function(req, res) {
     db.User
