@@ -34,6 +34,7 @@ export default {
   // Saves a property to the database
   saveProperty: async function (propertyData) {
     console.log("this save property API")
+    console.log("This is the property data:" + JSON.stringify(propertyData))
     let response = axios.post("/api/properties/", propertyData)
     .then(x => console.log("the response from posting the property is", x))
     .catch(error =>  
