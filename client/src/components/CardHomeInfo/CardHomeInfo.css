@@ -13,15 +13,7 @@
     position: absolute;
     top: 7px;
     right: 25px;
-    height: 20px;
-    width: 20px;
-}
-
-.cameraIconPosition{
-    position: absolute;
-    top: 7px;
-    left: 15px;
-    color: #008b00;
+    color: red;
     height: 20px;
     width: 20px;
 }
@@ -30,16 +22,8 @@
     font-size: 20px;
 }
 .styleIconRed{
-    /* color:#8b0046; */
-    color:red;
+    color:red
 }
 .styleIconRed:hover{
 color: black;
 }
-.styleGreen{
-    color: #008b00;
-}
-
-.styleGreen:hover{
-    color: black;
-    }

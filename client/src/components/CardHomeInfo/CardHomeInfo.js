@@ -92,7 +92,7 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
-              <a className="cameraIconPosition"><PhotoModal className="styleGreen"></PhotoModal></a>
+              <a className="cameraIconPosition"><PhotoModal></PhotoModal></a>
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
               <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
               <MDBCardText>{this.props.address} </MDBCardText>
