@@ -26,7 +26,7 @@ function App() {
         <Route  path="/main" component={MainPage} />
         <Route  path="/favorites" component={Favorites} />
         <Route  path="/adminarea" component={AdminArea} />
-        <Route   path="/invisible" component={InvisiblePage}/>
+        <Route  path="/invisible" component={InvisiblePage}/>
       </Router>
    
   );
