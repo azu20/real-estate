@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties he Books collection and inserts the books below
+// This file empties he Properties and Users collections and inserts the books below
 
 // mongoose.connect(
 //   process.env.MONGODB_URI ||
@@ -18,8 +18,8 @@ const propertySeed = [
     listingCompany: "Gerson Realty Co",
     daysListed: 5,
     listStatus: "For Sale",
-    address: "5637 E Casper Rd",
-    city: "Mesa",
+    address: "6834 N. Julian Rd",
+    city: "Chandler",
     state: "AZ",
     zipcode: "85205",
     propType: "Single Family Home",
@@ -41,7 +41,21 @@ const propertySeed = [
     listingLink: "https://www.realtor.com/realestateandhomes-detail/5635-E-Casper-Rd_Mesa_AZ_85205_M17393-80976?view=qv",
     propDetailSummary: "Adult 55+ Community Beautiful, well cared for home in the Velda Rose Estates community. This 2 bedroom 1.75 bath home has upgraded stovetop, oven and dishwasher that are less than 1 year old. AC replaced 4 years ago and 80% sun screens keep this property cool and comfortable. 2 living areas and 2 large bedrooms make this home feel spacious. Plenty of storage inside and out with a laundry room that could also be used as a small workshop. Backyard covered patio perfect to enjoy the beautiful backyard.",
     date: "2020-08-04 07:16pm",
-    likedByUser: []
+    likedByUser: [{
+      email: "socialism6549@yahoo.com",
+      userFullName: "John Doe"
+    }, {
+      email: "thepheonix@gmail.com",
+      userFullName: "Jean Grey"
+    },
+    {
+      email: "imanactress@yahoo.com",
+      userFullName: "Emma Stone"
+    }, {
+      email: "socialism6549@gmail.com",
+      userFullName: "Karl Marx"
+    }
+    ]
   },
   {
     listingID: 654852,
@@ -75,10 +89,7 @@ const propertySeed = [
     likedByUser: [{
       email: "socialism6549@gmail.com",
       userFullName: "Karl Marx",
-    }, {
-      email: "socialism6549@yahoo.com",
-      userFullName: "John Doe",
-    }],
+    }]
   },
   {
     listingID: 89767,
@@ -86,7 +97,7 @@ const propertySeed = [
     listingCompany: "ReMax Co",
     daysListed: 65,
     listStatus: "For Sale",
-    address: "5637 E Casper Rd",
+    address: "222 E Devon Dr.",
     city: "Mesa",
     state: "AZ",
     zipcode: "85205",
@@ -111,13 +122,17 @@ const propertySeed = [
     date: new Date(Date.now()),
     likedByUser: [{
       email: "socialism6549@gmail.com",
-      userFullName: "Karl Marx",
-    } ],
+      userFullName: "Karl Marx"
+    },  {
+      email: "socialism6549@yahoo.com",
+      userFullName: "John Doe"
+    }],
   }
 ];
 
 const userSeed = [
   {
+    lastLogin: new Date(Date.now() - 12*1000 * 3600 * 24),
     firstName: "Karl",
     lastName: "Marx",
     email: "socialism6549@gmail.com",
@@ -132,11 +147,11 @@ const userSeed = [
       bathrooms: 2.5,
       propertyType: "single family home",
       creationDate: new Date(Date.now()),
-      updateDate: new Date(Date.now())
+      updateDate: new Date(Date.now()),
     },
     favoriteProperties: [{
       propertyID: "89767",
-      propertyAddress: "5637 E Casper Rd",
+      propertyAddress: "6834 N. Julian Rd",
       listPrice: 225000,
       bedrooms: 5,
       bathrooms: 3.5,
@@ -147,6 +162,7 @@ const userSeed = [
     updateDate: new Date(Date.now())
   },
   {
+    lastLogin: new Date(Date.now() - 5*1000 * 3600 * 24),
     firstName: "John",
     lastName: "Doe",
     email: "socialism6549@yahoo.com",
@@ -165,12 +181,104 @@ const userSeed = [
     },
     favoriteProperties: [{
       propertyID: "89767",
+      propertyAddress: "222 E Devon Dr.",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }, {
+      propertyID: "89767",
+      propertyAddress: "6834 N. Julian Rd",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }
+    ],
+    registrationDate: new Date(Date.now()),
+    updateDate: new Date(Date.now())
+  },
+  {
+    lastLogin: new Date(Date.now()),
+    firstName: "Emma",
+    lastName: "Stone",
+    email: "imanactress@yahoo.com",
+    password: "veryPrivate456",
+    phone: 5426246496,
+    preferences: {
+      priceRange: {
+        from: 475000,
+        to: 550000
+      },
+      bedrooms: 4,
+      bathrooms: 2.5,
+      propertyType: "single family home",
+      creationDate: new Date(Date.now()),
+      updateDate: new Date(Date.now())
+    },
+    favoriteProperties: [{
+      propertyID: "89767",
+      propertyAddress: "5637 E Casper Rd",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }, 
+    {
+      propertyID: "89767",
       propertyAddress: "5637 E Casper Rd",
       listPrice: 225000,
       bedrooms: 5,
       bathrooms: 3.5,
       propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
     }
+    ],
+    registrationDate: new Date(Date.now()),
+    updateDate: new Date(Date.now())
+  }, 
+  {
+    lastLogin: new Date(Date.now() - 10*1000 * 3600 * 24),
+    firstName: "Jean",
+    lastName: "Grey",
+    email: "thepheonix@gmail.com",
+    password: "veryPrivate456",
+    phone: 5426246496,
+    preferences: {
+      priceRange: {
+        from: 475000,
+        to: 550000
+      },
+      bedrooms: 4,
+      bathrooms: 2.5,
+      propertyType: "single family home",
+      creationDate: new Date(Date.now()),
+      updateDate: new Date(Date.now())
+    },
+    favoriteProperties: [
+      {
+      propertyID: "165438",
+      propertyAddress: "6834 N. Julian Rd",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }, 
+    {
+      propertyID: "654852",
+      propertyAddress: "5637 E Casper Rd",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }, 
+    {
+      propertyID: "89767",
+      propertyAddress: "222 E Devon Dr.",
+      listPrice: 225000,
+      bedrooms: 5,
+      bathrooms: 3.5,
+      propertyImage: "https://ap.rdcpix.com/13b9a276c388dfc0687fcef1acfc87e4l-m3084758060od-w1024_h768.jpg"
+    }, 
     ],
     registrationDate: new Date(Date.now()),
     updateDate: new Date(Date.now())

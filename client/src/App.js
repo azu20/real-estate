@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
+import Home from "../src/components/Home/Home";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import MainPage from "../src/Pages/MainPage/Main";
 import Favorites from "./Pages/Favorites/Favorites";
 import AdminArea from "./Pages/AdminArea/AdminArea";
-import Home from "../src/components/Home/Home";
-import history from "./utils/history";
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
 import InvisiblePage from './components/InvisiblePage/InvisiblePage';
-
+import history from "../src/utils/history"
 
 function App() {
   const { isLoading } = useAuth0();
@@ -19,7 +18,7 @@ function App() {
   }
 
   return (
-    <>
+    
       <Router history={history}>
         <Route exact path="/" component={Home} />
         <Route  path="/main" component={MainPage} />
@@ -27,7 +26,7 @@ function App() {
         <Route  path="/adminarea" component={AdminArea} />
         <Route   path="/invisible" component={InvisiblePage}/>
       </Router>
-    </>
+   
   );
 }
 
