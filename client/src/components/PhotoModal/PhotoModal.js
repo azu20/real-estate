@@ -31,7 +31,7 @@ class PhotoModal extends Component {
           <MDBIcon
             icon="camera"
             size="2x"
-            className="green-text pr-3"
+            className="styleGreen"
             onClick={this.toggle(14)} />
 
           <MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>

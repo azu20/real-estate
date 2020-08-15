@@ -97,7 +97,7 @@ export default {
     "headers":{
     "content-type":"application/octet-stream",
     "x-rapidapi-host":"realtor.p.rapidapi.com",
-    "x-rapidapi-key":"11822a79cbmsh84f65be3e3c1181p1b273ejsn677317876206",
+    "x-rapidapi-key":"96c74fd5e4mshb8a226bc658c059p1b6d81jsnc089e2cbf5e3",
     "useQueryString":true
     },"params":{
     "beds_min":beds,
