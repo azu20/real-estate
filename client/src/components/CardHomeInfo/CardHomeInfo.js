@@ -65,7 +65,8 @@ class CardHomeInfo extends Component {
         state: this.props.state,
         zipcode: this.props.zip,
         photoGallery: this.state.photo_info.photos,
-        property_id: this.props.property_id
+        property_id: this.props.property_id,
+        description: this.state.photo_info.description
         
 
         //**will need  property model updates */
@@ -118,6 +119,7 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
+              {/* determine if we load Modal for Photos */}
               {
                 (this.state.photosCard)
                 ? <a className="cameraIconPosition" onClick={this.handleCameraClick()}><PhotoModal className="styleGreen" photo_info={this.state.photo_info} ></PhotoModal></a>

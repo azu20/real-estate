@@ -11,7 +11,7 @@ const TestPhotoDisplay = (props) => {
   let i = 0;
   const photoCarId = () => {
     i++; 
-    console.log("is this being called");
+    // console.log("is this being called");
     return i;
   }
 

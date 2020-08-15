@@ -21,6 +21,7 @@ const propertySchema = new Schema({
   subDivision: { type: String},
   photoGallery: {type: []},
   property_id: {type: String},
+  description: {type: String},
   annualPropTax: Number,
   taxCounty: String,
   utilityCompany: String,

@@ -12,7 +12,7 @@ class PhotoModal extends Component {
       result: {}
 
     };
-    console.log("these are props: " + props.photo_info)
+    // console.log("these are props: " + props.photo_info)
     //console.log("stat props result:"+ this.state.result)
     //console.log(this.state.result.photo_count)
   };
@@ -41,7 +41,7 @@ class PhotoModal extends Component {
             onClick={this.toggle(14)} />
 
           <MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-            <MDBModalHeader toggle={this.toggle(14)} className="cardFont">About this Property</MDBModalHeader>
+            <MDBModalHeader toggle={this.toggle(14)} className="cardFont">{this.props.photo_info.address.line}</MDBModalHeader>
             <MDBModalBody>
 
              <PhotoCarousel photo_info={this.props.photo_info}/>
@@ -49,9 +49,8 @@ class PhotoModal extends Component {
             </MDBModalBody>
             <MDBModalFooter center>
               <h5>Description</h5>
-              <p>This full stack application is deployed on Heroku with JawsDB.  The project focus was understanding and working with the MVC model.</p>
-              <p>The application is a Burger logger.  It allows you to add new burgers to the list and eventually eat them.  Each action makes requests to the DB and updates to the display.</p>
-              <p>**WARNING - app loads slow due to Heroku and the 'Huge' background file I used</p>
+              <p>{this.props.photo_info.description}</p>
+              
               {/* <h5>User Story</h5> */}
             </MDBModalFooter>
           </MDBModal>
