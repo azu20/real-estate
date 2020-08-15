@@ -22,6 +22,7 @@ const propertySchema = new Schema({
   photoGallery: {type: []},
   property_id: {type: String},
   description: {type: String},
+  email:{type: String},
   annualPropTax: Number,
   taxCounty: String,
   utilityCompany: String,

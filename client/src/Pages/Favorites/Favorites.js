@@ -9,22 +9,37 @@ import Contact from "../../components/Contact/Contact";
 
 
 class Favorites extends Component {
-    state = {
-        result: []
-    }
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            result: [],
+          
+           };
+    };
+
     // Loader
     loadProperties() {
         console.log("Test");
         API.getProperties()
             .then(payloadFromApiCall => {
                 const theProperties = payloadFromApiCall.data;
-                console.log("the top x properties", theProperties);
-                let cardData = [];
-                for (let oneProperty of theProperties) {
-                    cardData.push({ name: oneProperty.address, listprice: oneProperty.listPrice, image: oneProperty.image });
+                // console.log("the top x properties", theProperties);
+                let sortedData = []
+                for (let i=0; i<theProperties.length; i++){
+
+               
+                    if(theProperties[i].email === this.props.user_email){
+                        //console.log("return true" +data.data[i].email)
+                        //console.log("this is the sorted list")
+                        //console.log(theProperties[i])
+                        sortedData.push(theProperties[i])
+                    }
                 }
-                this.setState({ result: cardData })
-                console.log("this is card data: ", cardData)
+
+                
+                this.setState({ result: sortedData })
+                console.log("this is sorted data: ", sortedData )
             })
             .catch(err => console.log(err));
     }
@@ -38,7 +53,7 @@ class Favorites extends Component {
             <>
                 <Nav />
                 <div class="jumbotron">
-                    <h2 class="display-4 text-center">Welcome to the Favorites page</h2>
+                    <h2 class="display-4 text-center">Welcome Washburn Real Estate {this.props.user_email} We are excited to be working with you!</h2>
                     {/* <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                     <hr class="my-4" />
                     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -50,27 +65,21 @@ class Favorites extends Component {
                     <MDBRow>
                         <MDBCol size="6">
                             <MDBRow>
-                                {this.state.result.map(property => (
-                                    <MDBCol md="6">
+                            {this.state.result.map(property => (
+                                    <MDBCol>
 
                                         <CardHomeInfo
-                                            address={property.name}
-                                            price={property.listprice}
+                                            address={property.address}
+                                            city={property.city}
+                                            state={property.state}
+                                            zip={property.zipcode}
+                                            price={property.listPrice}
                                             src={property.image}
-
-                                        // address={property.address.line}
-                                        // city={property.address.city}
-                                        // state={property.address.state}
-                                        // zip={property.address.postal_code}
-                                        // price={property.price}
-                                        // src={property.thumbnail}
-                                        // bedrooms={property.beds}
-                                        // bathrooms={property.baths}
-                                        // email={this.props.user.email}
-                                        // property_id={property.property_id}
-                                        // sqft={property.building_size.size}
-
-
+                                            bedrooms={property.bedroom}
+                                            bathrooms={property.bathroom}
+                                            email={property.email}
+                                            property_id={property.property_id}
+                                            // sqft={property.building_size.size}
                                         />
                                     </MDBCol>
                                 ))}
@@ -81,30 +90,7 @@ class Favorites extends Component {
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
-                {this.state.result.map(property => (
-                    <MDBCol md="6">
-
-                        <CardHomeInfo
-                            address={property.name}
-                            price={property.listprice}
-                            src={dummyPhoto}
-
-                        // address={property.address.line}
-                        // city={property.address.city}
-                        // state={property.address.state}
-                        // zip={property.address.postal_code}
-                        // price={property.price}
-                        // src={property.thumbnail}
-                        // bedrooms={property.beds}
-                        // bathrooms={property.baths}
-                        // email={this.props.user.email}
-                        // property_id={property.property_id}
-                        // sqft={property.building_size.size}
-
-
-                        />
-                    </MDBCol>
-                ))}
+                
             </>
         );
     }

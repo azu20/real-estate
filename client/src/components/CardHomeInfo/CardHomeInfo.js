@@ -66,7 +66,8 @@ class CardHomeInfo extends Component {
         zipcode: this.props.zip,
         photoGallery: this.state.photo_info.photos,
         property_id: this.props.property_id,
-        description: this.state.photo_info.description
+        description: this.state.photo_info.description,
+        email: this.props.email
         
 
         //**will need  property model updates */
