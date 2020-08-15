@@ -7,7 +7,6 @@ import Favorites from "./Pages/Favorites/Favorites";
 import AdminArea from "./Pages/AdminArea/AdminArea";
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
-import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 import UserDetails from './Pages/UserDetails/UserDetails';
 import history from "../src/utils/history";
 
