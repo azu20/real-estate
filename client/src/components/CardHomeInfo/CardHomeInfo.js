@@ -21,11 +21,7 @@ class CardHomeInfo extends Component {
   }
 
 
-  handleCameraClick = (event) => {
-
-
-
-  }
+ 
 
   handleFavorites = (event) => {
     if (this.state.isFavorite) {
@@ -50,7 +46,7 @@ class CardHomeInfo extends Component {
           photo_info: data.data.properties[0],
           photosCard: true
         })
-  
+      console.log("this are photos")
       console.log(this.state.photo_info.photos)
       //console.log(this.state.photo_info.photo_count)
         
