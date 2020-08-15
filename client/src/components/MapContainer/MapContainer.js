@@ -8,19 +8,27 @@ import "./MapContainer.css"
 
 const MapContainer = (props) => {
 
+    let lat = [33.4152]
+    let lon =[-111.8315]
     // const [center] = useState([39.7392, -104.9903])
+    if(props.properties.length > 0){
+
+        const position = props.properties[0].address;
+        const latitude = position.lat
+        const longitude = position.lon
+        lat.unshift(latitude)
+        lon.unshift(longitude)
+        console.log(position);
     
-    // const position = props.properties[0];
-    // console.log(position);
-    
-    
+    }
+
     
 
     return (
 
         <Map
-            center={[39.7392, -104.9903]}
-            zoom={13}
+            center={[lat[0], lon[0]]}
+            zoom={11}
             style={{ width: '100%', height: '500px' }}
             
         >
@@ -66,6 +74,7 @@ const MapContainer = (props) => {
         </Map>
 
     )
+        
 }
 
 export default MapContainer

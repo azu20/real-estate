@@ -42,6 +42,7 @@ class CardHomeInfo extends Component {
         city: this.props.city,
         state: this.props.state,
         zipcode: this.props.zip,
+        propertyId: this.props.property_id
         
 
         //**will need  property model updates */

@@ -8,7 +8,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
 import UserDetails from './Pages/UserDetails/UserDetails';
 import Home from "../src/components/Home/Home";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
   const { isLoading } = useAuth0();

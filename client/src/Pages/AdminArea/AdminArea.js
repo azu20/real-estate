@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { MDBBadge, MDBRow, MDBCol, MDBListGroup, MDBListGroupItem } from 'mdbreact';
+import { MDBBadge, MDBRow, MDBCol, MDBListGroup, MDBListGroupItem, MDBContainer } from 'mdbreact';
 import Nav from "../../components/Nav/Nav";
 import "./AdminArea.css";
 import API from "../../utils/API";
@@ -97,74 +97,70 @@ function AdminArea() {
         <>
             <Nav />
             <br></br>
-            <MDBRow >
-                <MDBCol md="4">
-                    <h1 className="userStats align-center">User List</h1>
-                </MDBCol>
-                <MDBCol md="4">
-                    <h1 className="userStats align-center">User Activity</h1>
-                </MDBCol>
-                <MDBCol md="4">
-                    <h1 className="topProperties">Top Favorite Properties</h1>
-                </MDBCol>
-            </MDBRow>
-            <MDBRow>
-                <MDBCol className="align-items-center" md="4">
-                    <div>
-                        <MDBListGroup className="d-flex" style={{ width: "22rem", margin: "auto" }}>
-                            {
-                                _users.map(user => (
-                                    <MDBListGroupItem key={user._id} href={"/users/" + user._id} >
-                                        {user.firstName} {user.lastName}
-                                    </MDBListGroupItem>
-                                )
-                                )
-                            }
-                        </MDBListGroup>
-                    </div>
-                </MDBCol>
-                <MDBCol className="align-items-center" md="4" >
-                    <div>
-                        <MDBListGroup style={{ width: "22rem" }}>
+            <MDBContainer>
 
-                            <MDBListGroupItem className="d-flex justify-content-between align-items-center">Last 7 Days
+
+                <MDBRow>
+                    <MDBCol className="align-items-center p-2" sm="12" md="6" lg="4">
+                        <h1 className="userStats align-center">User List</h1>
+                        <div>
+                            <MDBListGroup className="d-flex" style={{ width: "16rem", margin: "auto" }}>
+                                {
+                                    _users.map(user => (
+                                        <MDBListGroupItem key={user._id} href={"/users/" + user._id} >
+                                            {user.firstName} {user.lastName}
+                                        </MDBListGroupItem>
+                                    )
+                                    )
+                                }
+                            </MDBListGroup>
+                        </div>
+                    </MDBCol>
+                    <MDBCol className="align-items-center p-2" sm="12" md="6" lg="4">
+                        <h1 className="userStats align-left">User Activity</h1>
+                        <div>
+                            <MDBListGroup style={{ width: "22rem" }}>
+
+                                <MDBListGroupItem className="d-flex justify-content-between align-items-center">Last 7 Days
                             <MDBBadge color="primary"
-                                    pill>{pieData['Last 7 Days']}</MDBBadge>
-                            </MDBListGroupItem>
-                            <MDBListGroupItem className="d-flex justify-content-between align-items-center">7 - 14 Days Ago
+                                        pill>{pieData['Last 7 Days']}</MDBBadge>
+                                </MDBListGroupItem>
+                                <MDBListGroupItem className="d-flex justify-content-between align-items-center">7 - 14 Days Ago
                             <MDBBadge
-                                    color="primary" pill>{pieData['7 - 14 Days Ago']}</MDBBadge>
-                            </MDBListGroupItem>
-                            <MDBListGroupItem className="d-flex justify-content-between align-items-center">Over 2 Weeks Ago
+                                        color="primary" pill>{pieData['7 - 14 Days Ago']}</MDBBadge>
+                                </MDBListGroupItem>
+                                <MDBListGroupItem className="d-flex justify-content-between align-items-center">Over 2 Weeks Ago
                             <MDBBadge color="primary"
-                                    pill>{pieData['Over 2 Weeks Ago']}</MDBBadge>
-                            </MDBListGroupItem>
-                            <MDBListGroupItem className="d-flex justify-content-between align-items-center">Over 1 Month Ago
+                                        pill>{pieData['Over 2 Weeks Ago']}</MDBBadge>
+                                </MDBListGroupItem>
+                                <MDBListGroupItem className="d-flex justify-content-between align-items-center">Over 1 Month Ago
                                  <MDBBadge color="primary" pill>{pieData['Over 1 Month Ago']}</MDBBadge>
-                            </MDBListGroupItem>
-                        </MDBListGroup>
-                    </div>
-                </MDBCol>
-                <MDBCol className="align-items-center" md="4" style={{ width: "60rem", margin: "auto" }} >
-                    <BarChart
-                        width={600}
-                        height={400}
-                        data={properties}
-                        margin={{
-                            top: 5, right: 30, left: 20, bottom: 5,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Bar dataKey="listprice" fill="#8884d8" />
-                        {/* <Bar dataKey="Yesterday" fill="#82ca9d" /> */}
-                    </BarChart>
+                                </MDBListGroupItem>
+                            </MDBListGroup>
+                        </div>
+                    </MDBCol>
+                    <MDBCol className="text-center p-2" md="12" lg="4" >
+                        <h1 className="userStats ml-4 text-center">Top Saved Properties</h1>
+                        <BarChart
+                            width={450}
+                            height={400}
+                            data={properties}
+                            margin={{
+                                top: 5, right: 30, left: 20, bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="listprice" fill="#8884d8" />
+                            {/* <Bar dataKey="Yesterday" fill="#82ca9d" /> */}
+                        </BarChart>
 
-                </MDBCol>
-            </MDBRow>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
         </>
     );
 
