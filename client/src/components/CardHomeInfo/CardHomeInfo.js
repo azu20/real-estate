@@ -119,7 +119,7 @@ class CardHomeInfo extends Component {
               {/* determine if we load Modal for Photos */}
               {
                 (this.state.photosCard)
-                ? <a className="cameraIconPosition" onClick={this.handleCameraClick()}><PhotoModal className="styleGreen" photo_info={this.state.photo_info} ></PhotoModal></a>
+                ? <a className="cameraIconPosition" ><PhotoModal className="styleGreen" photo_info={this.state.photo_info} ></PhotoModal></a>
                 : <></>
               }
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
