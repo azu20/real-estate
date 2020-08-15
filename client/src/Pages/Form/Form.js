@@ -5,6 +5,7 @@ import API from "../../utils/API"
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from "../../components/LogoutButton/LogoutButton"
 import { useHistory } from "react-router-dom";
+import GuestNav from "../../components/GuestNav/GuestNav";
 
 
 const Form = () => {
@@ -81,7 +82,8 @@ const Form = () => {
     }
     
     return (
-
+        <>
+        <GuestNav/>
         <MDBContainer>
             <MDBRow>
                 <MDBCol md="3"></MDBCol>
@@ -132,6 +134,7 @@ const Form = () => {
                 <MDBCol md="3"></MDBCol>
             </MDBRow>
         </MDBContainer>
+        </>
 
     )
 
