@@ -10,7 +10,7 @@ class PhotoModal extends Component {
       modal14: false
 
     };
-    //  console.log("these are props: " + props.src)
+     console.log("these are props: " + props)
   };
 
 

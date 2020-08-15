@@ -8,8 +8,11 @@ import AdminArea from "./Pages/AdminArea/AdminArea";
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
 import UserDetails from './Pages/UserDetails/UserDetails';
-import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 
+import Home from "../src/components/Home/Home";
+// import { useAuth0 } from "@auth0/auth0-react";
+
+import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 
 function App() {
   const { isLoading } = useAuth0();
