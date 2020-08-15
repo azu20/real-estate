@@ -1,6 +1,10 @@
 import React, { Component, MDBTooltip } from 'react';
-import { MDBContainer, MDBImage, MDBIcon, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact'
-import PhotoCarousel from '../PhotoCarousel/PhotoCarousel';
+import { MDBContainer, MDBImage, MDBIcon, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import TestPhotoDisplay from '../TestPhotoDisplay/TestPhotoDisplay';
+
+
+
+
 
 class PhotoModal extends Component {
 
@@ -10,13 +14,13 @@ class PhotoModal extends Component {
       modal14: false
 
     };
-     console.log("these are props: " + props)
+    //  console.log("these are props: " + props.src)
   };
-
+  // state = {
+  //   modal14: false
+  // }
 
   toggle = nr => () => {
-    //
-    
     let modalNumber = 'modal' + nr
     this.setState({
       [modalNumber]: !this.state[modalNumber]
@@ -28,17 +32,20 @@ class PhotoModal extends Component {
     return (
       <>
         <MDBContainer>
+          {/* <MDBBtn color="primary" onClick={this.toggle(14)}>MDBModal</MDBBtn> */}
+
+          {/* <i class="fab fa-readme fa-2x" onClick={this.toggle(14)}></i> */}
+
           <MDBIcon
             icon="camera"
             size="2x"
-            className="styleGreen"
+            className="green-text pr-3"
             onClick={this.toggle(14)} />
 
           <MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-            <MDBModalHeader toggle={this.toggle(14)} className="cardFont">About this Property</MDBModalHeader>
+            <MDBModalHeader toggle={this.toggle(14)} className="cardFont">EAT-DA-BURGER</MDBModalHeader>
             <MDBModalBody>
-
-             <PhotoCarousel/>
+              <TestPhotoDisplay></TestPhotoDisplay>
 
             </MDBModalBody>
             <MDBModalFooter center>

@@ -2,13 +2,15 @@ import React from "react";
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 import LoginButton from "../LoginButton/LoginButton.js";
 import "./Guest.css"
+import GuestNav from "../GuestNav/GuestNav";
 // import { useAuth0 } from "@auth0/auth0-react";
 
 
 const Guest = () => {
   // const { user, isAuthenticated } = useAuth0();
   return (
-
+    <>
+    <GuestNav/>
     <MDBContainer>
       <MDBRow>
         <MDBCol>
@@ -29,6 +31,7 @@ const Guest = () => {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+    </>
   )
 }
 

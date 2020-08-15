@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all properties
   getProperties: async function () {
-    let response = axios.get("/api/properties/")
+    let response = await axios.get("/api/properties/")
     .catch(err => console.log("error: ", err));
     return response;
   },
@@ -97,7 +97,9 @@ export default {
     "headers":{
     "content-type":"application/octet-stream",
     "x-rapidapi-host":"realtor.p.rapidapi.com",
+
     "x-rapidapi-key":"ad3ef9d53dmsh2c807bcf929ee3ap15e042jsnabc803406bee",
+
     "useQueryString":true
     },"params":{
     "beds_min":beds,
