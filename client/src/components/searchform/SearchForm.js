@@ -7,7 +7,7 @@ import "./SearchForm.css"
 const SearchForm = (props) => {
     return (
         <>
-            <MDBRow class="searchBox">
+            <MDBRow className="searchBox">
                 <MDBCol className="searchColumn" sm="12" md="2">
                     <MDBFormInline className="text-center md-form mr-auto mb-4 pl-3">
                         <h5 className="cityAndState">City and State</h5>
