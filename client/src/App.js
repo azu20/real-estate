@@ -11,6 +11,9 @@ import UserDetails from './Pages/UserDetails/UserDetails';
 import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 import AuthForFavs from './components/AuthForFavs/AuthForFavs';
 
+// import { useAuth0 } from "@auth0/auth0-react";
+
+import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 
 function App() {
   const { isLoading } = useAuth0();

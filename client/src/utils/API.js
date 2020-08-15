@@ -97,7 +97,12 @@ export default {
     "headers":{
     "content-type":"application/octet-stream",
     "x-rapidapi-host":"realtor.p.rapidapi.com",
-    "x-rapidapi-key":"49f19e7827msh46d8e3af31c58e0p12d920jsn76de267f5a55",
+
+
+
+    "x-rapidapi-key":"ad3ef9d53dmsh2c807bcf929ee3ap15e042jsnabc803406bee",
+
+
     "useQueryString":true
     },"params":{
     "beds_min":beds,
@@ -119,7 +124,7 @@ export default {
       "headers":{
       "content-type":"application/octet-stream",
       "x-rapidapi-host":"realtor.p.rapidapi.com",
-      "x-rapidapi-key":"49f19e7827msh46d8e3af31c58e0p12d920jsn76de267f5a55",
+      "x-rapidapi-key":"ad3ef9d53dmsh2c807bcf929ee3ap15e042jsnabc803406bee",
       "useQueryString":true
       },"params":{
       "property_id":property_id
