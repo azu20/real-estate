@@ -2,10 +2,10 @@ import React from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from "mdbreact";
 import BartStreet from "../../Assets/Test_JSON_files/testHomeDetailsBart.json";
 
-const TestPhotoDisplay = () => {
+const TestPhotoDisplay = (props) => {
 
 
-
+  console.log(props.photo_info)
   //needed in order to give each photo an id that the
   //carousel can keep track out
   let i = 0;

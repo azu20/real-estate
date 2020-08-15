@@ -9,22 +9,17 @@ class PhotoModal extends Component {
     super(props)
     this.state = {
       modal14: false,
-      result: []
+      result: {}
 
     };
     //  console.log("these are props: " + props.src)
+    //console.log("stat props result:"+ this.state.result)
+    //console.log(this.state.result.photo_count)
   };
 
 
   toggle = nr => () => {
-    //
-    API.search(this.props.property_id)
-    .then(data =>{
-      console.log("result from API:" + data)
-      this.setState({ result: data.data.properties })
-
-    })
-    .catch(err => console.log(err));
+    
     
     let modalNumber = 'modal' + nr
     this.setState({
@@ -49,7 +44,7 @@ class PhotoModal extends Component {
             <MDBModalHeader toggle={this.toggle(14)} className="cardFont">About this Property</MDBModalHeader>
             <MDBModalBody>
 
-             <PhotoCarousel/>
+             <PhotoCarousel photo_info={this.state.result}/>
 
             </MDBModalBody>
             <MDBModalFooter center>

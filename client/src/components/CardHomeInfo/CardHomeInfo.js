@@ -13,11 +13,19 @@ class CardHomeInfo extends Component {
    
     this.state = {
       isFavorite: false,
-      cardInfo: {}
+      cardInfo: {},
+      photo_info:{},
+      photos: false
     }
     // console.log("this is props"+ this.props.email)
   }
 
+
+  handleCameraClick = (event) => {
+
+
+
+  }
 
   handleFavorites = (event) => {
     if (this.state.isFavorite) {
@@ -32,6 +40,20 @@ class CardHomeInfo extends Component {
       //make API call for details, need property id
       //this.props.property_id
       //then send all info to db
+
+      API.detailedSearch(this.props.property_id)
+      .then(data =>{
+        console.log("this is property_id:" + this.props.property_id )
+        console.log(data.data.properties[0].photo_count)
+        console.log("test")
+        this.setState({
+          photo_info: data.data.properties[0],
+          photos: true
+        })
+  
+      console.log(this.state.result)
+      console.log(this.state.result.photo_count)
+        
 
       let property = {
         address: this.props.address,
@@ -51,9 +73,11 @@ class CardHomeInfo extends Component {
         // extendedDetails: result
         
       }
-      //add to fav
-
-      API.saveProperty(property) 
+        // this.setState({ result: data.data.properties[0] })
+        //### build out the object to send to the DB
+        API.saveProperty(property) 
+      })
+      .catch(err => console.log(err));
    
     }
    
@@ -92,7 +116,7 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
-              <a className="cameraIconPosition"><PhotoModal className="styleGreen" property_id={this.props.property_id}></PhotoModal></a>
+              <a className="cameraIconPosition" onClick={this.handleCameraClick()}><PhotoModal className="styleGreen" ></PhotoModal></a>
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
               <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
               <MDBCardText>{this.props.address} </MDBCardText>
