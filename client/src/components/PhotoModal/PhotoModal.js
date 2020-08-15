@@ -1,13 +1,15 @@
 import React, { Component, MDBTooltip } from 'react';
 import { MDBContainer, MDBImage, MDBIcon, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact'
 import PhotoCarousel from '../PhotoCarousel/PhotoCarousel';
+import API from "../../utils/API";
 
 class PhotoModal extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      modal14: false
+      modal14: false,
+      result: []
 
     };
     //  console.log("these are props: " + props.src)
@@ -16,11 +18,20 @@ class PhotoModal extends Component {
 
   toggle = nr => () => {
     //
+    API.search(this.props.property_id)
+    .then(data =>{
+      console.log("result from API:" + data)
+      this.setState({ result: data.data.properties })
+
+    })
+    .catch(err => console.log(err));
     
     let modalNumber = 'modal' + nr
     this.setState({
       [modalNumber]: !this.state[modalNumber]
     });
+
+
   }
 
   render() {
