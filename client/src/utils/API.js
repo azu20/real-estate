@@ -98,7 +98,10 @@ export default {
     "content-type":"application/octet-stream",
     "x-rapidapi-host":"realtor.p.rapidapi.com",
 
+
+
     "x-rapidapi-key":"ad3ef9d53dmsh2c807bcf929ee3ap15e042jsnabc803406bee",
+
 
     "useQueryString":true
     },"params":{
@@ -116,21 +119,16 @@ export default {
     }),
     
   detailedSearch: (property_id) => axios({
-    "method":"GET",
-    "url":"https://realtor.p.rapidapi.com/properties/v2/detail",
-    "headers":{
-    "content-type":"application/octet-stream",
-    "x-rapidapi-host":"realtor.p.rapidapi.com",
-    "x-rapidapi-key":"96c74fd5e4mshb8a226bc658c059p1b6d81jsnc089e2cbf5e3",
-    "useQueryString":true
-    },"params":{
-    "property_id":property_id
-    }
-    })
-    .then((response)=>{
-      console.log(response)
-    })
-    .catch((error)=>{
-      console.log(error)
-  })
+      "method":"GET",
+      "url":"https://realtor.p.rapidapi.com/properties/v2/detail",
+      "headers":{
+      "content-type":"application/octet-stream",
+      "x-rapidapi-host":"realtor.p.rapidapi.com",
+      "x-rapidapi-key":"ad3ef9d53dmsh2c807bcf929ee3ap15e042jsnabc803406bee",
+      "useQueryString":true
+      },"params":{
+      "property_id":property_id
+      }
+      })
+
 };

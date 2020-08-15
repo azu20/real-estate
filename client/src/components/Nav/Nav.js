@@ -35,29 +35,25 @@ render(props) {
                 </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="/favorites">
-              <MDBIcon icon="heart" />
-              </MDBNavLink>
-            </MDBNavItem>
-            {/* <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="google-plus-g" />
-              </MDBNavLink>
-            </MDBNavItem> */}
-            <MDBNavItem>
+
+          <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
                   <MDBIcon icon="user" />
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default">
                   <MDBDropdownItem href="#!"><LogoutButton/></MDBDropdownItem>
-                  {/* <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem> */}
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
+
+
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="/favorites">
+              <MDBIcon icon="heart" />
+              </MDBNavLink>
+            </MDBNavItem>
+        
 
             <MDBNavItem>
               <MDBNavLink to="/adminarea">ADMIN</MDBNavLink>

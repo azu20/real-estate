@@ -28,13 +28,13 @@ const InvisiblePage = () => {
 
         try {
             const data = await API.getUsers()
-            console.log("PROMISE RESULT:", data)
+            //console.log("PROMISE RESULT:", data)
 
             for (let i=0; i<data.data.length; i++){
 
                
                 if(data.data[i].email === email){
-                    console.log("return true" +data.data[i].email)
+                    //console.log("return true" +data.data[i].email)
                     return true;
                 }
 
@@ -60,11 +60,11 @@ const InvisiblePage = () => {
             if (userStatus === "undetermined" && result) {
 
                 setUserStatus("registered")
-                console.log("Status updated to registered")
-                console.log("this is the result: " +result);
+                // console.log("Status updated to registered")
+                // console.log("this is the result: " +result);
             } else {
                 setUserStatus("unregistered")
-                console.log("Status updated to unregistered")
+                // console.log("Status updated to unregistered")
             }
 
             })
