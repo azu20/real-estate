@@ -15,7 +15,7 @@ class CardHomeInfo extends Component {
       isFavorite: false,
       cardInfo: {},
       photo_info:{},
-      photos: false
+      photosCard: false
     }
     // console.log("this is props"+ this.props.email)
   }
@@ -43,16 +43,16 @@ class CardHomeInfo extends Component {
 
       API.detailedSearch(this.props.property_id)
       .then(data =>{
-        console.log("this is property_id:" + this.props.property_id )
-        console.log(data.data.properties[0].photo_count)
-        console.log("test")
+        //console.log("this is property_id:" + this.props.property_id )
+        //console.log(data.data.properties[0].photo_count)
+        //console.log("test")
         this.setState({
           photo_info: data.data.properties[0],
-          photos: true
+          photosCard: true
         })
   
-      console.log(this.state.result)
-      console.log(this.state.result.photo_count)
+      console.log(this.state.photo_info.photos)
+      //console.log(this.state.photo_info.photo_count)
         
 
       let property = {
@@ -64,6 +64,8 @@ class CardHomeInfo extends Component {
         city: this.props.city,
         state: this.props.state,
         zipcode: this.props.zip,
+        photoGallery: this.state.photo_info.photos,
+        property_id: this.props.property_id
         
 
         //**will need  property model updates */
@@ -116,7 +118,11 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
-              <a className="cameraIconPosition" onClick={this.handleCameraClick()}><PhotoModal className="styleGreen" ></PhotoModal></a>
+              {
+                (this.state.photosCard)
+                ? <a className="cameraIconPosition" onClick={this.handleCameraClick()}><PhotoModal className="styleGreen" photo_info={this.state.photo_info} ></PhotoModal></a>
+                : <></>
+              }
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
               <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
               <MDBCardText>{this.props.address} </MDBCardText>

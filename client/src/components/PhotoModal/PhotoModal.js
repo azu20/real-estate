@@ -12,7 +12,7 @@ class PhotoModal extends Component {
       result: {}
 
     };
-    //  console.log("these are props: " + props.src)
+    console.log("these are props: " + props.photo_info)
     //console.log("stat props result:"+ this.state.result)
     //console.log(this.state.result.photo_count)
   };
@@ -44,7 +44,7 @@ class PhotoModal extends Component {
             <MDBModalHeader toggle={this.toggle(14)} className="cardFont">About this Property</MDBModalHeader>
             <MDBModalBody>
 
-             <PhotoCarousel photo_info={this.state.result}/>
+             <PhotoCarousel photo_info={this.props.photo_info}/>
 
             </MDBModalBody>
             <MDBModalFooter center>

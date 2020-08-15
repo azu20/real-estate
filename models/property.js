@@ -19,6 +19,8 @@ const propertySchema = new Schema({
   bedroom: { type: Number},
   bathroom: { type: Number},
   subDivision: { type: String},
+  photoGallery: {type: []},
+  property_id: {type: String},
   annualPropTax: Number,
   taxCounty: String,
   utilityCompany: String,

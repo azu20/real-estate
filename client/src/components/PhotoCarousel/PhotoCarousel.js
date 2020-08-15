@@ -4,7 +4,7 @@ import BartStreet from "../../Assets/Test_JSON_files/testHomeDetailsBart.json";
 
 const TestPhotoDisplay = (props) => {
 
-
+  console.log("from carousel")
   console.log(props.photo_info)
   //needed in order to give each photo an id that the
   //carousel can keep track out
@@ -19,20 +19,20 @@ const TestPhotoDisplay = (props) => {
     <MDBContainer>
       <MDBCarousel
         activeItem={1}
-        length={BartStreet.properties[0].photo_count}
+        length={props.photo_info.photo_count}
         showControls={true}
         showIndicators={false}
         className="z-depth-1"
         slide
       >
         <MDBCarouselInner>
-        {BartStreet.properties[0].photos.map(item => (
+        {props.photo_info.photos.map(item => (
           <MDBCarouselItem itemId={photoCarId()}>
             <MDBView>
               <img
                 className="d-block w-100"
                 src={item.href}></img>
-              <div className="positionCount">{i} of {BartStreet.properties[0].photo_count}</div>  
+              <div className="positionCount">{i} of {props.photo_info.photo_count}</div>  
               </MDBView>
           </MDBCarouselItem>
           ))}
