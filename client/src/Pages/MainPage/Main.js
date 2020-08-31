@@ -15,7 +15,7 @@ class MainPage extends Component {
         this.state = {
             user: props.user,
             result: [],
-            search: "Denver",    
+            search: "Mesa",    
             selectedBed: null,
             selectedBath:null,
             selectedMax:null,

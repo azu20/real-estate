@@ -11,7 +11,7 @@ import UserFavorite from "../../components/UserFavorite/UserFavorite"
 function UserDetails() {
     const [user, setUser] = useState({})
     const [preferences, setUserPreferences] = useState({})
-    const [favorites, setUserFavoritesProperties] = useState({})
+    const [favorites, setUserFavoritesProperties] = useState([{}])
     const { id } = useParams()
     let favoriteHouse1 = []
 
@@ -36,95 +36,56 @@ function UserDetails() {
 
 
 
-    if (favorites.length > 0) {
-
-        return (
-            <>
-                <Nav />
-
-                <MDBContainer>
-                    <MDBRow className="d-flex" style={{ backgroundImage: `url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg)`, padding: 60 }}>
-                        <MDBJumbotron fluid className="mt-2 text-center" style={{ width: "75rem", margin: "auto", padding: "auto" }}>
-                            <h4 className="display-4 font-weight-bold text-center">{user.firstName} {user.lastName}</h4>
-                            <p>Email: {user.email}</p>
-                            <p>Phone Contact: {user.phone}</p>
-                            <p>Bedrooms: {preferences.bedrooms}</p>
-                            <p>Bathrooms: {preferences.bathrooms}</p>
-                            <p>Price Range: $ {preferences.priceRange ? preferences.priceRange.from : "?"} - $ {preferences.priceRange ? preferences.priceRange.to : "?"}</p>
-                            <hr className="my-2" />
-                            <p>Registration date: {user.registrationDate}</p>
-                            <p>Last Login: {user.lastLogin}</p>
-                            <MDBBtn  color="elegant" className="waves-effect" href="/adminarea" >
-                                ← Back to Admin Page
-                            </MDBBtn>
-                        </MDBJumbotron>
-                    </MDBRow>
-                </MDBContainer>
-                <MDBContainer>
-                <MDBRow>
-                    <MDBCol className="p-3" size="4" >
-                        <MDBCard style={{ width: "22rem" }}>
-                            <MDBCardImage className="img-fluid" src={favorites[0].propertyImage} waves />
-                            <MDBCardBody>
-                                <MDBCardTitle><h2>{favorites[0].propertyAddress}</h2></MDBCardTitle>
-                                <MDBCardText> Price: ${favorites[0].listPrice}</MDBCardText>
-                                <MDBCardText> Bedrooms: ${favorites[0].bedrooms}</MDBCardText>
-                                <MDBCardText> Bathrooms: ${favorites[0].bathrooms}</MDBCardText>
-
-                                <MDBBtn color="elegant" className="align-center" href="#">Schedule Showing</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
-
-                    <MDBCol className="p-3" size="4" >
-                        <MDBCard style={{ width: "22rem" }}>
-                            <MDBCardImage className="img-fluid" src={favorites[1].propertyImage} waves />
-                            <MDBCardBody>
-                                <MDBCardTitle><h2>{favorites[1].propertyAddress}</h2></MDBCardTitle>
-                                <MDBCardText> Price: ${favorites[1].listPrice}</MDBCardText>
-                                <MDBCardText> Bedrooms: ${favorites[1].bedrooms}</MDBCardText>
-                                <MDBCardText> Bathrooms: ${favorites[1].bathrooms}</MDBCardText>
-
-                                <MDBBtn color="elegant" className="text-center" href="#">Schedule Showing</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
-
-                    <MDBCol className="p-3" size="4" >
-                        <MDBCard style={{ width: "22rem" }}>
-                            <MDBCardImage className="img-fluid" src={favorites[1].propertyImage} waves />
-                            <MDBCardBody>
-                                <MDBCardTitle><h2>{favorites[1].propertyAddress}</h2></MDBCardTitle>
-                                <MDBCardText> Price: ${favorites[1].listPrice}</MDBCardText>
-                                <MDBCardText> Bedrooms: ${favorites[1].bedrooms}</MDBCardText>
-                                <MDBCardText> Bathrooms: ${favorites[1].bathrooms}</MDBCardText>
-
-                                <MDBBtn color="elegant" className="text-center" href="#">Schedule Showing</MDBBtn>
-                            </MDBCardBody>
-                        </MDBCard>
-                    </MDBCol>
-                </MDBRow>
-                </MDBContainer>
-            </>
-
-
-        )
-    }
-
-
-
-
-
-
-
-
-
 
     return (
         <>
+            <Nav />
 
+            <MDBContainer>
+                <MDBRow className="d-flex" style={{ backgroundImage: `url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg)`, padding: 60 }}>
+                    <MDBJumbotron fluid className="mt-2 text-center" style={{ width: "75rem", margin: "auto", padding: "auto" }}>
+                        <h4 className="display-4 font-weight-bold text-center">{user.firstName} {user.lastName}</h4>
+                        <p>Email: {user.email}</p>
+                        <p>Phone Contact: {user.phone}</p>
+                        <p>Bedrooms: {preferences.bedrooms}</p>
+                        <p>Bathrooms: {preferences.bathrooms}</p>
+                        <p>Price Range: $ {preferences.priceRange ? preferences.priceRange.from : "?"} - $ {preferences.priceRange ? preferences.priceRange.to : "?"}</p>
+                        <hr className="my-2" />
+                        <p>Registration date: {user.registrationDate}</p>
+                        <p>Last Login: {user.lastLogin}</p>
+                        <MDBBtn color="elegant" className="waves-effect" href="/adminarea" >
+                            ← Back to Admin Page
+                            </MDBBtn>
+                    </MDBJumbotron>
+                </MDBRow>
+            </MDBContainer>
+            <MDBContainer>
+                <MDBRow>
+                    <div>
+                    <MDBCol className="d-flex">
+                        {favorites.map(x => (
+
+                            
+                                <MDBCard style={{ width: "22rem" }}>
+                                    <MDBCardImage className="img-fluid" src={x.propertyImage} waves />
+                                    <MDBCardBody>
+                                        <MDBCardTitle><h2>{x.propertyAddress}</h2></MDBCardTitle>
+                                        <MDBCardText> Price: ${x.listPrice}</MDBCardText>
+                                        <MDBCardText> Bedrooms: ${x.bedrooms}</MDBCardText>
+                                        <MDBCardText> Bathrooms: ${x.bathrooms}</MDBCardText>
+
+                                        <MDBBtn color="elegant" className="align-center" href="#">Schedule Showing</MDBBtn>
+                                    </MDBCardBody>
+                                </MDBCard>
+                           
+
+                        ))}
+                         </MDBCol>
+                    </div>
+                </MDBRow>
+            </MDBContainer>
         </>
-    );
+    )
 }
 
 export default UserDetails;

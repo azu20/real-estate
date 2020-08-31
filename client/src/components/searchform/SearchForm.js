@@ -11,7 +11,7 @@ const SearchForm = (props) => {
                 <MDBCol className="searchColumn" sm="12" md="2">
                     <MDBFormInline className="text-center md-form mr-auto mb-4 pl-3">
                         <h5 className="cityAndState">City and State</h5>
-                        <input className="form-control mr-sm-2" name="search" value={props.search} type="text" onChange={props.handleInputChange} placeholder="Denver, CO" aria-label="Search" />
+                        <input className="form-control mr-sm-2" name="search" value={props.search} type="text" onChange={props.handleInputChange} placeholder="Mesa, AZ" aria-label="Search" />
                         <MDBBtn color="elegant" size="3x" rounded type="submit" className="mr-auto searchButton" onClick={props.handleFormSubmit}>Search <MDBIcon size="1x" icon="search-location" /></MDBBtn>
                     </MDBFormInline>
                 </MDBCol>
