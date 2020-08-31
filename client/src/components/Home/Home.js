@@ -18,17 +18,10 @@ const Home = () => {
     // });
     // };
     return (
-<<<<<<< HEAD
-       <>
-            {/* isAuthenticated ? 
-                (checkUserByEmail(user.email) ? <MainPage user={user} /> : <UserRegistration user={user} /> ) 
-                : <Guest /> ) */}
-=======
         <>
             {/* {isAuthenticated ? <MainPage user={user} /> : <Guest />} */}
             {/* {isAuthenticated ? <MainPage user={user} /> : <Guest />} */}
 
->>>>>>> master
             {/* going to route to them to InvisiblePage --> then to--> Form if the dont exist in DB */}
                 {/* not passing Auth0 props here, Invisible page generates its own*/}
                 {   isAuthenticated ? <InvisiblePage /> : <Guest />   }
