@@ -37,7 +37,7 @@ const InvisiblePage = () => {
                 // console.log("return pre:  " + data.data.email[i])
                
                 if(data.data[i].email === email){
-                    console.log("return true" +data.data[i].email)
+                    console.log("return true" + data.data[i].email)
                     return true;
                 }
                 

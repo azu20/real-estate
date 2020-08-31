@@ -8,30 +8,26 @@ import "./Main.css"
 import Contact from "../../components/Contact/Contact";
 import API from "../../utils/API";
 
-
-
-
 class MainPage extends Component {
     constructor(props) {
-        super(props)
+        super(props);
+       
         this.state = {
+            user: props.user,
             result: [],
-            search: "Denver",
-    
+            search: "Denver",    
             selectedBed: null,
             selectedBath:null,
             selectedMax:null,
             selectedMin:null,
-            selectedSqFt:null
-          
+            selectedSqFt:null          
            };
+        console.log("the state of props",props);
+        console.log("the state of MainPage",this.state);
     };
-
-
 
     componentDidMount() {
         this.searchHouses("Denver, CO");
-
     }
 
     searchHouses = (query) => {
@@ -46,9 +42,7 @@ class MainPage extends Component {
         API.search(city,stateCode, beds, priceMin, baths, priceMax, sqft)
             .then(data => this.setState({ result: data.data.properties }))
             .catch(err => console.log(err));
-
-        //this.setState({result: TestAPIData.properties})
- 
+        //this.setState({result: TestAPIData.properties}) 
     };
 
     handleInputChange = event => {
@@ -75,17 +69,15 @@ class MainPage extends Component {
     render() {
         return (
             <>
-                <Nav></Nav>
 
-                       
+                <Nav></Nav>
+                     
                 <SearchForm className="searchBox"
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit}
                     
-                />
-                
-
+                />              
 
                 <MDBContainer fluid>
                     <MDBRow>
@@ -118,17 +110,11 @@ class MainPage extends Component {
                             </MDBRow>
                         </MDBCol>
                     </MDBRow>
-
                 </MDBContainer>
-
-
             </>
         );
     }
 }
-
-
-
 
 export default MainPage;
 
