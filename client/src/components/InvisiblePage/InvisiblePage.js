@@ -20,7 +20,7 @@ const InvisiblePage = () => {
     //console.log(useAuth0())
     console.log(user);
     console.log("Auth0 email: "+ email);
-    
+
 
 
 
@@ -28,22 +28,18 @@ const InvisiblePage = () => {
 
         try {
             const data = await API.getUsers()
-            // const data = await API.getUsers()
-            console.log("PROMISE RESULT:", data)
-            // console.log("length: " + data.data.length)
+            //console.log("PROMISE RESULT:", data)
+
             for (let i=0; i<data.data.length; i++){
-            
-                // console.log("return pre:  " +data.data[i].email)
-                // console.log("return pre:  " + data.data.email[i])
+
                
                 if(data.data[i].email === email){
-                    console.log("return true" + data.data[i].email)
+                    //console.log("return true" +data.data[i].email)
                     return true;
                 }
-                
+
             }
-            // return true;
-            //  return data ? true : false;
+                       //  return data ? true : false;
 
         } catch (error) {
             console.log("API ERROR:", error);
@@ -53,24 +49,24 @@ const InvisiblePage = () => {
 
     useEffect(() => {
 
-        console.log("something happened")
+        // console.log("something happened")
         doSomething(email)
     }, [])
 
     const doSomething = (email) => {
         console.log("do somthing email:" + email);
         isUserRegistered(email).then((result) => {
-            
+
             if (userStatus === "undetermined" && result) {
 
                 setUserStatus("registered")
-                console.log("Status updated to registered")
-                console.log("this is the result: " +result);
+                // console.log("Status updated to registered")
+                // console.log("this is the result: " +result);
             } else {
                 setUserStatus("unregistered")
-                console.log("Status updated to unregistered")
+                // console.log("Status updated to unregistered")
             }
-            
+
             })
     }
 
@@ -84,4 +80,4 @@ const InvisiblePage = () => {
     );
 };
 
-export default InvisiblePage;
+export default InvisiblePage; 

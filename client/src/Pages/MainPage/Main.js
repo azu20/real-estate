@@ -27,7 +27,8 @@ class MainPage extends Component {
     };
 
     componentDidMount() {
-        this.searchHouses("Denver, CO");
+        this.searchHouses("Mesa, AZ");
+
     }
 
     searchHouses = (query) => {

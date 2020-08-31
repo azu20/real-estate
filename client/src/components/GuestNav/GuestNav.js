@@ -19,15 +19,15 @@ toggleCollapse = () => {
 
 render(props) {
   const navColor = {backgroundColor:'#8B0000' }
-  
+
   return (
       <MDBNavbar style={navColor} dark expand="md">
 
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-         
 
-          
+
+
           <MDBNavbarNav left>
                 <MDBNavItem>
                 <NavLink className="" to="/"><img className="logo" alt="" src="./images/wr.png"  height="75px"/>
@@ -67,9 +67,9 @@ render(props) {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-   
+
     );
   }
 }
 
-export default GuestNav;
+export default GuestNav; 

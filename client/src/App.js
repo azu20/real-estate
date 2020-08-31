@@ -8,9 +8,12 @@ import Guest from  "../src/components/Guest/Guest";
 import AdminArea from "./Pages/AdminArea/AdminArea";
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading/Loading";
-import InvisiblePage from './components/InvisiblePage/InvisiblePage';
 import UserDetails from './Pages/UserDetails/UserDetails';
-import history from "./utils/history";
+import InvisiblePage from './components/InvisiblePage/InvisiblePage';
+import AuthForFavs from './components/AuthForFavs/AuthForFavs';
+
+// import { useAuth0 } from "@auth0/auth0-react";
+
 
 function App() {
   const { isLoading } = useAuth0();
@@ -20,17 +23,19 @@ function App() {
   }
 
   return (
-  
-      <Router history={history}>       
-        <Route  exact path="/" component={Home} />
-        <Route  path="/guest" component={Guest} />
-        <Route  path="/main" component={MainPage} />
-        <Route  path="/favorites" component={Favorites} />
-        <Route  path="/adminarea" component={AdminArea} />
-        <Route  path="/invisible" component={InvisiblePage}/>
-        <Route  path="/users/:id" component={UserDetails}/>
-      </Router>
-   
+
+    <Router>
+
+      <Route exact path="/" component={Home} />
+      <Route exact path="/main" component={MainPage} />
+      <Route exact path="/favorites" component={AuthForFavs} />
+      <Route exact path="/adminarea" component={AdminArea} />
+      <Route exact path="/invisible" component={InvisiblePage} />
+      <Route exact path="/users/:id" component={UserDetails} />
+
+
+    </Router>
+
   );
 }
 

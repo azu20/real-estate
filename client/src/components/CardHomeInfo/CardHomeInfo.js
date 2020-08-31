@@ -13,11 +13,15 @@ class CardHomeInfo extends Component {
    
     this.state = {
       isFavorite: false,
-      cardInfo: {}
+      cardInfo: {},
+      photo_info:{},
+      photosCard: false
     }
     // console.log("this is props"+ this.props.email)
   }
 
+
+ 
 
   handleFavorites = (event) => {
     if (this.state.isFavorite) {
@@ -33,6 +37,20 @@ class CardHomeInfo extends Component {
       //this.props.property_id
       //then send all info to db
 
+      API.detailedSearch(this.props.property_id)
+      .then(data =>{
+        //console.log("this is property_id:" + this.props.property_id )
+        //console.log(data.data.properties[0].photo_count)
+        //console.log("test")
+        this.setState({
+          photo_info: data.data.properties[0],
+          photosCard: true
+        })
+      console.log("this are photos")
+      console.log(this.state.photo_info.photos)
+      //console.log(this.state.photo_info.photo_count)
+        
+
       let property = {
         address: this.props.address,
         listPrice: this.props.price,
@@ -42,6 +60,12 @@ class CardHomeInfo extends Component {
         city: this.props.city,
         state: this.props.state,
         zipcode: this.props.zip,
+        photoGallery: this.state.photo_info.photos,
+        property_id: this.props.property_id,
+        description: this.state.photo_info.description,
+        email: this.props.email,
+        propertyId: this.props.property_id
+
         
 
         //**will need  property model updates */
@@ -51,9 +75,11 @@ class CardHomeInfo extends Component {
         // extendedDetails: result
         
       }
-      //add to fav
-
-      API.saveProperty(property) 
+        // this.setState({ result: data.data.properties[0] })
+        //### build out the object to send to the DB
+        API.saveProperty(property) 
+      })
+      .catch(err => console.log(err));
    
     }
    
@@ -92,7 +118,12 @@ class CardHomeInfo extends Component {
                       size="2x" />
                   </a>
               }
-              <a className="cameraIconPosition"><PhotoModal className="styleGreen"></PhotoModal></a>
+              {/* determine if we load Modal for Photos */}
+              {
+                (this.state.photosCard)
+                ? <a className="cameraIconPosition" ><PhotoModal className="styleGreen" photo_info={this.state.photo_info} ></PhotoModal></a>
+                : <></>
+              }
               <MDBCardTitle>Price: ${this.props.price} </MDBCardTitle>
               <MDBCardText>Beds: {this.props.bedrooms} | Baths: {this.props.bathrooms} </MDBCardText>
               <MDBCardText>{this.props.address} </MDBCardText>
